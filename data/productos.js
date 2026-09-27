@@ -6829,15 +6829,6 @@ window.PRODUCTOS = [
   "nuevo": false
  },
  {
-  "id": "SD-049",
-  "nombre": "Stitch good/bad 2",
-  "categoria": "Series y dibujitos",
-  "imagen": "assets/img/stickers/SD-049.webp",
-  "mini": "assets/img/stickers/mini/SD-049.webp",
-  "stock": null,
-  "nuevo": false
- },
- {
   "id": "SD-050",
   "nombre": "Stitch lengua",
   "categoria": "Series y dibujitos",
