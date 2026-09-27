@@ -125,6 +125,16 @@
     });
     const actual = (it) => Object.assign(original(it), cambios[it.id] || {});
 
+    // lo que ya se aplicó al catálogo deja de contar como cambio pendiente
+    for (const it of ITEMS) {
+      const c = cambios[it.id];
+      if (!c) continue;
+      const o = original(it);
+      for (const k in c) if (c[k] === o[k] || (k === "comentario" && it.nota.includes(`comentario: ${c[k]}`))) delete c[k];
+      if (!Object.keys(c).length) delete cambios[it.id];
+    }
+    try { localStorage.setItem(CLAVE, JSON.stringify(cambios)); } catch (e) {}
+
     const cats = [...new Set(ITEMS.map((i) => i.categoria))].sort((a, b) => a.localeCompare(b, "es"));
     $("#f-cat").innerHTML += cats.map((c) => `<option>${esc(c)}</option>`).join("");
     $("#cats").innerHTML = cats.map((c) => `<option value="${esc(c)}">`).join("");

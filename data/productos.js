@@ -21,7 +21,7 @@ window.PRODUCTOS = [
   "categoria": "Anime",
   "imagen": "assets/img/stickers/AN-002.webp",
   "mini": "assets/img/stickers/mini/AN-002.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -30,7 +30,7 @@ window.PRODUCTOS = [
   "categoria": "Anime",
   "imagen": "assets/img/stickers/AN-003.webp",
   "mini": "assets/img/stickers/mini/AN-003.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -39,7 +39,7 @@ window.PRODUCTOS = [
   "categoria": "Anime",
   "imagen": "assets/img/stickers/AN-004.webp",
   "mini": "assets/img/stickers/mini/AN-004.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -48,7 +48,7 @@ window.PRODUCTOS = [
   "categoria": "Anime",
   "imagen": "assets/img/stickers/AN-005.webp",
   "mini": "assets/img/stickers/mini/AN-005.webp",
-  "stock": null,
+  "stock": 3,
   "nuevo": false
  },
  {
@@ -75,7 +75,7 @@ window.PRODUCTOS = [
   "categoria": "Anime",
   "imagen": "assets/img/stickers/AN-009.webp",
   "mini": "assets/img/stickers/mini/AN-009.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -93,7 +93,7 @@ window.PRODUCTOS = [
   "categoria": "Anime",
   "imagen": "assets/img/stickers/AN-011.webp",
   "mini": "assets/img/stickers/mini/AN-011.webp",
-  "stock": null,
+  "stock": 3,
   "nuevo": false
  },
  {
@@ -133,21 +133,12 @@ window.PRODUCTOS = [
   "nuevo": false
  },
  {
-  "id": "AN-016",
-  "nombre": "Mugiwaras chibi",
-  "categoria": "Anime",
-  "imagen": "assets/img/stickers/AN-016.webp",
-  "mini": "assets/img/stickers/mini/AN-016.webp",
-  "stock": null,
-  "nuevo": false
- },
- {
   "id": "AN-017",
   "nombre": "Nube Akatsuki",
   "categoria": "Anime",
   "imagen": "assets/img/stickers/AN-017.webp",
   "mini": "assets/img/stickers/mini/AN-017.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -156,16 +147,7 @@ window.PRODUCTOS = [
   "categoria": "Anime",
   "imagen": "assets/img/stickers/AN-018.webp",
   "mini": "assets/img/stickers/mini/AN-018.webp",
-  "stock": null,
-  "nuevo": false
- },
- {
-  "id": "AN-019",
-  "nombre": "Goku clásico",
-  "categoria": "Anime",
-  "imagen": "assets/img/stickers/AN-019.webp",
-  "mini": "assets/img/stickers/mini/AN-019.webp",
-  "stock": null,
+  "stock": 5,
   "nuevo": false
  },
  {
@@ -192,7 +174,7 @@ window.PRODUCTOS = [
   "categoria": "Anime",
   "imagen": "assets/img/stickers/AN-022.webp",
   "mini": "assets/img/stickers/mini/AN-022.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -210,7 +192,7 @@ window.PRODUCTOS = [
   "categoria": "Anime",
   "imagen": "assets/img/stickers/AN-024.webp",
   "mini": "assets/img/stickers/mini/AN-024.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -219,7 +201,7 @@ window.PRODUCTOS = [
   "categoria": "Anime",
   "imagen": "assets/img/stickers/AN-025.webp",
   "mini": "assets/img/stickers/mini/AN-025.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -228,7 +210,7 @@ window.PRODUCTOS = [
   "categoria": "Anime",
   "imagen": "assets/img/stickers/AN-028.webp",
   "mini": "assets/img/stickers/mini/AN-028.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -237,7 +219,7 @@ window.PRODUCTOS = [
   "categoria": "Anime",
   "imagen": "assets/img/stickers/AN-029.webp",
   "mini": "assets/img/stickers/mini/AN-029.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -269,25 +251,25 @@ window.PRODUCTOS = [
  },
  {
   "id": "AR-003",
-  "nombre": "Estrella cola",
+  "nombre": "Estrella culona",
   "categoria": "Argentina",
   "imagen": "assets/img/stickers/AR-003.webp",
   "mini": "assets/img/stickers/mini/AR-003.webp",
-  "stock": null,
+  "stock": 5,
   "nuevo": false
  },
  {
   "id": "AR-004",
-  "nombre": "Estampilla El lujo es vulgaridad",
+  "nombre": "Estampilla Indio",
   "categoria": "Argentina",
   "imagen": "assets/img/stickers/AR-004.webp",
   "mini": "assets/img/stickers/mini/AR-004.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
   "id": "AR-005",
-  "nombre": "Estampilla Ruta 40",
+  "nombre": "Argentina Estampilla Ruta 40",
   "categoria": "Argentina",
   "imagen": "assets/img/stickers/AR-005.webp",
   "mini": "assets/img/stickers/mini/AR-005.webp",
@@ -300,7 +282,7 @@ window.PRODUCTOS = [
   "categoria": "Argentina",
   "imagen": "assets/img/stickers/AR-006.webp",
   "mini": "assets/img/stickers/mini/AR-006.webp",
-  "stock": null,
+  "stock": 5,
   "nuevo": false
  },
  {
@@ -309,7 +291,7 @@ window.PRODUCTOS = [
   "categoria": "Argentina",
   "imagen": "assets/img/stickers/AR-007.webp",
   "mini": "assets/img/stickers/mini/AR-007.webp",
-  "stock": null,
+  "stock": 6,
   "nuevo": false
  },
  {
@@ -345,7 +327,7 @@ window.PRODUCTOS = [
   "categoria": "Argentina",
   "imagen": "assets/img/stickers/AR-011.webp",
   "mini": "assets/img/stickers/mini/AR-011.webp",
-  "stock": null,
+  "stock": 3,
   "nuevo": false
  },
  {
@@ -372,7 +354,7 @@ window.PRODUCTOS = [
   "categoria": "Argentina",
   "imagen": "assets/img/stickers/AR-014.webp",
   "mini": "assets/img/stickers/mini/AR-014.webp",
-  "stock": null,
+  "stock": 9,
   "nuevo": false
  },
  {
@@ -381,7 +363,7 @@ window.PRODUCTOS = [
   "categoria": "Bebidas",
   "imagen": "assets/img/stickers/BE-001.webp",
   "mini": "assets/img/stickers/mini/BE-001.webp",
-  "stock": null,
+  "stock": 9,
   "nuevo": false
  },
  {
@@ -390,7 +372,7 @@ window.PRODUCTOS = [
   "categoria": "Bebidas",
   "imagen": "assets/img/stickers/BE-002.webp",
   "mini": "assets/img/stickers/mini/BE-002.webp",
-  "stock": null,
+  "stock": 5,
   "nuevo": false
  },
  {
@@ -458,7 +440,7 @@ window.PRODUCTOS = [
  },
  {
   "id": "BE-010",
-  "nombre": "Águila Branca",
+  "nombre": "Águila Fernet Branca",
   "categoria": "Bebidas",
   "imagen": "assets/img/stickers/BE-010.webp",
   "mini": "assets/img/stickers/mini/BE-010.webp",
@@ -502,15 +484,6 @@ window.PRODUCTOS = [
   "nuevo": false
  },
  {
-  "id": "BE-015",
-  "nombre": "Mate de calabaza",
-  "categoria": "Bebidas",
-  "imagen": "assets/img/stickers/BE-015.webp",
-  "mini": "assets/img/stickers/mini/BE-015.webp",
-  "stock": null,
-  "nuevo": false
- },
- {
   "id": "CO-001",
   "nombre": "Pastelería",
   "categoria": "Cocina",
@@ -534,7 +507,7 @@ window.PRODUCTOS = [
   "categoria": "Cocina",
   "imagen": "assets/img/stickers/CO-003.webp",
   "mini": "assets/img/stickers/mini/CO-003.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -570,7 +543,7 @@ window.PRODUCTOS = [
   "categoria": "Cute",
   "imagen": "assets/img/stickers/CU-006.webp",
   "mini": "assets/img/stickers/mini/CU-006.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -579,7 +552,7 @@ window.PRODUCTOS = [
   "categoria": "Cute",
   "imagen": "assets/img/stickers/CU-007.webp",
   "mini": "assets/img/stickers/mini/CU-007.webp",
-  "stock": null,
+  "stock": 3,
   "nuevo": false
  },
  {
@@ -588,7 +561,7 @@ window.PRODUCTOS = [
   "categoria": "Cute",
   "imagen": "assets/img/stickers/CU-008.webp",
   "mini": "assets/img/stickers/mini/CU-008.webp",
-  "stock": null,
+  "stock": 3,
   "nuevo": false
  },
  {
@@ -624,7 +597,7 @@ window.PRODUCTOS = [
   "categoria": "Cute",
   "imagen": "assets/img/stickers/CU-012.webp",
   "mini": "assets/img/stickers/mini/CU-012.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -633,7 +606,7 @@ window.PRODUCTOS = [
   "categoria": "Cute",
   "imagen": "assets/img/stickers/CU-013.webp",
   "mini": "assets/img/stickers/mini/CU-013.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -651,7 +624,7 @@ window.PRODUCTOS = [
   "categoria": "Cute",
   "imagen": "assets/img/stickers/CU-015.webp",
   "mini": "assets/img/stickers/mini/CU-015.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -660,7 +633,7 @@ window.PRODUCTOS = [
   "categoria": "Disney",
   "imagen": "assets/img/stickers/DI-001.webp",
   "mini": "assets/img/stickers/mini/DI-001.webp",
-  "stock": null,
+  "stock": 3,
   "nuevo": false
  },
  {
@@ -678,7 +651,7 @@ window.PRODUCTOS = [
   "categoria": "Disney",
   "imagen": "assets/img/stickers/DI-003.webp",
   "mini": "assets/img/stickers/mini/DI-003.webp",
-  "stock": null,
+  "stock": 3,
   "nuevo": false
  },
  {
@@ -696,7 +669,7 @@ window.PRODUCTOS = [
   "categoria": "Disney",
   "imagen": "assets/img/stickers/DI-005.webp",
   "mini": "assets/img/stickers/mini/DI-005.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -705,7 +678,7 @@ window.PRODUCTOS = [
   "categoria": "Disney",
   "imagen": "assets/img/stickers/DI-006.webp",
   "mini": "assets/img/stickers/mini/DI-006.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -777,7 +750,7 @@ window.PRODUCTOS = [
   "categoria": "Disney",
   "imagen": "assets/img/stickers/DI-014.webp",
   "mini": "assets/img/stickers/mini/DI-014.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -786,7 +759,7 @@ window.PRODUCTOS = [
   "categoria": "Disney",
   "imagen": "assets/img/stickers/DI-015.webp",
   "mini": "assets/img/stickers/mini/DI-015.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -795,7 +768,7 @@ window.PRODUCTOS = [
   "categoria": "Disney",
   "imagen": "assets/img/stickers/DI-016.webp",
   "mini": "assets/img/stickers/mini/DI-016.webp",
-  "stock": null,
+  "stock": 5,
   "nuevo": false
  },
  {
@@ -845,7 +818,7 @@ window.PRODUCTOS = [
  },
  {
   "id": "DI-024",
-  "nombre": "Mickey Mouse",
+  "nombre": "Mickey Mouse nuevo",
   "categoria": "Disney",
   "imagen": "assets/img/stickers/DI-024.webp",
   "mini": "assets/img/stickers/mini/DI-024.webp",
@@ -998,11 +971,11 @@ window.PRODUCTOS = [
  },
  {
   "id": "FU-001",
-  "nombre": "Escudo Banfield",
+  "nombre": "Escudo San miguel",
   "categoria": "Fútbol",
   "imagen": "assets/img/stickers/FU-001.webp",
   "mini": "assets/img/stickers/mini/FU-001.webp",
-  "stock": null,
+  "stock": 6,
   "nuevo": false
  },
  {
@@ -1011,7 +984,7 @@ window.PRODUCTOS = [
   "categoria": "Fútbol",
   "imagen": "assets/img/stickers/FU-002.webp",
   "mini": "assets/img/stickers/mini/FU-002.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -1020,7 +993,7 @@ window.PRODUCTOS = [
   "categoria": "Fútbol",
   "imagen": "assets/img/stickers/FU-003.webp",
   "mini": "assets/img/stickers/mini/FU-003.webp",
-  "stock": null,
+  "stock": 8,
   "nuevo": false
  },
  {
@@ -1029,12 +1002,12 @@ window.PRODUCTOS = [
   "categoria": "Fútbol",
   "imagen": "assets/img/stickers/FU-004.webp",
   "mini": "assets/img/stickers/mini/FU-004.webp",
-  "stock": null,
+  "stock": 4,
   "nuevo": false
  },
  {
   "id": "FU-005",
-  "nombre": "Escudo River Plate",
+  "nombre": "Escudo River Plate clasic",
   "categoria": "Fútbol",
   "imagen": "assets/img/stickers/FU-005.webp",
   "mini": "assets/img/stickers/mini/FU-005.webp",
@@ -1047,7 +1020,7 @@ window.PRODUCTOS = [
   "categoria": "Fútbol",
   "imagen": "assets/img/stickers/FU-006.webp",
   "mini": "assets/img/stickers/mini/FU-006.webp",
-  "stock": null,
+  "stock": 6,
   "nuevo": false
  },
  {
@@ -1056,7 +1029,7 @@ window.PRODUCTOS = [
   "categoria": "Fútbol",
   "imagen": "assets/img/stickers/FU-007.webp",
   "mini": "assets/img/stickers/mini/FU-007.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -1065,25 +1038,25 @@ window.PRODUCTOS = [
   "categoria": "Fútbol",
   "imagen": "assets/img/stickers/FU-008.webp",
   "mini": "assets/img/stickers/mini/FU-008.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
   "id": "FU-010",
-  "nombre": "Escudo Banfield redondo",
+  "nombre": "Escudo San miguel redondo",
   "categoria": "Fútbol",
   "imagen": "assets/img/stickers/FU-010.webp",
   "mini": "assets/img/stickers/mini/FU-010.webp",
-  "stock": null,
+  "stock": 4,
   "nuevo": false
  },
  {
   "id": "FU-011",
-  "nombre": "Duende Banfield",
+  "nombre": "Duende San Miguel",
   "categoria": "Fútbol",
   "imagen": "assets/img/stickers/FU-011.webp",
   "mini": "assets/img/stickers/mini/FU-011.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -1092,7 +1065,7 @@ window.PRODUCTOS = [
   "categoria": "Fútbol",
   "imagen": "assets/img/stickers/FU-012.webp",
   "mini": "assets/img/stickers/mini/FU-012.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -1101,7 +1074,7 @@ window.PRODUCTOS = [
   "categoria": "Fútbol",
   "imagen": "assets/img/stickers/FU-013.webp",
   "mini": "assets/img/stickers/mini/FU-013.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -1110,7 +1083,7 @@ window.PRODUCTOS = [
   "categoria": "Fútbol",
   "imagen": "assets/img/stickers/FU-014.webp",
   "mini": "assets/img/stickers/mini/FU-014.webp",
-  "stock": null,
+  "stock": 5,
   "nuevo": false
  },
  {
@@ -1119,7 +1092,7 @@ window.PRODUCTOS = [
   "categoria": "Fútbol",
   "imagen": "assets/img/stickers/FU-015.webp",
   "mini": "assets/img/stickers/mini/FU-015.webp",
-  "stock": null,
+  "stock": 3,
   "nuevo": false
  },
  {
@@ -1128,7 +1101,7 @@ window.PRODUCTOS = [
   "categoria": "Fútbol",
   "imagen": "assets/img/stickers/FU-016.webp",
   "mini": "assets/img/stickers/mini/FU-016.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -1146,7 +1119,7 @@ window.PRODUCTOS = [
   "categoria": "K-pop",
   "imagen": "assets/img/stickers/KP-005.webp",
   "mini": "assets/img/stickers/mini/KP-005.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -1209,7 +1182,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-009.webp",
   "mini": "assets/img/stickers/mini/MA-009.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -1218,7 +1191,7 @@ window.PRODUCTOS = [
   "categoria": "Marvel",
   "imagen": "assets/img/stickers/MV-001.webp",
   "mini": "assets/img/stickers/mini/MV-001.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -1236,7 +1209,7 @@ window.PRODUCTOS = [
   "categoria": "Marvel",
   "imagen": "assets/img/stickers/MV-003.webp",
   "mini": "assets/img/stickers/mini/MV-003.webp",
-  "stock": null,
+  "stock": 3,
   "nuevo": false
  },
  {
@@ -1245,7 +1218,7 @@ window.PRODUCTOS = [
   "categoria": "Marvel",
   "imagen": "assets/img/stickers/MV-004.webp",
   "mini": "assets/img/stickers/mini/MV-004.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -1272,7 +1245,7 @@ window.PRODUCTOS = [
   "categoria": "Marvel",
   "imagen": "assets/img/stickers/MV-007.webp",
   "mini": "assets/img/stickers/mini/MV-007.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -1281,7 +1254,7 @@ window.PRODUCTOS = [
   "categoria": "Marvel",
   "imagen": "assets/img/stickers/MV-008.webp",
   "mini": "assets/img/stickers/mini/MV-008.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -1290,7 +1263,7 @@ window.PRODUCTOS = [
   "categoria": "Marvel",
   "imagen": "assets/img/stickers/MV-009.webp",
   "mini": "assets/img/stickers/mini/MV-009.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -1331,7 +1304,7 @@ window.PRODUCTOS = [
  },
  {
   "id": "ME-010",
-  "nombre": "Personaje con mate",
+  "nombre": "Mate-oli",
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-010.webp",
   "mini": "assets/img/stickers/mini/ME-010.webp",
@@ -1385,7 +1358,7 @@ window.PRODUCTOS = [
  },
  {
   "id": "ME-016",
-  "nombre": "Cocodrilo bombardero",
+  "nombre": "Bombardilococodrilo",
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-016.webp",
   "mini": "assets/img/stickers/mini/ME-016.webp",
@@ -1394,7 +1367,7 @@ window.PRODUCTOS = [
  },
  {
   "id": "ME-017",
-  "nombre": "Tiburón con zapatillas",
+  "nombre": "Tralalero Tralala",
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-017.webp",
   "mini": "assets/img/stickers/mini/ME-017.webp",
@@ -1403,7 +1376,7 @@ window.PRODUCTOS = [
  },
  {
   "id": "ME-018",
-  "nombre": "Cappuccino assassino",
+  "nombre": "Assassino Cappuccino",
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-018.webp",
   "mini": "assets/img/stickers/mini/ME-018.webp",
@@ -1412,11 +1385,11 @@ window.PRODUCTOS = [
  },
  {
   "id": "ME-019",
-  "nombre": "Paloma con migas",
+  "nombre": "Paloma con migajera",
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-019.webp",
   "mini": "assets/img/stickers/mini/ME-019.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -1452,7 +1425,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-023.webp",
   "mini": "assets/img/stickers/mini/ME-023.webp",
-  "stock": null,
+  "stock": 4,
   "nuevo": false
  },
  {
@@ -1461,7 +1434,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-024.webp",
   "mini": "assets/img/stickers/mini/ME-024.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -1470,7 +1443,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-025.webp",
   "mini": "assets/img/stickers/mini/ME-025.webp",
-  "stock": null,
+  "stock": 6,
   "nuevo": false
  },
  {
@@ -1488,7 +1461,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-028.webp",
   "mini": "assets/img/stickers/mini/ME-028.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -1506,7 +1479,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-031.webp",
   "mini": "assets/img/stickers/mini/ME-031.webp",
-  "stock": null,
+  "stock": 9,
   "nuevo": false
  },
  {
@@ -1641,7 +1614,7 @@ window.PRODUCTOS = [
   "categoria": "Música",
   "imagen": "assets/img/stickers/MU-007.webp",
   "mini": "assets/img/stickers/mini/MU-007.webp",
-  "stock": null,
+  "stock": 3,
   "nuevo": false
  },
  {
@@ -1655,7 +1628,7 @@ window.PRODUCTOS = [
  },
  {
   "id": "MU-009",
-  "nombre": "Guitarrista con camiseta argentina",
+  "nombre": "Charly camiseta argentina",
   "categoria": "Música",
   "imagen": "assets/img/stickers/MU-009.webp",
   "mini": "assets/img/stickers/mini/MU-009.webp",
@@ -1668,16 +1641,16 @@ window.PRODUCTOS = [
   "categoria": "Música",
   "imagen": "assets/img/stickers/MU-010.webp",
   "mini": "assets/img/stickers/mini/MU-010.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
   "id": "MU-011",
-  "nombre": "Casita",
+  "nombre": "Casita Bad Bunny",
   "categoria": "Música",
   "imagen": "assets/img/stickers/MU-011.webp",
   "mini": "assets/img/stickers/mini/MU-011.webp",
-  "stock": null,
+  "stock": 3,
   "nuevo": false
  },
  {
@@ -1686,7 +1659,7 @@ window.PRODUCTOS = [
   "categoria": "Música",
   "imagen": "assets/img/stickers/MU-012.webp",
   "mini": "assets/img/stickers/mini/MU-012.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -1695,7 +1668,7 @@ window.PRODUCTOS = [
   "categoria": "Música",
   "imagen": "assets/img/stickers/MU-013.webp",
   "mini": "assets/img/stickers/mini/MU-013.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -1704,12 +1677,12 @@ window.PRODUCTOS = [
   "categoria": "Música",
   "imagen": "assets/img/stickers/MU-014.webp",
   "mini": "assets/img/stickers/mini/MU-014.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
   "id": "SE-001",
-  "nombre": "Beckham y jugador argentino",
+  "nombre": "Beckham y Scaloni",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-001.webp",
   "mini": "assets/img/stickers/mini/SE-001.webp",
@@ -1718,52 +1691,52 @@ window.PRODUCTOS = [
  },
  {
   "id": "SE-002",
-  "nombre": "A mí háblame bien",
+  "nombre": "Messi - A mí háblame bien",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-002.webp",
   "mini": "assets/img/stickers/mini/SE-002.webp",
-  "stock": null,
+  "stock": 4,
   "nuevo": false
  },
  {
   "id": "SE-003",
-  "nombre": "Jugador 22 festejo",
+  "nombre": "Lautaro 22 festejo",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-003.webp",
   "mini": "assets/img/stickers/mini/SE-003.webp",
-  "stock": null,
+  "stock": 5,
   "nuevo": false
  },
  {
   "id": "SE-004",
-  "nombre": "Jugador 24 con sol",
+  "nombre": "Enzo Festejo con sol",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-004.webp",
   "mini": "assets/img/stickers/mini/SE-004.webp",
-  "stock": null,
+  "stock": 5,
   "nuevo": false
  },
  {
   "id": "SE-005",
-  "nombre": "Uuuh no terminó",
+  "nombre": "Messi Uuuh no terminó",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-005.webp",
   "mini": "assets/img/stickers/mini/SE-005.webp",
-  "stock": null,
+  "stock": 5,
   "nuevo": false
  },
  {
   "id": "SE-006",
-  "nombre": "Jugador 10 festejo arrodillado",
+  "nombre": "Messi festejo arrodillado",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-006.webp",
   "mini": "assets/img/stickers/mini/SE-006.webp",
-  "stock": null,
+  "stock": 5,
   "nuevo": false
  },
  {
   "id": "SE-007",
-  "nombre": "Jugador 10 festejo",
+  "nombre": "Messi 10 festejo",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-007.webp",
   "mini": "assets/img/stickers/mini/SE-007.webp",
@@ -1772,7 +1745,7 @@ window.PRODUCTOS = [
  },
  {
   "id": "SE-008",
-  "nombre": "Jugador 10 silencio",
+  "nombre": "Messi silencio",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-008.webp",
   "mini": "assets/img/stickers/mini/SE-008.webp",
@@ -1785,16 +1758,16 @@ window.PRODUCTOS = [
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-009.webp",
   "mini": "assets/img/stickers/mini/SE-009.webp",
-  "stock": null,
+  "stock": 6,
   "nuevo": false
  },
  {
   "id": "SE-010",
-  "nombre": "Jugador 10 retro",
+  "nombre": "Maradona 10 retro",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-010.webp",
   "mini": "assets/img/stickers/mini/SE-010.webp",
-  "stock": null,
+  "stock": 11,
   "nuevo": false
  },
  {
@@ -1803,7 +1776,7 @@ window.PRODUCTOS = [
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-011.webp",
   "mini": "assets/img/stickers/mini/SE-011.webp",
-  "stock": null,
+  "stock": 13,
   "nuevo": false
  },
  {
@@ -1812,21 +1785,21 @@ window.PRODUCTOS = [
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-012.webp",
   "mini": "assets/img/stickers/mini/SE-012.webp",
-  "stock": null,
+  "stock": 11,
   "nuevo": false
  },
  {
   "id": "SE-013",
-  "nombre": "Marcador Mundial 2026",
+  "nombre": "Argentina Inglaterra",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-013.webp",
   "mini": "assets/img/stickers/mini/SE-013.webp",
-  "stock": null,
+  "stock": 8,
   "nuevo": false
  },
  {
   "id": "SE-014",
-  "nombre": "Jugador 9 festejo",
+  "nombre": "Julian 9 festejo",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-014.webp",
   "mini": "assets/img/stickers/mini/SE-014.webp",
@@ -1835,7 +1808,7 @@ window.PRODUCTOS = [
  },
  {
   "id": "SE-015",
-  "nombre": "Jugadores en acción",
+  "nombre": "Paredes en acción",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-015.webp",
   "mini": "assets/img/stickers/mini/SE-015.webp",
@@ -1844,7 +1817,7 @@ window.PRODUCTOS = [
  },
  {
   "id": "SE-016",
-  "nombre": "Jugador 5 remate",
+  "nombre": "Paredes remate",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-016.webp",
   "mini": "assets/img/stickers/mini/SE-016.webp",
@@ -1853,16 +1826,16 @@ window.PRODUCTOS = [
  },
  {
   "id": "SE-017",
-  "nombre": "Jugador con bombo",
+  "nombre": "Paredes bombo",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-017.webp",
   "mini": "assets/img/stickers/mini/SE-017.webp",
-  "stock": null,
+  "stock": 5,
   "nuevo": false
  },
  {
   "id": "SE-018",
-  "nombre": "Jugador festejo puño",
+  "nombre": "Messi festejo puño",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-018.webp",
   "mini": "assets/img/stickers/mini/SE-018.webp",
@@ -1871,34 +1844,34 @@ window.PRODUCTOS = [
  },
  {
   "id": "SE-019",
-  "nombre": "Jugador 24 festejo",
+  "nombre": "Enzo 24 festejo Torso",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-019.webp",
   "mini": "assets/img/stickers/mini/SE-019.webp",
-  "stock": null,
+  "stock": 4,
   "nuevo": false
  },
  {
   "id": "SE-020",
-  "nombre": "Jugador 10 sentado",
+  "nombre": "Messi 10 sentado",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-020.webp",
   "mini": "assets/img/stickers/mini/SE-020.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
   "id": "SE-021",
-  "nombre": "Jugadores abrazados",
+  "nombre": "Peredes y Enzo",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-021.webp",
   "mini": "assets/img/stickers/mini/SE-021.webp",
-  "stock": null,
+  "stock": 5,
   "nuevo": false
  },
  {
   "id": "SE-022",
-  "nombre": "Festejo en andas",
+  "nombre": "Messi en andas",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-022.webp",
   "mini": "assets/img/stickers/mini/SE-022.webp",
@@ -1907,7 +1880,7 @@ window.PRODUCTOS = [
  },
  {
   "id": "SE-023",
-  "nombre": "Arquero 23 relajado",
+  "nombre": "Dibu23 relajado",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-023.webp",
   "mini": "assets/img/stickers/mini/SE-023.webp",
@@ -1916,43 +1889,43 @@ window.PRODUCTOS = [
  },
  {
   "id": "SE-024",
-  "nombre": "Jugador 10 con sol",
+  "nombre": "Messi 10 con sol",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-024.webp",
   "mini": "assets/img/stickers/mini/SE-024.webp",
-  "stock": null,
+  "stock": 4,
   "nuevo": false
  },
  {
   "id": "SE-025",
-  "nombre": "Jugador con lentes",
+  "nombre": "Licha con lentes",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-025.webp",
   "mini": "assets/img/stickers/mini/SE-025.webp",
-  "stock": null,
+  "stock": 4,
   "nuevo": false
  },
  {
   "id": "SE-026",
-  "nombre": "Arquero 23 tirado",
+  "nombre": "Dibu 23 tirado",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-026.webp",
   "mini": "assets/img/stickers/mini/SE-026.webp",
-  "stock": null,
+  "stock": 4,
   "nuevo": false
  },
  {
   "id": "SE-027",
-  "nombre": "Jugador cara de pícaro",
+  "nombre": "Messi -Asi quedamos",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-027.webp",
   "mini": "assets/img/stickers/mini/SE-027.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
   "id": "SE-028",
-  "nombre": "Jugador 24 ¿qué pasó?",
+  "nombre": "Enzo 24 ¿qué pasó?",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-028.webp",
   "mini": "assets/img/stickers/mini/SE-028.webp",
@@ -1965,12 +1938,12 @@ window.PRODUCTOS = [
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-029.webp",
   "mini": "assets/img/stickers/mini/SE-029.webp",
-  "stock": null,
+  "stock": 4,
   "nuevo": false
  },
  {
   "id": "SE-030",
-  "nombre": "Soldado Malvinas",
+  "nombre": "Escaloni Soldado Malvinas",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-030.webp",
   "mini": "assets/img/stickers/mini/SE-030.webp",
@@ -1983,7 +1956,7 @@ window.PRODUCTOS = [
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-031.webp",
   "mini": "assets/img/stickers/mini/SE-031.webp",
-  "stock": null,
+  "stock": 4,
   "nuevo": false
  },
  {
@@ -2015,7 +1988,7 @@ window.PRODUCTOS = [
  },
  {
   "id": "SE-035",
-  "nombre": "Arquero 23 atajada",
+  "nombre": "Dibu 23 atajada",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-035.webp",
   "mini": "assets/img/stickers/mini/SE-035.webp",
@@ -2024,11 +1997,11 @@ window.PRODUCTOS = [
  },
  {
   "id": "SE-036",
-  "nombre": "Bandera Inglaterra",
+  "nombre": "Bandera Inglaterra LCDTM",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-036.webp",
   "mini": "assets/img/stickers/mini/SE-036.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -2042,62 +2015,62 @@ window.PRODUCTOS = [
  },
  {
   "id": "SE-038",
-  "nombre": "Estampita futbolera",
+  "nombre": "Estampita Messi",
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-038.webp",
   "mini": "assets/img/stickers/mini/SE-038.webp",
-  "stock": null,
+  "stock": 6,
   "nuevo": false
  },
  {
   "id": "SD-001",
   "nombre": "Thundercats logo",
-  "categoria": "Series y dibujitos",
+  "categoria": "Anime",
   "imagen": "assets/img/stickers/SD-001.webp",
   "mini": "assets/img/stickers/mini/SD-001.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
   "id": "SD-002",
   "nombre": "Silverhawks logo",
-  "categoria": "Series y dibujitos",
+  "categoria": "Anime",
   "imagen": "assets/img/stickers/SD-002.webp",
   "mini": "assets/img/stickers/mini/SD-002.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
   "id": "SD-003",
   "nombre": "Silverhawks equipo",
-  "categoria": "Series y dibujitos",
+  "categoria": "Anime",
   "imagen": "assets/img/stickers/SD-003.webp",
   "mini": "assets/img/stickers/mini/SD-003.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
   "id": "SD-004",
   "nombre": "He-Man Masters of the Universe",
-  "categoria": "Series y dibujitos",
+  "categoria": "Anime",
   "imagen": "assets/img/stickers/SD-004.webp",
   "mini": "assets/img/stickers/mini/SD-004.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
   "id": "SD-005",
   "nombre": "He-Man con espada",
-  "categoria": "Series y dibujitos",
+  "categoria": "Anime",
   "imagen": "assets/img/stickers/SD-005.webp",
   "mini": "assets/img/stickers/mini/SD-005.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
   "id": "SD-006",
   "nombre": "He-Man poder",
-  "categoria": "Series y dibujitos",
+  "categoria": "Anime",
   "imagen": "assets/img/stickers/SD-006.webp",
   "mini": "assets/img/stickers/mini/SD-006.webp",
   "stock": null,
@@ -2106,15 +2079,15 @@ window.PRODUCTOS = [
  {
   "id": "SD-007",
   "nombre": "He-Man clásico",
-  "categoria": "Series y dibujitos",
+  "categoria": "Anime",
   "imagen": "assets/img/stickers/SD-007.webp",
   "mini": "assets/img/stickers/mini/SD-007.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
   "id": "SD-008",
-  "nombre": "Corbata Gryffindor",
+  "nombre": "Pañuelo Scout",
   "categoria": "Series y dibujitos",
   "imagen": "assets/img/stickers/SD-008.webp",
   "mini": "assets/img/stickers/mini/SD-008.webp",
@@ -2123,7 +2096,7 @@ window.PRODUCTOS = [
  },
  {
   "id": "SD-009",
-  "nombre": "Nadie se salva solo",
+  "nombre": "eternauta - Nadie se salva solo",
   "categoria": "Series y dibujitos",
   "imagen": "assets/img/stickers/SD-009.webp",
   "mini": "assets/img/stickers/mini/SD-009.webp",
@@ -2132,29 +2105,29 @@ window.PRODUCTOS = [
  },
  {
   "id": "SD-010",
-  "nombre": "You're my person",
+  "nombre": "Greys Anatomy - You're my person",
   "categoria": "Series y dibujitos",
   "imagen": "assets/img/stickers/SD-010.webp",
   "mini": "assets/img/stickers/mini/SD-010.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
   "id": "SD-011",
-  "nombre": "Amigas en ambo",
+  "nombre": "Greys Anatomy- Amigas en ambo",
   "categoria": "Series y dibujitos",
   "imagen": "assets/img/stickers/SD-011.webp",
   "mini": "assets/img/stickers/mini/SD-011.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
   "id": "SD-012",
-  "nombre": "Amigas",
+  "nombre": "Donde estan las rubias",
   "categoria": "Series y dibujitos",
   "imagen": "assets/img/stickers/SD-012.webp",
   "mini": "assets/img/stickers/mini/SD-012.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -2172,7 +2145,7 @@ window.PRODUCTOS = [
   "categoria": "Series y dibujitos",
   "imagen": "assets/img/stickers/SD-014.webp",
   "mini": "assets/img/stickers/mini/SD-014.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -2181,7 +2154,7 @@ window.PRODUCTOS = [
   "categoria": "Series y dibujitos",
   "imagen": "assets/img/stickers/SD-015.webp",
   "mini": "assets/img/stickers/mini/SD-015.webp",
-  "stock": null,
+  "stock": 3,
   "nuevo": false
  },
  {
@@ -2190,7 +2163,7 @@ window.PRODUCTOS = [
   "categoria": "Series y dibujitos",
   "imagen": "assets/img/stickers/SD-016.webp",
   "mini": "assets/img/stickers/mini/SD-016.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -2199,7 +2172,7 @@ window.PRODUCTOS = [
   "categoria": "Series y dibujitos",
   "imagen": "assets/img/stickers/SD-017.webp",
   "mini": "assets/img/stickers/mini/SD-017.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -2226,7 +2199,7 @@ window.PRODUCTOS = [
   "categoria": "Series y dibujitos",
   "imagen": "assets/img/stickers/SD-020.webp",
   "mini": "assets/img/stickers/mini/SD-020.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -2249,11 +2222,11 @@ window.PRODUCTOS = [
  },
  {
   "id": "SD-023",
-  "nombre": "Chanchito con lentes",
+  "nombre": "Pato - Chanchito con lentes",
   "categoria": "Series y dibujitos",
   "imagen": "assets/img/stickers/SD-023.webp",
   "mini": "assets/img/stickers/mini/SD-023.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -2262,7 +2235,7 @@ window.PRODUCTOS = [
   "categoria": "Series y dibujitos",
   "imagen": "assets/img/stickers/SD-024.webp",
   "mini": "assets/img/stickers/mini/SD-024.webp",
-  "stock": null,
+  "stock": 3,
   "nuevo": false
  },
  {
@@ -2280,16 +2253,16 @@ window.PRODUCTOS = [
   "categoria": "Series y dibujitos",
   "imagen": "assets/img/stickers/SD-026.webp",
   "mini": "assets/img/stickers/mini/SD-026.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
   "id": "SD-031",
   "nombre": "Mientras uno esté vivo",
-  "categoria": "Series y dibujitos",
+  "categoria": "Música",
   "imagen": "assets/img/stickers/SD-031.webp",
   "mini": "assets/img/stickers/mini/SD-031.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -2298,7 +2271,7 @@ window.PRODUCTOS = [
   "categoria": "Series y dibujitos",
   "imagen": "assets/img/stickers/SD-032.webp",
   "mini": "assets/img/stickers/mini/SD-032.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -2307,7 +2280,7 @@ window.PRODUCTOS = [
   "categoria": "Series y dibujitos",
   "imagen": "assets/img/stickers/SD-033.webp",
   "mini": "assets/img/stickers/mini/SD-033.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -2388,7 +2361,7 @@ window.PRODUCTOS = [
   "categoria": "Simpsons",
   "imagen": "assets/img/stickers/SI-005.webp",
   "mini": "assets/img/stickers/mini/SI-005.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -2397,7 +2370,7 @@ window.PRODUCTOS = [
   "categoria": "Simpsons",
   "imagen": "assets/img/stickers/SI-006.webp",
   "mini": "assets/img/stickers/mini/SI-006.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -2406,7 +2379,7 @@ window.PRODUCTOS = [
   "categoria": "Simpsons",
   "imagen": "assets/img/stickers/SI-007.webp",
   "mini": "assets/img/stickers/mini/SI-007.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -2433,7 +2406,7 @@ window.PRODUCTOS = [
   "categoria": "Simpsons",
   "imagen": "assets/img/stickers/SI-010.webp",
   "mini": "assets/img/stickers/mini/SI-010.webp",
-  "stock": null,
+  "stock": 6,
   "nuevo": false
  },
  {
@@ -2451,7 +2424,7 @@ window.PRODUCTOS = [
   "categoria": "Simpsons",
   "imagen": "assets/img/stickers/SI-012.webp",
   "mini": "assets/img/stickers/mini/SI-012.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -2478,7 +2451,7 @@ window.PRODUCTOS = [
   "categoria": "Simpsons",
   "imagen": "assets/img/stickers/SI-015.webp",
   "mini": "assets/img/stickers/mini/SI-015.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -2496,7 +2469,7 @@ window.PRODUCTOS = [
   "categoria": "Simpsons",
   "imagen": "assets/img/stickers/SI-017.webp",
   "mini": "assets/img/stickers/mini/SI-017.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -2550,7 +2523,7 @@ window.PRODUCTOS = [
   "categoria": "Anime",
   "imagen": "assets/img/stickers/AN-037.webp",
   "mini": "assets/img/stickers/mini/AN-037.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -3045,7 +3018,7 @@ window.PRODUCTOS = [
   "categoria": "Cute",
   "imagen": "assets/img/stickers/CU-033.webp",
   "mini": "assets/img/stickers/mini/CU-033.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -3081,7 +3054,7 @@ window.PRODUCTOS = [
   "categoria": "Cute",
   "imagen": "assets/img/stickers/CU-037.webp",
   "mini": "assets/img/stickers/mini/CU-037.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -3144,7 +3117,7 @@ window.PRODUCTOS = [
   "categoria": "Cute",
   "imagen": "assets/img/stickers/CU-044.webp",
   "mini": "assets/img/stickers/mini/CU-044.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -3180,7 +3153,7 @@ window.PRODUCTOS = [
   "categoria": "Cute",
   "imagen": "assets/img/stickers/CU-048.webp",
   "mini": "assets/img/stickers/mini/CU-048.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -3540,7 +3513,7 @@ window.PRODUCTOS = [
   "categoria": "K-pop",
   "imagen": "assets/img/stickers/KP-019.webp",
   "mini": "assets/img/stickers/mini/KP-019.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -3549,7 +3522,7 @@ window.PRODUCTOS = [
   "categoria": "K-pop",
   "imagen": "assets/img/stickers/KP-020.webp",
   "mini": "assets/img/stickers/mini/KP-020.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -3558,7 +3531,7 @@ window.PRODUCTOS = [
   "categoria": "K-pop",
   "imagen": "assets/img/stickers/KP-021.webp",
   "mini": "assets/img/stickers/mini/KP-021.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -3567,7 +3540,7 @@ window.PRODUCTOS = [
   "categoria": "K-pop",
   "imagen": "assets/img/stickers/KP-022.webp",
   "mini": "assets/img/stickers/mini/KP-022.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -3576,7 +3549,7 @@ window.PRODUCTOS = [
   "categoria": "K-pop",
   "imagen": "assets/img/stickers/KP-023.webp",
   "mini": "assets/img/stickers/mini/KP-023.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -3585,7 +3558,7 @@ window.PRODUCTOS = [
   "categoria": "K-pop",
   "imagen": "assets/img/stickers/KP-024.webp",
   "mini": "assets/img/stickers/mini/KP-024.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -3630,7 +3603,7 @@ window.PRODUCTOS = [
   "categoria": "K-pop",
   "imagen": "assets/img/stickers/KP-029.webp",
   "mini": "assets/img/stickers/mini/KP-029.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -3675,7 +3648,7 @@ window.PRODUCTOS = [
   "categoria": "K-pop",
   "imagen": "assets/img/stickers/KP-034.webp",
   "mini": "assets/img/stickers/mini/KP-034.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -3684,7 +3657,7 @@ window.PRODUCTOS = [
   "categoria": "K-pop",
   "imagen": "assets/img/stickers/KP-035.webp",
   "mini": "assets/img/stickers/mini/KP-035.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -4989,7 +4962,7 @@ window.PRODUCTOS = [
   "categoria": "Música",
   "imagen": "assets/img/stickers/MU-015.webp",
   "mini": "assets/img/stickers/mini/MU-015.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -4998,7 +4971,7 @@ window.PRODUCTOS = [
   "categoria": "Música",
   "imagen": "assets/img/stickers/MU-017.webp",
   "mini": "assets/img/stickers/mini/MU-017.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -5007,7 +4980,7 @@ window.PRODUCTOS = [
   "categoria": "Música",
   "imagen": "assets/img/stickers/MU-018.webp",
   "mini": "assets/img/stickers/mini/MU-018.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -5016,7 +4989,7 @@ window.PRODUCTOS = [
   "categoria": "Música",
   "imagen": "assets/img/stickers/MU-019.webp",
   "mini": "assets/img/stickers/mini/MU-019.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -5025,7 +4998,7 @@ window.PRODUCTOS = [
   "categoria": "Música",
   "imagen": "assets/img/stickers/MU-020.webp",
   "mini": "assets/img/stickers/mini/MU-020.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -5034,7 +5007,7 @@ window.PRODUCTOS = [
   "categoria": "Música",
   "imagen": "assets/img/stickers/MU-021.webp",
   "mini": "assets/img/stickers/mini/MU-021.webp",
-  "stock": null,
+  "stock": 5,
   "nuevo": false
  },
  {
@@ -5052,7 +5025,7 @@ window.PRODUCTOS = [
   "categoria": "Música",
   "imagen": "assets/img/stickers/MU-023.webp",
   "mini": "assets/img/stickers/mini/MU-023.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -5061,7 +5034,7 @@ window.PRODUCTOS = [
   "categoria": "Música",
   "imagen": "assets/img/stickers/MU-024.webp",
   "mini": "assets/img/stickers/mini/MU-024.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -5070,7 +5043,7 @@ window.PRODUCTOS = [
   "categoria": "Música",
   "imagen": "assets/img/stickers/MU-025.webp",
   "mini": "assets/img/stickers/mini/MU-025.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -5295,7 +5268,7 @@ window.PRODUCTOS = [
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-085.webp",
   "mini": "assets/img/stickers/mini/SE-085.webp",
-  "stock": null,
+  "stock": 19,
   "nuevo": false
  },
  {
@@ -5673,7 +5646,7 @@ window.PRODUCTOS = [
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-127.webp",
   "mini": "assets/img/stickers/mini/SE-127.webp",
-  "stock": null,
+  "stock": 5,
   "nuevo": false
  },
  {
@@ -5682,7 +5655,7 @@ window.PRODUCTOS = [
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-128.webp",
   "mini": "assets/img/stickers/mini/SE-128.webp",
-  "stock": null,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -6024,7 +5997,7 @@ window.PRODUCTOS = [
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-168.webp",
   "mini": "assets/img/stickers/mini/SE-168.webp",
-  "stock": null,
+  "stock": 3,
   "nuevo": false
  },
  {
