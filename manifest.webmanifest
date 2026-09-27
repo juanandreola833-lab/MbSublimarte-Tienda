@@ -1,0 +1,15 @@
+{
+  "name": "MB Sublimarte · Stickers",
+  "short_name": "MB Stickers",
+  "description": "Catálogo de stickers DTF UV de MB Sublimarte",
+  "lang": "es-AR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8f3fd",
+  "theme_color": "#d9c6ef",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
