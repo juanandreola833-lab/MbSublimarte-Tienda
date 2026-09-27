@@ -24,6 +24,7 @@ assets/icons/           íconos de la app
 manifest.webmanifest    datos para instalar como app
 sw.js                   service worker (carga rápida / sin conexión)
 tools/procesar_imagenes.py  genera imágenes y catálogo desde los originales
+tools/dividir_planchas.py   recorta las planchas en stickers sueltos
 ```
 
 ## Cambiar datos de la tienda
@@ -49,6 +50,12 @@ Para actualizar la tienda:
    Agrega al CSV los PNG nuevos, genera las imágenes con marca de agua y
    reescribe `data/productos.js` y `data/revision.js`.
 3. Commit de los dos repos (el CSV actualizado va en el de originales).
+
+Planchas: las filas con `tipo` = `plancha` se pueden dividir en stickers
+sueltos con `python tools/dividir_planchas.py ../mbsublimarte-originales`
+(requiere `pip install scipy`). Guarda cada recorte en
+`<carpeta>/recortes/<código plancha>-NN.png` y lo agrega al CSV; después hay
+que correr `procesar_imagenes.py`.
 
 Stock en el CSV: número = unidades, `0` = agotado, vacío = a pedido.
 `publicar` = `si`/`no`. Las planchas y los repetidos arrancan en `no`.
