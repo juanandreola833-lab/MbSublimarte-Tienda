@@ -62,7 +62,7 @@ directo en el navegador (sin la parte de app instalable).
 
 En GitHub: **Settings → Pages → Build and deployment → Deploy from a branch →
 `main` / `(root)`**. Queda en
-`https://juanandreola833-lab.github.io/mbsublimarte-tienda/`.
+`https://juanandreola833-lab.github.io/MbSublimarte-Tienda/`.
 
 Después de actualizar archivos, subir el número de versión en `sw.js`
 (`mb-tienda-v1` → `v2`) para que los celulares que la tienen instalada tomen
