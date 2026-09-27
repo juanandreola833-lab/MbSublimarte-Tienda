@@ -54,13 +54,35 @@
   }
 
   // ---------- catálogo ----------
+  const POR_PAGINA = 24;
   let categoria = "Todos";
   let busqueda = "";
+  let orden = "destacados";
+  let soloStock = false;
+  let mostrar = POR_PAGINA;
+
+  // "Destacados": primero los nuevos y después intercalando categorías,
+  // así la primera pantalla muestra variedad.
+  const DESTACADOS = (() => {
+    const grupos = new Map();
+    for (const p of PRODUCTOS) {
+      if (!grupos.has(p.categoria)) grupos.set(p.categoria, []);
+      grupos.get(p.categoria).push(p);
+    }
+    const colas = [...grupos.values()];
+    const mezcla = [];
+    for (let i = 0; mezcla.length < PRODUCTOS.length; i++) {
+      for (const c of colas) if (c[i]) mezcla.push(c[i]);
+    }
+    return [...mezcla.filter((p) => p.nuevo), ...mezcla.filter((p) => !p.nuevo)];
+  })();
 
   function pintarChips() {
-    const cats = ["Todos", ...new Set(PRODUCTOS.map((p) => p.categoria))];
-    $("#chips").innerHTML = cats
-      .map((c) => `<button class="chip" role="tab" aria-selected="${c === categoria}" data-cat="${esc(c)}">${esc(c)}</button>`)
+    const cuenta = {};
+    for (const p of PRODUCTOS) cuenta[p.categoria] = (cuenta[p.categoria] || 0) + 1;
+    const cats = Object.keys(cuenta).sort((a, b) => a.localeCompare(b, "es"));
+    $("#chips").innerHTML = [["Todos", PRODUCTOS.length], ...cats.map((c) => [c, cuenta[c]])]
+      .map(([c, n]) => `<button class="chip" role="tab" aria-selected="${c === categoria}" data-cat="${esc(c)}">${esc(c)} <small>${n}</small></button>`)
       .join("");
   }
 
@@ -84,19 +106,35 @@
 
   function visibles() {
     const q = normalizar(busqueda.trim());
-    return PRODUCTOS.filter((p) =>
+    const base = orden === "destacados" ? DESTACADOS
+      : [...PRODUCTOS].sort((a, b) => orden === "az"
+        ? a.nombre.localeCompare(b.nombre, "es")
+        : a.categoria.localeCompare(b.categoria, "es") || a.nombre.localeCompare(b.nombre, "es"));
+    return base.filter((p) =>
       (categoria === "Todos" || p.categoria === categoria) &&
+      (!soloStock || (p.stock !== null && p.stock > 0)) &&
       (!q || normalizar(`${p.nombre} ${p.categoria} ${p.id}`).includes(q)));
   }
 
+  function reiniciarGrilla() {
+    mostrar = POR_PAGINA;
+    pintarGrilla();
+  }
+
   function pintarGrilla() {
-    const lista = visibles();
-    $("#sin-resultados").hidden = lista.length > 0;
+    const todos = visibles();
+    const lista = todos.slice(0, mostrar);
+    const yaEstaban = $("#grid").children.length;
+    $("#sin-resultados").hidden = todos.length > 0;
+    const resto = todos.length - lista.length;
+    $("#ver-mas").hidden = resto <= 0;
+    $("#ver-mas").textContent = `Ver más stickers (${resto})`;
+    $("#contador").textContent = `${todos.length} sticker${todos.length === 1 ? "" : "s"}`;
     $("#grid").innerHTML = lista.map((p, i) => `
-      <article class="card ${maximo(p) === 0 ? "agotado" : ""}" style="animation-delay:${Math.min(i, 12) * 30}ms">
+      <article class="card ${maximo(p) === 0 ? "agotado" : ""}" style="animation-delay:${Math.max(0, Math.min(i - yaEstaban, 12)) * 30}ms">
         ${p.nuevo ? '<span class="tag tag-nuevo">Nuevo</span>' : ""}
         <button class="card-img protect" style="--bg:${fondo(p.id)}" data-ver="${p.id}" aria-label="Ver ${esc(p.nombre)}">
-          <img src="${esc(p.imagen)}" alt="${esc(p.nombre)}" loading="lazy" draggable="false">
+          <img src="${esc(p.mini || p.imagen)}" alt="${esc(p.nombre)}" loading="lazy" draggable="false">
         </button>
         <div class="card-body">
           <h3 class="card-name">${esc(p.nombre)}</h3>
@@ -140,7 +178,7 @@
     $("#cart-list").innerHTML = ids.map((id) => {
       const p = porId.get(id);
       return `<li class="cart-item">
-        <div class="thumb protect" style="--bg:${fondo(id)}"><img src="${esc(p.imagen)}" alt="" draggable="false"></div>
+        <div class="thumb protect" style="--bg:${fondo(id)}"><img src="${esc(p.mini || p.imagen)}" alt="" draggable="false"></div>
         <div class="info"><b>${esc(p.nombre)}</b><small>${p.id}</small></div>
         <div class="qty">
           <button data-menos="${id}" aria-label="Quitar uno">−</button>
@@ -293,11 +331,15 @@
     else if (d.cat !== undefined) {
       categoria = d.cat;
       pintarChips();
-      pintarGrilla();
+      $("#grid").innerHTML = "";
+      reiniciarGrilla();
     } else if ("cerrar" in d) cerrarModal();
   });
 
-  $("#buscar").addEventListener("input", (e) => { busqueda = e.target.value; pintarGrilla(); });
+  $("#buscar").addEventListener("input", (e) => { busqueda = e.target.value; $("#grid").innerHTML = ""; reiniciarGrilla(); });
+  $("#orden").addEventListener("change", (e) => { orden = e.target.value; $("#grid").innerHTML = ""; reiniciarGrilla(); });
+  $("#solo-stock").addEventListener("change", (e) => { soloStock = e.target.checked; $("#grid").innerHTML = ""; reiniciarGrilla(); });
+  $("#ver-mas").addEventListener("click", () => { mostrar += POR_PAGINA * 2; pintarGrilla(); });
 
   $("#abrir-carrito").addEventListener("click", () => { irA("carrito"); abrirModal("#carrito"); });
   $("#paso-atras").addEventListener("click", () => irA(paso === "pago" ? "datos" : "carrito"));

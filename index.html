@@ -58,9 +58,19 @@
       </label>
       <div class="chips" id="chips" role="tablist"></div>
     </section>
+    <div class="filtros">
+        <span class="contador" id="contador"></span>
+        <label class="toggle"><input type="checkbox" id="solo-stock"> Solo en stock</label>
+        <select id="orden" aria-label="Ordenar">
+          <option value="destacados">Destacados</option>
+          <option value="az">Nombre A–Z</option>
+          <option value="categoria">Por categoría</option>
+        </select>
+    </div>
 
     <p class="empty" id="sin-resultados" hidden>No encontramos stickers con esa búsqueda 🥲</p>
     <section class="grid" id="grid" aria-live="polite"></section>
+    <button class="btn-mas" id="ver-mas" hidden>Ver más stickers</button>
   </main>
 
   <footer class="foot">

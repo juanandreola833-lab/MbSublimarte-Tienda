@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Revisión del catálogo · MB Sublimarte</title>
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    main { padding-bottom: 140px; }
+    .intro { background: var(--blanco); border-radius: var(--radio); box-shadow: var(--sombra); padding: 16px 18px; margin: 18px 0 10px; font-size: .92rem; line-height: 1.5; }
+    .intro h2 { margin: 0 0 6px; font-family: var(--script); font-size: 2rem; }
+    .intro ul { margin: 6px 0 0; padding-left: 20px; }
+    .rev-filtros { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 10px 0; }
+    .rev-filtros select, .rev-filtros input[type=search] {
+      font: inherit; color: var(--ciruela); border: 0; border-radius: 999px; padding: 9px 14px;
+      background: var(--blanco); box-shadow: 0 3px 10px rgba(91, 63, 114, .08); min-width: 0;
+    }
+    .rev-filtros input[type=search] { flex: 1 1 180px; }
+    .rev-list { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); }
+    .rev {
+      display: grid; grid-template-columns: 96px 1fr; gap: 10px; padding: 10px;
+      background: var(--blanco); border-radius: 18px; box-shadow: var(--sombra); border: 2px solid transparent;
+    }
+    .rev.oculto { opacity: .62; }
+    .rev.cambiado { border-color: var(--lila); }
+    .rev .img { width: 96px; height: 96px; padding: 8px; border-radius: 14px; background: var(--bg, var(--lila-claro)); }
+    .rev .img img { width: 100%; height: 100%; object-fit: contain; }
+    .rev .campos { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+    .rev .top { display: flex; gap: 6px; align-items: center; font-size: .75rem; color: var(--ciruela-suave); font-weight: 700; flex-wrap: wrap; }
+    .rev .chipito { padding: 1px 8px; border-radius: 999px; background: var(--rosa); color: var(--ciruela); }
+    .rev input[type=text], .rev input[list] {
+      width: 100%; font: inherit; font-size: .9rem; color: var(--ciruela); padding: 7px 10px;
+      border-radius: 10px; border: 2px solid var(--lila-claro); background: var(--lila-fondo); outline: none;
+    }
+    .rev input:focus { border-color: var(--lila); }
+    .rev .fila { display: flex; gap: 6px; align-items: center; }
+    .rev .fila input[name=stock] { width: 92px; flex: none; }
+    .rev label.chk { display: flex; align-items: center; gap: 4px; font-size: .82rem; font-weight: 600; white-space: nowrap; cursor: pointer; }
+    .rev label.chk input { accent-color: var(--ciruela); }
+    .rev .nota { font-size: .75rem; color: #b04a74; font-weight: 600; }
+    .barra {
+      position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+      padding: 12px 16px; padding-bottom: max(12px, env(safe-area-inset-bottom));
+      background: rgba(255, 255, 255, .94); backdrop-filter: blur(12px); border-top: 1px solid var(--lila-claro);
+    }
+    .barra .info { flex: 1 1 140px; font-weight: 700; font-size: .9rem; }
+    .barra button { border: 0; padding: 11px 16px; border-radius: 14px; font-weight: 700; background: var(--lila-claro); }
+    .barra button.prim { background: var(--ciruela); color: var(--blanco); }
+  </style>
+</head>
+<body>
+  <div class="blobs" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+  <header class="top">
+    <div class="brand">
+      <img src="assets/img/logo-mb.png" alt="" class="brand-logo" width="70" height="80">
+      <div>
+        <h1 class="brand-name">MB Sublimarte</h1>
+        <p class="brand-sub">revisión del catálogo</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>¡Hola Maca! 💜</h2>
+      Acá están <b id="total"></b> stickers. Los nombres son provisorios. Revisá y corregí lo que quieras:
+      <ul>
+        <li><b>Nombre</b> y <b>categoría</b>: cambialos si no te gustan.</li>
+        <li><b>Stock</b>: un número si tenés unidades, <b>0</b> si está agotado, vacío si es <b>a pedido</b>.</li>
+        <li><b>Publicar</b>: destildá los que no querés mostrar en la tienda.</li>
+        <li>Las <b>planchas</b> y los <b>repetidos</b> arrancan ocultos. Las notas en rosa te avisan por qué.</li>
+      </ul>
+      Los cambios quedan guardados en este celu o esta compu. Cuando termines tocá <b>Descargar cambios</b> o
+      <b>Copiar cambios</b> y mandáselos a Juan.
+    </section>
+
+    <div class="rev-filtros">
+      <input type="search" id="f-buscar" placeholder="Buscar por nombre o código…">
+      <select id="f-cat"><option value="">Todas las categorías</option></select>
+      <select id="f-estado">
+        <option value="">Todos</option>
+        <option value="pub">Publicados</option>
+        <option value="oculto">Ocultos</option>
+        <option value="nota">Con nota</option>
+        <option value="plancha">Planchas</option>
+        <option value="cambiado">Modificados por mí</option>
+      </select>
+    </div>
+    <p class="contador" id="f-contador"></p>
+    <section class="rev-list" id="lista"></section>
+    <datalist id="cats"></datalist>
+  </main>
+
+  <div class="barra">
+    <span class="info" id="cambios">Sin cambios</span>
+    <button id="btn-copiar">Copiar cambios</button>
+    <button class="prim" id="btn-descargar">Descargar cambios</button>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="data/revision.js"></script>
+  <script>
+  (() => {
+    "use strict";
+    const ITEMS = window.REVISION || [];
+    const CLAVE = "mb-revision";
+    const FONDOS = ["#ffd6e5", "#cdefe3", "#ffe1c8", "#d6e9ff", "#ece2f8", "#fff3c4"];
+    const $ = (s) => document.querySelector(s);
+    const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    const norm = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+    const fondo = (id) => FONDOS[[...id].reduce((a, c) => a + c.charCodeAt(0), 0) % FONDOS.length];
+
+    let cambios = {};
+    try { cambios = JSON.parse(localStorage.getItem(CLAVE)) || {}; } catch (e) {}
+    const guardar = () => { try { localStorage.setItem(CLAVE, JSON.stringify(cambios)); } catch (e) {} };
+
+    const original = (it) => ({
+      nombre: it.nombre, categoria: it.categoria, stock: it.stockTexto || "",
+      publicar: it.publicar, nuevo: it.nuevo, comentario: "",
+    });
+    const actual = (it) => Object.assign(original(it), cambios[it.id] || {});
+
+    const cats = [...new Set(ITEMS.map((i) => i.categoria))].sort((a, b) => a.localeCompare(b, "es"));
+    $("#f-cat").innerHTML += cats.map((c) => `<option>${esc(c)}</option>`).join("");
+    $("#cats").innerHTML = cats.map((c) => `<option value="${esc(c)}">`).join("");
+    $("#total").textContent = ITEMS.length;
+
+    function tarjeta(it) {
+      const v = actual(it);
+      return `<article class="rev ${v.publicar ? "" : "oculto"} ${cambios[it.id] ? "cambiado" : ""}" data-id="${it.id}">
+        <div class="img protect" style="--bg:${fondo(it.id)}"><img src="${esc(it.mini)}" alt="" loading="lazy" draggable="false"></div>
+        <div class="campos">
+          <div class="top">${it.id}${it.tipo === "plancha" ? '<span class="chipito">Plancha</span>' : ""}</div>
+          <input type="text" name="nombre" value="${esc(v.nombre)}" aria-label="Nombre">
+          <input name="categoria" list="cats" value="${esc(v.categoria)}" aria-label="Categoría">
+          <div class="fila">
+            <input type="text" name="stock" inputmode="numeric" value="${esc(v.stock)}" placeholder="a pedido" aria-label="Stock">
+            <label class="chk"><input type="checkbox" name="publicar" ${v.publicar ? "checked" : ""}> Publicar</label>
+            <label class="chk"><input type="checkbox" name="nuevo" ${v.nuevo ? "checked" : ""}> Nuevo</label>
+          </div>
+          <input type="text" name="comentario" value="${esc(v.comentario)}" placeholder="Comentario para Juan (opcional)" aria-label="Comentario">
+          ${it.nota ? `<div class="nota">⚠ ${esc(it.nota)}</div>` : ""}
+        </div>
+      </article>`;
+    }
+
+    function filtrados() {
+      const q = norm($("#f-buscar").value.trim());
+      const cat = $("#f-cat").value, est = $("#f-estado").value;
+      return ITEMS.filter((it) => {
+        const v = actual(it);
+        if (q && !norm(`${v.nombre} ${it.id}`).includes(q)) return false;
+        if (cat && v.categoria !== cat) return false;
+        if (est === "pub" && !v.publicar) return false;
+        if (est === "oculto" && v.publicar) return false;
+        if (est === "nota" && !it.nota) return false;
+        if (est === "plancha" && it.tipo !== "plancha") return false;
+        if (est === "cambiado" && !cambios[it.id]) return false;
+        return true;
+      });
+    }
+
+    function pintar() {
+      const lista = filtrados();
+      $("#f-contador").textContent = `${lista.length} de ${ITEMS.length}`;
+      $("#lista").innerHTML = lista.map(tarjeta).join("");
+      contar();
+    }
+
+    function contar() {
+      const n = Object.keys(cambios).length;
+      $("#cambios").textContent = n ? `${n} sticker${n > 1 ? "s" : ""} modificado${n > 1 ? "s" : ""}` : "Sin cambios";
+    }
+
+    $("#lista").addEventListener("input", (e) => {
+      const card = e.target.closest(".rev");
+      if (!card) return;
+      const it = ITEMS.find((i) => i.id === card.dataset.id);
+      const leer = (n) => card.querySelector(`[name=${n}]`);
+      const v = {
+        nombre: leer("nombre").value.trim(), categoria: leer("categoria").value.trim(),
+        stock: leer("stock").value.trim(), publicar: leer("publicar").checked,
+        nuevo: leer("nuevo").checked, comentario: leer("comentario").value.trim(),
+      };
+      const o = original(it);
+      const dif = {};
+      for (const k in v) if (v[k] !== o[k]) dif[k] = v[k];
+      if (Object.keys(dif).length) cambios[it.id] = dif; else delete cambios[it.id];
+      card.classList.toggle("cambiado", !!cambios[it.id]);
+      card.classList.toggle("oculto", !v.publicar);
+      guardar();
+      contar();
+    });
+
+    ["#f-buscar", "#f-cat", "#f-estado"].forEach((s) => $(s).addEventListener("input", pintar));
+    document.addEventListener("contextmenu", (e) => { if (e.target.closest(".protect")) e.preventDefault(); });
+
+    function csv() {
+      const col = (x) => `"${String(x).replace(/"/g, '""')}"`;
+      const filas = [["id", "nombre", "categoria", "stock", "publicar", "nuevo", "comentario"]];
+      for (const it of ITEMS) {
+        if (!cambios[it.id]) continue;
+        const v = actual(it);
+        filas.push([it.id, v.nombre, v.categoria, v.stock, v.publicar ? "si" : "no", v.nuevo ? "si" : "", v.comentario]);
+      }
+      return filas.map((f) => f.map(col).join(",")).join("\n");
+    }
+
+    let tt;
+    const toast = (t) => { const el = $("#toast"); el.textContent = t; el.classList.add("show"); clearTimeout(tt); tt = setTimeout(() => el.classList.remove("show"), 2200); };
+
+    $("#btn-copiar").addEventListener("click", async () => {
+      if (!Object.keys(cambios).length) return toast("Todavía no hay cambios");
+      try { await navigator.clipboard.writeText(csv()); toast("Cambios copiados ✓ pegalos en el chat"); }
+      catch (e) { toast("No se pudo copiar, usá Descargar"); }
+    });
+    $("#btn-descargar").addEventListener("click", () => {
+      if (!Object.keys(cambios).length) return toast("Todavía no hay cambios");
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(new Blob(["﻿" + csv()], { type: "text/csv;charset=utf-8" }));
+      a.download = `cambios-catalogo-${new Date().toISOString().slice(0, 10)}.csv`;
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    });
+
+    pintar();
+  })();
+  </script>
+</body>
+</html>

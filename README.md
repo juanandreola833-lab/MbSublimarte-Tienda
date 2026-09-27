@@ -11,18 +11,19 @@ de entrega, ve el **alias para transferir** y envía el pedido armado por
 ## Estructura
 
 ```
-index.html              página única: catálogo + carrito + pago
+index.html              tienda: catálogo + carrito + pago
+revision.html           planilla para revisar nombres/stock/publicar (no enlazada)
 data/config.js          WhatsApp, alias, precios, opciones de entrega
-data/productos.js       catálogo de stickers (nombre, categoría, stock, foto)
+data/productos.js       catálogo publicado (GENERADO, no editar a mano)
+data/revision.js        todos los stickers para revision.html (GENERADO)
 assets/css/styles.css   estilos (paleta lila/pastel)
 assets/js/app.js        lógica del catálogo, carrito y pedido
-assets/img/stickers/    fotos publicadas (con marca de agua)
+assets/img/stickers/    fotos con marca de agua (700 px) y mini/ (360 px)
 assets/img/logo-mb.png  logo (solo las letras)
 assets/icons/           íconos de la app
 manifest.webmanifest    datos para instalar como app
 sw.js                   service worker (carga rápida / sin conexión)
-tools/procesar_imagenes.py  optimiza fotos y les pone marca de agua
-originales/             fotos originales SIN marca (no se suben al repo)
+tools/procesar_imagenes.py  genera imágenes y catálogo desde los originales
 ```
 
 ## Cambiar datos de la tienda
@@ -30,25 +31,31 @@ originales/             fotos originales SIN marca (no se suben al repo)
 Todo está en `data/config.js`: número de WhatsApp, alias (y opcionalmente
 titular y CBU), precio unitario, combo, medida y opciones de entrega.
 
-## Cargar stickers nuevos
+## Catálogo e imágenes
 
-1. Poner las fotos originales en `originales/`, con nombre
-   `categoria_nombre-del-diseno.png` (ej: `kawaii_gatito-cafe.png`).
-   Idealmente PNG con fondo transparente.
-2. Correr:
+Los PNG originales (sin marca de agua) viven en el repo **privado**
+`mbsublimarte-originales`, junto con `catalogo.csv`, la planilla maestra
+(código, nombre, categoría, tipo, publicar, stock, nuevo, nota, archivo).
+
+Para actualizar la tienda:
+
+1. Subir PNG nuevos al repo de originales (en la carpeta de su categoría)
+   y/o editar `catalogo.csv`.
+2. Con los dos repos uno al lado del otro, correr desde esta carpeta:
    ```
    pip install pillow
-   python tools/procesar_imagenes.py
+   python tools/procesar_imagenes.py ../mbsublimarte-originales
    ```
-   Esto genera las versiones web con marca de agua en `assets/img/stickers/`
-   y agrega los stickers nuevos a `data/productos.js`.
-3. Revisar `data/productos.js` y ajustar nombre, categoría y stock:
-   - `"stock": 12` → hay 12 unidades físicas
-   - `"stock": 0` → agotado
-   - `"stock": null` → a pedido (se imprime cuando lo piden)
-   - `"nuevo": true` → muestra la etiqueta "Nuevo"
+   Agrega al CSV los PNG nuevos, genera las imágenes con marca de agua y
+   reescribe `data/productos.js` y `data/revision.js`.
+3. Commit de los dos repos (el CSV actualizado va en el de originales).
 
-Las fotos originales **nunca** se suben: `originales/` está en `.gitignore`.
+Stock en el CSV: número = unidades, `0` = agotado, vacío = a pedido.
+`publicar` = `si`/`no`. Las planchas y los repetidos arrancan en `no`.
+
+`revision.html` (…/MbSublimarte-Tienda/revision.html) muestra todos los
+stickers para corregir nombres, stock y qué se publica; exporta los cambios
+como CSV para pasarlos a `catalogo.csv`.
 
 ## Ver en local
 
