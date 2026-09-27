@@ -170,11 +170,19 @@
 
   // ---------- carrito / checkout ----------
   let paso = "carrito";
-  const TITULOS = { carrito: "Tu pedido", datos: "Tus datos", pago: "Pagar" };
+  const TITULOS = { carrito: "Tu pedido", datos: "Tus datos", pago: "Pagar", enviado: "¡Listo!" };
+  let numeroPedido = null;
+
+  function nuevoNumero() {
+    const h = new Date();
+    const dd = String(h.getDate()).padStart(2, "0") + String(h.getMonth() + 1).padStart(2, "0");
+    return `MB-${dd}-${Math.floor(1000 + Math.random() * 9000)}`;
+  }
 
   function pintarCarrito() {
     const ids = Object.keys(carrito);
     $("#carrito-vacio").hidden = ids.length > 0;
+    $("#vaciar-carrito").hidden = ids.length === 0 || paso !== "carrito";
     $("#cart-list").innerHTML = ids.map((id) => {
       const p = porId.get(id);
       return `<li class="cart-item">
@@ -207,14 +215,20 @@
 
   function irA(nuevo) {
     paso = nuevo;
-    document.querySelectorAll(".step").forEach((s) => (s.hidden = s.dataset.step !== paso));
+    document.querySelectorAll("#carrito .step").forEach((s) => (s.hidden = s.dataset.step !== paso));
     $("#sheet-title").textContent = TITULOS[paso];
-    $("#paso-atras").hidden = paso === "carrito";
-    $("#btn-siguiente").hidden = paso === "pago";
+    $("#paso-atras").hidden = paso === "carrito" || paso === "enviado";
+    $("#btn-siguiente").hidden = paso === "pago" || paso === "enviado";
     $("#btn-siguiente").textContent = paso === "carrito" ? "Continuar" : "Ver datos de pago";
     $("#btn-whatsapp").hidden = paso !== "pago";
-    $("#btn-vaciar").hidden = paso !== "pago";
-    if (paso === "pago") prepararPago();
+    $("#btn-reenviar").hidden = paso !== "enviado";
+    $("#btn-seguir").hidden = paso !== "enviado";
+    $("#totales").hidden = paso === "enviado";
+    $("#vaciar-carrito").hidden = paso !== "carrito" || totalUnidades() === 0;
+    if (paso === "pago") {
+      numeroPedido = numeroPedido || nuevoNumero();
+      prepararPago();
+    }
     refrescarBoton();
   }
 
@@ -248,6 +262,7 @@
     if (r.sueltos) detalle.push(`${r.sueltos} suelto${r.sueltos > 1 ? "s" : ""} × ${pesos(CFG.precioUnitario)} = ${pesos(r.sueltos * CFG.precioUnitario)}`);
     return [
       `¡Hola ${CFG.marca}! 💜 Quiero hacer este pedido:`,
+      `*Pedido ${numeroPedido}*`,
       "",
       ...lineas,
       "",
@@ -370,15 +385,99 @@
   });
 
   $("#btn-whatsapp").addEventListener("click", () => {
-    setTimeout(() => toast("¡Gracias! No te olvides de mandar el comprobante 💜"), 400);
+    // se guarda el pedido y se vacía el carrito después de abrir WhatsApp
+    const pedido = {
+      numero: numeroPedido,
+      fecha: new Date().toISOString(),
+      items: Object.entries(carrito).map(([id, q]) => {
+        const p = porId.get(id);
+        return { id, q, nombre: p.nombre, mini: p.mini || p.imagen };
+      }),
+      ...calcular(),
+      datos: datosFormulario(),
+      mensaje: mensajePedido(),
+    };
+    setTimeout(() => {
+      const lista = leer("mb-pedidos", []);
+      lista.unshift(pedido);
+      guardar("mb-pedidos", lista.slice(0, 30));
+      carrito = {};
+      guardar("mb-carrito", carrito);
+      numeroPedido = null;
+      $("#form-datos").notas.value = "";
+      $("#enviado-numero").textContent = pedido.numero;
+      $("#enviado-detalle").innerHTML = tarjetaPedido(pedido, false);
+      $("#btn-reenviar").href = linkWhatsApp(pedido.mensaje);
+      irA("enviado");
+      refrescar();
+      toast("¡Gracias! No te olvides de mandar el comprobante 💜");
+    }, 0);
   });
 
-  $("#btn-vaciar").addEventListener("click", () => {
+  $("#vaciar-carrito").addEventListener("click", () => {
     if (!confirm("¿Vaciar el carrito?")) return;
     carrito = {};
     guardar("mb-carrito", carrito);
-    irA("carrito");
+    numeroPedido = null;
     refrescar();
+    toast("Carrito vacío");
+  });
+
+  $("#btn-seguir").addEventListener("click", () => cerrarModal());
+
+  // ---------- mis pedidos ----------
+  function linkWhatsApp(msg) {
+    return `https://wa.me/${CFG.whatsapp}?text=${encodeURIComponent(msg)}`;
+  }
+
+  function tarjetaPedido(p, conAcciones) {
+    const fecha = new Date(p.fecha).toLocaleString("es-AR", { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" });
+    return `<article class="pedido">
+      <div class="pedido-top"><b>${esc(p.numero)}</b><span>${fecha}</span></div>
+      <ul class="pedido-items">${p.items.map((it) => `
+        <li><div class="thumb protect" style="--bg:${fondo(it.id)}"><img src="${esc(it.mini)}" alt="" draggable="false" loading="lazy"></div>
+          <span class="q">${it.q} ×</span><span>${esc(it.nombre)} <small>(${esc(it.id)})</small></span></li>`).join("")}
+      </ul>
+      <div class="pedido-total"><span>${p.n} sticker${p.n > 1 ? "s" : ""}${p.ahorro > 0 ? ` · ahorro ${pesos(p.ahorro)}` : ""}</span><span>${pesos(p.total)}</span></div>
+      <p class="pedido-datos">${esc(p.datos.nombre)} · ${esc(p.datos.entrega)} · Alias ${esc(CFG.alias)}</p>
+      ${conAcciones ? `<div class="pedido-acciones">
+        <a class="wa" href="${linkWhatsApp(p.mensaje)}" target="_blank" rel="noopener">Reenviar por WhatsApp</a>
+        <button data-repetir="${esc(p.numero)}">Volver a pedir</button>
+        <button data-borrar="${esc(p.numero)}">Borrar</button>
+      </div>` : ""}
+    </article>`;
+  }
+
+  function pintarPedidos() {
+    const lista = leer("mb-pedidos", []);
+    $("#pedidos-vacio").hidden = lista.length > 0;
+    $("#pedidos-lista").innerHTML = lista.map((p) => tarjetaPedido(p, true)).join("");
+  }
+
+  $("#abrir-pedidos").addEventListener("click", () => { pintarPedidos(); abrirModal("#pedidos"); });
+
+  $("#pedidos-lista").addEventListener("click", (e) => {
+    const b = e.target.closest("button");
+    if (!b) return;
+    const lista = leer("mb-pedidos", []);
+    if (b.dataset.borrar) {
+      if (!confirm("¿Borrar este pedido de la lista?")) return;
+      guardar("mb-pedidos", lista.filter((p) => p.numero !== b.dataset.borrar));
+      pintarPedidos();
+    } else if (b.dataset.repetir) {
+      const p = lista.find((x) => x.numero === b.dataset.repetir);
+      let faltan = 0;
+      for (const it of p.items) {
+        const prod = porId.get(it.id);
+        if (!prod || maximo(prod) === 0) { faltan++; continue; }
+        carrito[it.id] = Math.min(cantidad(it.id) + it.q, maximo(prod));
+      }
+      guardar("mb-carrito", carrito);
+      refrescar();
+      irA("carrito");
+      abrirModal("#carrito");
+      if (faltan) toast(`${faltan} sticker${faltan > 1 ? "s ya no están" : " ya no está"} disponible${faltan > 1 ? "s" : ""}`);
+    }
   });
 
   // Evita el menú "guardar imagen" sobre los stickers

@@ -1,7 +1,7 @@
 // Service worker: permite instalar la tienda como app y que cargue rápido.
 // Páginas, estilos, scripts y catálogo: primero red (para ver siempre lo último),
 // si no hay conexión usa la copia guardada. Imágenes: primero la copia guardada.
-const CACHE = "mb-tienda-v2";
+const CACHE = "mb-tienda-v3";
 const BASE = [
   "./",
   "index.html",
