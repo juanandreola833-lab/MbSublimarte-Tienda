@@ -7223,5 +7223,3335 @@ window.PRODUCTOS = [
   "mini": "assets/img/stickers/mini/SD-093.webp",
   "stock": null,
   "nuevo": false
+ },
+ {
+  "id": "SE-134",
+  "nombre": "Copa del Mundo",
+  "categoria": "Selección",
+  "imagen": "assets/img/stickers/SE-134.webp",
+  "mini": "assets/img/stickers/mini/SE-134.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-051",
+  "nombre": "Monstera en maceta",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-051.webp",
+  "mini": "assets/img/stickers/mini/CU-051.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-052",
+  "nombre": "Planta en maceta",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-052.webp",
+  "mini": "assets/img/stickers/mini/CU-052.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-053",
+  "nombre": "Lavanda",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-053.webp",
+  "mini": "assets/img/stickers/mini/CU-053.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AR-015",
+  "nombre": "Chica tomando mate",
+  "categoria": "Argentina",
+  "imagen": "assets/img/stickers/AR-015.webp",
+  "mini": "assets/img/stickers/mini/AR-015.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AR-016",
+  "nombre": "Estampilla Ya arranqué el día",
+  "categoria": "Argentina",
+  "imagen": "assets/img/stickers/AR-016.webp",
+  "mini": "assets/img/stickers/mini/AR-016.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AR-017",
+  "nombre": "Estampilla Mafalda sonríe",
+  "categoria": "Argentina",
+  "imagen": "assets/img/stickers/AR-017.webp",
+  "mini": "assets/img/stickers/mini/AR-017.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "ME-029",
+  "nombre": "Usted se tiene que arrepentir",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-029.webp",
+  "mini": "assets/img/stickers/mini/ME-029.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "ME-143",
+  "nombre": "Por el macho todo letras",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-143.webp",
+  "mini": "assets/img/stickers/mini/ME-143.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CO-004",
+  "nombre": "Tostada con palta y huevo",
+  "categoria": "Cocina",
+  "imagen": "assets/img/stickers/CO-004.webp",
+  "mini": "assets/img/stickers/mini/CO-004.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MA-044",
+  "nombre": "Nada se pierde todo se transforma",
+  "categoria": "Manifestación",
+  "imagen": "assets/img/stickers/MA-044.webp",
+  "mini": "assets/img/stickers/mini/MA-044.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-054",
+  "nombre": "Flor de hibisco",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-054.webp",
+  "mini": "assets/img/stickers/mini/CU-054.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MU-016",
+  "nombre": "Qué chimba de vida",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-016.webp",
+  "mini": "assets/img/stickers/mini/MU-016.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-055",
+  "nombre": "Jirafa asomada",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-055.webp",
+  "mini": "assets/img/stickers/mini/CU-055.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SD-049",
+  "nombre": "No me simpatizas",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-049.webp",
+  "mini": "assets/img/stickers/mini/SD-049.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SD-094",
+  "nombre": "Chavo del 8",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-094.webp",
+  "mini": "assets/img/stickers/mini/SD-094.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "DI-057",
+  "nombre": "Galletita de jengibre",
+  "categoria": "Disney",
+  "imagen": "assets/img/stickers/DI-057.webp",
+  "mini": "assets/img/stickers/mini/DI-057.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-001",
+  "nombre": "It's Leviosa not Leviosa",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-001.webp",
+  "mini": "assets/img/stickers/mini/HP-001.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-002",
+  "nombre": "Expecto Patronum",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-002.webp",
+  "mini": "assets/img/stickers/mini/HP-002.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-003",
+  "nombre": "Harry con varita",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-003.webp",
+  "mini": "assets/img/stickers/mini/HP-003.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-004",
+  "nombre": "Escudo de Hogwarts",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-004.webp",
+  "mini": "assets/img/stickers/mini/HP-004.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-005",
+  "nombre": "Harry, Hermione y Ron",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-005.webp",
+  "mini": "assets/img/stickers/mini/HP-005.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-006",
+  "nombre": "Anteojos Harry Potter",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-006.webp",
+  "mini": "assets/img/stickers/mini/HP-006.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-006",
+  "nombre": "Shinx",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-006.webp",
+  "mini": "assets/img/stickers/mini/AN-006.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-007",
+  "nombre": "Voldemort",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-007.webp",
+  "mini": "assets/img/stickers/mini/HP-007.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-008",
+  "nombre": "Dumbledore",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-008.webp",
+  "mini": "assets/img/stickers/mini/HP-008.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-009",
+  "nombre": "Hagrid",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-009.webp",
+  "mini": "assets/img/stickers/mini/HP-009.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-010",
+  "nombre": "Harry Potter logo cara",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-010.webp",
+  "mini": "assets/img/stickers/mini/HP-010.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-011",
+  "nombre": "HP varitas cruzadas",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-011.webp",
+  "mini": "assets/img/stickers/mini/HP-011.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-012",
+  "nombre": "Hogwarts Quidditch",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-012.webp",
+  "mini": "assets/img/stickers/mini/HP-012.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-013",
+  "nombre": "Harry Potter letras",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-013.webp",
+  "mini": "assets/img/stickers/mini/HP-013.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-014",
+  "nombre": "Harry y el castillo",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-014.webp",
+  "mini": "assets/img/stickers/mini/HP-014.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-015",
+  "nombre": "Patronus siluetas",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-015.webp",
+  "mini": "assets/img/stickers/mini/HP-015.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-016",
+  "nombre": "Libros de Hogwarts",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-016.webp",
+  "mini": "assets/img/stickers/mini/HP-016.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-017",
+  "nombre": "Harry retrato",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-017.webp",
+  "mini": "assets/img/stickers/mini/HP-017.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-018",
+  "nombre": "Sombrero Seleccionador",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-018.webp",
+  "mini": "assets/img/stickers/mini/HP-018.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-019",
+  "nombre": "Love 9¾",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-019.webp",
+  "mini": "assets/img/stickers/mini/HP-019.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-020",
+  "nombre": "Bufanda Gryffindor",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-020.webp",
+  "mini": "assets/img/stickers/mini/HP-020.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-019",
+  "nombre": "Luvdisc",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-019.webp",
+  "mini": "assets/img/stickers/mini/AN-019.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-021",
+  "nombre": "Auto volador Weasley",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-021.webp",
+  "mini": "assets/img/stickers/mini/HP-021.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-022",
+  "nombre": "Avada Kedavra",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-022.webp",
+  "mini": "assets/img/stickers/mini/HP-022.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-023",
+  "nombre": "Dobby con media",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-023.webp",
+  "mini": "assets/img/stickers/mini/HP-023.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-024",
+  "nombre": "Hedwig con carta",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-024.webp",
+  "mini": "assets/img/stickers/mini/HP-024.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-075",
+  "nombre": "Ditto",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-075.webp",
+  "mini": "assets/img/stickers/mini/AN-075.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-025",
+  "nombre": "Andén 9¾",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-025.webp",
+  "mini": "assets/img/stickers/mini/HP-025.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-026",
+  "nombre": "Trío de Hogwarts bufandas",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-026.webp",
+  "mini": "assets/img/stickers/mini/HP-026.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-027",
+  "nombre": "Hermione",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-027.webp",
+  "mini": "assets/img/stickers/mini/HP-027.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-028",
+  "nombre": "Harry, Hermione y Ron caritas",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-028.webp",
+  "mini": "assets/img/stickers/mini/HP-028.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-018",
+  "nombre": "Lisa con tapado",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-018.webp",
+  "mini": "assets/img/stickers/mini/SI-018.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-019",
+  "nombre": "Maggie con gato",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-019.webp",
+  "mini": "assets/img/stickers/mini/SI-019.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-020",
+  "nombre": "Señor Burns alien",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-020.webp",
+  "mini": "assets/img/stickers/mini/SI-020.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-021",
+  "nombre": "Homero en el caño",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-021.webp",
+  "mini": "assets/img/stickers/mini/SI-021.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-022",
+  "nombre": "Lisa con billetes",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-022.webp",
+  "mini": "assets/img/stickers/mini/SI-022.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-023",
+  "nombre": "Lisa vestida de negro",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-023.webp",
+  "mini": "assets/img/stickers/mini/SI-023.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-024",
+  "nombre": "Homero en calzones con café",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-024.webp",
+  "mini": "assets/img/stickers/mini/SI-024.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MU-026",
+  "nombre": "Bad Bunny lentes rojos",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-026.webp",
+  "mini": "assets/img/stickers/mini/MU-026.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MU-027",
+  "nombre": "Bad Bunny conejo",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-027.webp",
+  "mini": "assets/img/stickers/mini/MU-027.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MU-028",
+  "nombre": "Conejo Bad Bunny",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-028.webp",
+  "mini": "assets/img/stickers/mini/MU-028.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MU-029",
+  "nombre": "Corazón Un Verano Sin Ti",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-029.webp",
+  "mini": "assets/img/stickers/mini/MU-029.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-076",
+  "nombre": "Cubone",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-076.webp",
+  "mini": "assets/img/stickers/mini/AN-076.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-077",
+  "nombre": "Horsea",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-077.webp",
+  "mini": "assets/img/stickers/mini/AN-077.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-025",
+  "nombre": "Homero saltando",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-025.webp",
+  "mini": "assets/img/stickers/mini/SI-025.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-026",
+  "nombre": "Blinky pez de tres ojos",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-026.webp",
+  "mini": "assets/img/stickers/mini/SI-026.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-027",
+  "nombre": "Flanders con estatua",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-027.webp",
+  "mini": "assets/img/stickers/mini/SI-027.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-028",
+  "nombre": "Homero con vestido floreado",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-028.webp",
+  "mini": "assets/img/stickers/mini/SI-028.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-029",
+  "nombre": "Lisa tomando",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-029.webp",
+  "mini": "assets/img/stickers/mini/SI-029.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-030",
+  "nombre": "Milhouse en el refrigerador",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-030.webp",
+  "mini": "assets/img/stickers/mini/SI-030.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-031",
+  "nombre": "Cabeza de Homero",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-031.webp",
+  "mini": "assets/img/stickers/mini/SI-031.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MU-030",
+  "nombre": "Ella es callaíta",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-030.webp",
+  "mini": "assets/img/stickers/mini/MU-030.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MU-031",
+  "nombre": "Dile que tú eres mía",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-031.webp",
+  "mini": "assets/img/stickers/mini/MU-031.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MU-032",
+  "nombre": "Tú no eres bebecita tú eres bebesota",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-032.webp",
+  "mini": "assets/img/stickers/mini/MU-032.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MU-033",
+  "nombre": "Bad Bunny letras",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-033.webp",
+  "mini": "assets/img/stickers/mini/MU-033.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MU-034",
+  "nombre": "Bad Bunny logo lentes",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-034.webp",
+  "mini": "assets/img/stickers/mini/MU-034.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MU-035",
+  "nombre": "Bad Bunny rosa",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-035.webp",
+  "mini": "assets/img/stickers/mini/MU-035.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MU-036",
+  "nombre": "Bad Bunny lengua",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-036.webp",
+  "mini": "assets/img/stickers/mini/MU-036.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-078",
+  "nombre": "Ditto derretido",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-078.webp",
+  "mini": "assets/img/stickers/mini/AN-078.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-032",
+  "nombre": "Barney",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-032.webp",
+  "mini": "assets/img/stickers/mini/SI-032.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-033",
+  "nombre": "Homero y el chancho",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-033.webp",
+  "mini": "assets/img/stickers/mini/SI-033.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-034",
+  "nombre": "Nelson Ha ha",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-034.webp",
+  "mini": "assets/img/stickers/mini/SI-034.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-035",
+  "nombre": "Abe y Marge",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-035.webp",
+  "mini": "assets/img/stickers/mini/SI-035.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-036",
+  "nombre": "Bart pensando",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-036.webp",
+  "mini": "assets/img/stickers/mini/SI-036.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-037",
+  "nombre": "Bart triste",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-037.webp",
+  "mini": "assets/img/stickers/mini/SI-037.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-038",
+  "nombre": "Lisa con bolsa",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-038.webp",
+  "mini": "assets/img/stickers/mini/SI-038.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-039",
+  "nombre": "Bart gritando",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-039.webp",
+  "mini": "assets/img/stickers/mini/SI-039.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-040",
+  "nombre": "Bart tomando leche",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-040.webp",
+  "mini": "assets/img/stickers/mini/SI-040.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MU-037",
+  "nombre": "Bad Bunny zapatilla",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-037.webp",
+  "mini": "assets/img/stickers/mini/MU-037.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MU-038",
+  "nombre": "Bad Bunny Un Verano Sin Ti",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-038.webp",
+  "mini": "assets/img/stickers/mini/MU-038.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MU-039",
+  "nombre": "Bad Bunny lentes corazón",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-039.webp",
+  "mini": "assets/img/stickers/mini/MU-039.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-056",
+  "nombre": "Rana durmiendo en hoja",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-056.webp",
+  "mini": "assets/img/stickers/mini/CU-056.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-041",
+  "nombre": "Homero durmiendo",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-041.webp",
+  "mini": "assets/img/stickers/mini/SI-041.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-042",
+  "nombre": "Bart y Lisa",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-042.webp",
+  "mini": "assets/img/stickers/mini/SI-042.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MU-040",
+  "nombre": "Bad Bunny tercer ojo",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-040.webp",
+  "mini": "assets/img/stickers/mini/MU-040.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MU-041",
+  "nombre": "Corazón triste Bad Bunny",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-041.webp",
+  "mini": "assets/img/stickers/mini/MU-041.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MU-042",
+  "nombre": "Bad Bunny lengua afuera",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-042.webp",
+  "mini": "assets/img/stickers/mini/MU-042.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-079",
+  "nombre": "Poliwrath",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-079.webp",
+  "mini": "assets/img/stickers/mini/AN-079.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-080",
+  "nombre": "Swinub sonriendo",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-080.webp",
+  "mini": "assets/img/stickers/mini/AN-080.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-043",
+  "nombre": "Señor Burns volando",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-043.webp",
+  "mini": "assets/img/stickers/mini/SI-043.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "VI-001",
+  "nombre": "Mundo con avión",
+  "categoria": "Viajes",
+  "imagen": "assets/img/stickers/VI-001.webp",
+  "mini": "assets/img/stickers/mini/VI-001.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "VI-002",
+  "nombre": "Valija con stickers",
+  "categoria": "Viajes",
+  "imagen": "assets/img/stickers/VI-002.webp",
+  "mini": "assets/img/stickers/mini/VI-002.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "VI-003",
+  "nombre": "Mapa Estados Unidos",
+  "categoria": "Viajes",
+  "imagen": "assets/img/stickers/VI-003.webp",
+  "mini": "assets/img/stickers/mini/VI-003.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-009",
+  "nombre": "Escudo Independiente",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-009.webp",
+  "mini": "assets/img/stickers/mini/FU-009.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-017",
+  "nombre": "Libertadores 7 Independiente",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-017.webp",
+  "mini": "assets/img/stickers/mini/FU-017.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-018",
+  "nombre": "Independiente tira",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-018.webp",
+  "mini": "assets/img/stickers/mini/FU-018.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-019",
+  "nombre": "Jugador 10 rojo de espaldas",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-019.webp",
+  "mini": "assets/img/stickers/mini/FU-019.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-020",
+  "nombre": "Escudo Newell's",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-020.webp",
+  "mini": "assets/img/stickers/mini/FU-020.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-021",
+  "nombre": "DT de cuclillas caricatura",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-021.webp",
+  "mini": "assets/img/stickers/mini/FU-021.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-022",
+  "nombre": "Jugador 10 Newell's brazos arriba",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-022.webp",
+  "mini": "assets/img/stickers/mini/FU-022.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-023",
+  "nombre": "Loco póster",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-023.webp",
+  "mini": "assets/img/stickers/mini/FU-023.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SE-146",
+  "nombre": "Santo Maradona",
+  "categoria": "Selección",
+  "imagen": "assets/img/stickers/SE-146.webp",
+  "mini": "assets/img/stickers/mini/SE-146.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AR-018",
+  "nombre": "Al gran pueblo argentino salud",
+  "categoria": "Argentina",
+  "imagen": "assets/img/stickers/AR-018.webp",
+  "mini": "assets/img/stickers/mini/AR-018.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "VI-004",
+  "nombre": "Pasaporte",
+  "categoria": "Viajes",
+  "imagen": "assets/img/stickers/VI-004.webp",
+  "mini": "assets/img/stickers/mini/VI-004.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "VI-005",
+  "nombre": "Estatua de la Libertad",
+  "categoria": "Viajes",
+  "imagen": "assets/img/stickers/VI-005.webp",
+  "mini": "assets/img/stickers/mini/VI-005.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "VI-006",
+  "nombre": "Ventanilla de avión",
+  "categoria": "Viajes",
+  "imagen": "assets/img/stickers/VI-006.webp",
+  "mini": "assets/img/stickers/mini/VI-006.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "VI-007",
+  "nombre": "Infinito con avión",
+  "categoria": "Viajes",
+  "imagen": "assets/img/stickers/VI-007.webp",
+  "mini": "assets/img/stickers/mini/VI-007.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-024",
+  "nombre": "Jugador de Independiente",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-024.webp",
+  "mini": "assets/img/stickers/mini/FU-024.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-025",
+  "nombre": "Estadio Libertadores de América",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-025.webp",
+  "mini": "assets/img/stickers/mini/FU-025.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-026",
+  "nombre": "Diablo rojo Independiente",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-026.webp",
+  "mini": "assets/img/stickers/mini/FU-026.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-027",
+  "nombre": "Te llevo en el alma Newell's",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-027.webp",
+  "mini": "assets/img/stickers/mini/FU-027.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-028",
+  "nombre": "Jugador 10 Newell's festejo",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-028.webp",
+  "mini": "assets/img/stickers/mini/FU-028.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-029",
+  "nombre": "Jugador Newell's besando escudo",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-029.webp",
+  "mini": "assets/img/stickers/mini/FU-029.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-030",
+  "nombre": "Garra Newell's",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-030.webp",
+  "mini": "assets/img/stickers/mini/FU-030.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "ME-144",
+  "nombre": "¿Qué sabés de mí? ¡Hablá!",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-144.webp",
+  "mini": "assets/img/stickers/mini/ME-144.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "VI-008",
+  "nombre": "Mapa del mundo con avión",
+  "categoria": "Viajes",
+  "imagen": "assets/img/stickers/VI-008.webp",
+  "mini": "assets/img/stickers/mini/VI-008.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "VI-009",
+  "nombre": "Explore",
+  "categoria": "Viajes",
+  "imagen": "assets/img/stickers/VI-009.webp",
+  "mini": "assets/img/stickers/mini/VI-009.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "VI-010",
+  "nombre": "Cámara de fotos mapa",
+  "categoria": "Viajes",
+  "imagen": "assets/img/stickers/VI-010.webp",
+  "mini": "assets/img/stickers/mini/VI-010.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-031",
+  "nombre": "Hinchada roja",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-031.webp",
+  "mini": "assets/img/stickers/mini/FU-031.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-032",
+  "nombre": "Escudo Independiente CAI",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-032.webp",
+  "mini": "assets/img/stickers/mini/FU-032.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-033",
+  "nombre": "El Rojo Independiente",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-033.webp",
+  "mini": "assets/img/stickers/mini/FU-033.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-034",
+  "nombre": "Solo entiende quien comparte mi pasión Newell's",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-034.webp",
+  "mini": "assets/img/stickers/mini/FU-034.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-035",
+  "nombre": "Estadio Newell's",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-035.webp",
+  "mini": "assets/img/stickers/mini/FU-035.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-036",
+  "nombre": "Camiseta Newell's",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-036.webp",
+  "mini": "assets/img/stickers/mini/FU-036.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "ME-145",
+  "nombre": "Mirá de quién te burlaste",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-145.webp",
+  "mini": "assets/img/stickers/mini/ME-145.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "ME-146",
+  "nombre": "A la gilada ni cabida",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-146.webp",
+  "mini": "assets/img/stickers/mini/ME-146.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "VI-011",
+  "nombre": "Torre Eiffel",
+  "categoria": "Viajes",
+  "imagen": "assets/img/stickers/VI-011.webp",
+  "mini": "assets/img/stickers/mini/VI-011.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "VI-012",
+  "nombre": "Ventanilla atardecer",
+  "categoria": "Viajes",
+  "imagen": "assets/img/stickers/VI-012.webp",
+  "mini": "assets/img/stickers/mini/VI-012.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "VI-013",
+  "nombre": "Avión mapamundi",
+  "categoria": "Viajes",
+  "imagen": "assets/img/stickers/VI-013.webp",
+  "mini": "assets/img/stickers/mini/VI-013.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "VI-014",
+  "nombre": "Postal de playa",
+  "categoria": "Viajes",
+  "imagen": "assets/img/stickers/VI-014.webp",
+  "mini": "assets/img/stickers/mini/VI-014.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "VI-015",
+  "nombre": "Cartel de ciudades",
+  "categoria": "Viajes",
+  "imagen": "assets/img/stickers/VI-015.webp",
+  "mini": "assets/img/stickers/mini/VI-015.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-037",
+  "nombre": "Jugador con escudo CAI",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-037.webp",
+  "mini": "assets/img/stickers/mini/FU-037.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-038",
+  "nombre": "Escudo Libertadores 7",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-038.webp",
+  "mini": "assets/img/stickers/mini/FU-038.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-039",
+  "nombre": "Banderín CAI",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-039.webp",
+  "mini": "assets/img/stickers/mini/FU-039.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-040",
+  "nombre": "Bandera Newell's",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-040.webp",
+  "mini": "assets/img/stickers/mini/FU-040.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-041",
+  "nombre": "Newell's Old Boys letras",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-041.webp",
+  "mini": "assets/img/stickers/mini/FU-041.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-042",
+  "nombre": "Newell's rojo y negro",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-042.webp",
+  "mini": "assets/img/stickers/mini/FU-042.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-057",
+  "nombre": "Margarita sonriente",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-057.webp",
+  "mini": "assets/img/stickers/mini/CU-057.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-058",
+  "nombre": "Abejita",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-058.webp",
+  "mini": "assets/img/stickers/mini/CU-058.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-059",
+  "nombre": "Ramo de flores en frasco",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-059.webp",
+  "mini": "assets/img/stickers/mini/CU-059.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-060",
+  "nombre": "Mariposa lila corazones",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-060.webp",
+  "mini": "assets/img/stickers/mini/CU-060.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-061",
+  "nombre": "Mini corazón rosa",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-061.webp",
+  "mini": "assets/img/stickers/mini/CU-061.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-062",
+  "nombre": "Ramita de hojas",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-062.webp",
+  "mini": "assets/img/stickers/mini/CU-062.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-063",
+  "nombre": "Tulipán amarillo",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-063.webp",
+  "mini": "assets/img/stickers/mini/CU-063.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-064",
+  "nombre": "Margarita",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-064.webp",
+  "mini": "assets/img/stickers/mini/CU-064.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-065",
+  "nombre": "Lentes corazón y café",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-065.webp",
+  "mini": "assets/img/stickers/mini/CU-065.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-066",
+  "nombre": "Vaquita de San Antonio y agenda",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-066.webp",
+  "mini": "assets/img/stickers/mini/CU-066.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-067",
+  "nombre": "Flor violeta pastel",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-067.webp",
+  "mini": "assets/img/stickers/mini/CU-067.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-068",
+  "nombre": "Ramita de flores rosas",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-068.webp",
+  "mini": "assets/img/stickers/mini/CU-068.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-069",
+  "nombre": "Destello amarillo",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-069.webp",
+  "mini": "assets/img/stickers/mini/CU-069.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-070",
+  "nombre": "Libros con flores",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-070.webp",
+  "mini": "assets/img/stickers/mini/CU-070.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-071",
+  "nombre": "Tulipán rosa guiño",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-071.webp",
+  "mini": "assets/img/stickers/mini/CU-071.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-072",
+  "nombre": "Flor y cámara instantánea",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-072.webp",
+  "mini": "assets/img/stickers/mini/CU-072.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-073",
+  "nombre": "Flor rosa",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-073.webp",
+  "mini": "assets/img/stickers/mini/CU-073.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-074",
+  "nombre": "Frappé con crema",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-074.webp",
+  "mini": "assets/img/stickers/mini/CU-074.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-081",
+  "nombre": "Cherubi",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-081.webp",
+  "mini": "assets/img/stickers/mini/AN-081.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-082",
+  "nombre": "Gato con sombrero y lentes",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-082.webp",
+  "mini": "assets/img/stickers/mini/AN-082.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-075",
+  "nombre": "Tulipán rosa",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-075.webp",
+  "mini": "assets/img/stickers/mini/CU-075.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-076",
+  "nombre": "Gatito durmiendo y flores",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-076.webp",
+  "mini": "assets/img/stickers/mini/CU-076.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-077",
+  "nombre": "Moño rosa pastel",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-077.webp",
+  "mini": "assets/img/stickers/mini/CU-077.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-078",
+  "nombre": "Frasco de flores y moño",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-078.webp",
+  "mini": "assets/img/stickers/mini/CU-078.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-079",
+  "nombre": "Taza con flores",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-079.webp",
+  "mini": "assets/img/stickers/mini/CU-079.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-083",
+  "nombre": "Piplup enojado",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-083.webp",
+  "mini": "assets/img/stickers/mini/AN-083.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-084",
+  "nombre": "Jigglypuff enojado",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-084.webp",
+  "mini": "assets/img/stickers/mini/AN-084.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-080",
+  "nombre": "Cintas washi",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-080.webp",
+  "mini": "assets/img/stickers/mini/CU-080.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-085",
+  "nombre": "Wooloo",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-085.webp",
+  "mini": "assets/img/stickers/mini/AN-085.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-086",
+  "nombre": "Eevee",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-086.webp",
+  "mini": "assets/img/stickers/mini/AN-086.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MT-001",
+  "nombre": "Libros con manzana",
+  "categoria": "Maestros",
+  "imagen": "assets/img/stickers/MT-001.webp",
+  "mini": "assets/img/stickers/mini/MT-001.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MT-002",
+  "nombre": "Feliz día del maestro",
+  "categoria": "Maestros",
+  "imagen": "assets/img/stickers/MT-002.webp",
+  "mini": "assets/img/stickers/mini/MT-002.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MT-003",
+  "nombre": "Enseñar también es dejar huella",
+  "categoria": "Maestros",
+  "imagen": "assets/img/stickers/MT-003.webp",
+  "mini": "assets/img/stickers/mini/MT-003.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MT-004",
+  "nombre": "Educar es un acto de amor",
+  "categoria": "Maestros",
+  "imagen": "assets/img/stickers/MT-004.webp",
+  "mini": "assets/img/stickers/mini/MT-004.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MT-005",
+  "nombre": "Gracias por tu dedicación",
+  "categoria": "Maestros",
+  "imagen": "assets/img/stickers/MT-005.webp",
+  "mini": "assets/img/stickers/mini/MT-005.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "ME-147",
+  "nombre": "Atiendo boludos",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-147.webp",
+  "mini": "assets/img/stickers/mini/ME-147.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SE-234",
+  "nombre": "Anulo mufa",
+  "categoria": "Selección",
+  "imagen": "assets/img/stickers/SE-234.webp",
+  "mini": "assets/img/stickers/mini/SE-234.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-044",
+  "nombre": "Alguien quiere pensar en los niños",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-044.webp",
+  "mini": "assets/img/stickers/mini/SI-044.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-045",
+  "nombre": "Hellfish",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-045.webp",
+  "mini": "assets/img/stickers/mini/SI-045.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SE-243",
+  "nombre": "Estrellas 1978 1986 2022 Malvinas",
+  "categoria": "Selección",
+  "imagen": "assets/img/stickers/SE-243.webp",
+  "mini": "assets/img/stickers/mini/SE-243.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SE-244",
+  "nombre": "Figurita Messi 2026",
+  "categoria": "Selección",
+  "imagen": "assets/img/stickers/SE-244.webp",
+  "mini": "assets/img/stickers/mini/SE-244.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SE-245",
+  "nombre": "Figurita dorada Messi 2026",
+  "categoria": "Selección",
+  "imagen": "assets/img/stickers/SE-245.webp",
+  "mini": "assets/img/stickers/mini/SE-245.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SE-246",
+  "nombre": "Figurita Dibu Martínez 2026",
+  "categoria": "Selección",
+  "imagen": "assets/img/stickers/SE-246.webp",
+  "mini": "assets/img/stickers/mini/SE-246.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MT-006",
+  "nombre": "Frasco Mil gracias",
+  "categoria": "Maestros",
+  "imagen": "assets/img/stickers/MT-006.webp",
+  "mini": "assets/img/stickers/mini/MT-006.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MT-007",
+  "nombre": "Podés cambiar el mundo desde un aula",
+  "categoria": "Maestros",
+  "imagen": "assets/img/stickers/MT-007.webp",
+  "mini": "assets/img/stickers/mini/MT-007.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MT-008",
+  "nombre": "Lápices en vaso",
+  "categoria": "Maestros",
+  "imagen": "assets/img/stickers/MT-008.webp",
+  "mini": "assets/img/stickers/mini/MT-008.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MT-009",
+  "nombre": "La magia de enseñar",
+  "categoria": "Maestros",
+  "imagen": "assets/img/stickers/MT-009.webp",
+  "mini": "assets/img/stickers/mini/MT-009.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-043",
+  "nombre": "Figurita Tim Payne 2026",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-043.webp",
+  "mini": "assets/img/stickers/mini/FU-043.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SE-247",
+  "nombre": "Pelota Trionda 2026",
+  "categoria": "Selección",
+  "imagen": "assets/img/stickers/SE-247.webp",
+  "mini": "assets/img/stickers/mini/SE-247.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SE-248",
+  "nombre": "Logo Mundial 2026",
+  "categoria": "Selección",
+  "imagen": "assets/img/stickers/SE-248.webp",
+  "mini": "assets/img/stickers/mini/SE-248.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SE-249",
+  "nombre": "Camiseta Argentina 10",
+  "categoria": "Selección",
+  "imagen": "assets/img/stickers/SE-249.webp",
+  "mini": "assets/img/stickers/mini/SE-249.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SE-250",
+  "nombre": "Escudo AFA",
+  "categoria": "Selección",
+  "imagen": "assets/img/stickers/SE-250.webp",
+  "mini": "assets/img/stickers/mini/SE-250.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-044",
+  "nombre": "Escudo Boca Juniors",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-044.webp",
+  "mini": "assets/img/stickers/mini/FU-044.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SE-251",
+  "nombre": "Estrellas 78 22 86",
+  "categoria": "Selección",
+  "imagen": "assets/img/stickers/SE-251.webp",
+  "mini": "assets/img/stickers/mini/SE-251.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SE-252",
+  "nombre": "Argentina campeón",
+  "categoria": "Selección",
+  "imagen": "assets/img/stickers/SE-252.webp",
+  "mini": "assets/img/stickers/mini/SE-252.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MT-010",
+  "nombre": "Pizarrón Gracias por hacer la diferencia",
+  "categoria": "Maestros",
+  "imagen": "assets/img/stickers/MT-010.webp",
+  "mini": "assets/img/stickers/mini/MT-010.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MT-011",
+  "nombre": "Libros de colores",
+  "categoria": "Maestros",
+  "imagen": "assets/img/stickers/MT-011.webp",
+  "mini": "assets/img/stickers/mini/MT-011.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-045",
+  "nombre": "Escudo CAI",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-045.webp",
+  "mini": "assets/img/stickers/mini/FU-045.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AR-019",
+  "nombre": "Termo y mate",
+  "categoria": "Argentina",
+  "imagen": "assets/img/stickers/AR-019.webp",
+  "mini": "assets/img/stickers/mini/AR-019.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-046",
+  "nombre": "Homero rock and roll",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-046.webp",
+  "mini": "assets/img/stickers/mini/SI-046.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SD-095",
+  "nombre": "Chicas Superpoderosas",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-095.webp",
+  "mini": "assets/img/stickers/mini/SD-095.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-081",
+  "nombre": "Dinosaurio rosa",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-081.webp",
+  "mini": "assets/img/stickers/mini/CU-081.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MA-045",
+  "nombre": "Un día a la vez",
+  "categoria": "Manifestación",
+  "imagen": "assets/img/stickers/MA-045.webp",
+  "mini": "assets/img/stickers/mini/MA-045.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "DE-001",
+  "nombre": "Pelota y zapatilla de básquet",
+  "categoria": "Deportes",
+  "imagen": "assets/img/stickers/DE-001.webp",
+  "mini": "assets/img/stickers/mini/DE-001.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "DE-002",
+  "nombre": "Fórmula 1 McLaren",
+  "categoria": "Deportes",
+  "imagen": "assets/img/stickers/DE-002.webp",
+  "mini": "assets/img/stickers/mini/DE-002.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-082",
+  "nombre": "Flor sonriente amarilla",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-082.webp",
+  "mini": "assets/img/stickers/mini/CU-082.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-083",
+  "nombre": "Dinosaurio lila",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-083.webp",
+  "mini": "assets/img/stickers/mini/CU-083.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AR-020",
+  "nombre": "100% made in Argentina",
+  "categoria": "Argentina",
+  "imagen": "assets/img/stickers/AR-020.webp",
+  "mini": "assets/img/stickers/mini/AR-020.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "DE-003",
+  "nombre": "Aro de básquet",
+  "categoria": "Deportes",
+  "imagen": "assets/img/stickers/DE-003.webp",
+  "mini": "assets/img/stickers/mini/DE-003.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AR-021",
+  "nombre": "Escudo nacional argentino",
+  "categoria": "Argentina",
+  "imagen": "assets/img/stickers/AR-021.webp",
+  "mini": "assets/img/stickers/mini/AR-021.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-084",
+  "nombre": "Pochoclos",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-084.webp",
+  "mini": "assets/img/stickers/mini/CU-084.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-029",
+  "nombre": "Sombrero Seleccionador 2",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-029.webp",
+  "mini": "assets/img/stickers/mini/HP-029.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AR-022",
+  "nombre": "Estampilla Tres empanadas",
+  "categoria": "Argentina",
+  "imagen": "assets/img/stickers/AR-022.webp",
+  "mini": "assets/img/stickers/mini/AR-022.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "DI-058",
+  "nombre": "Stitch con coco",
+  "categoria": "Disney",
+  "imagen": "assets/img/stickers/DI-058.webp",
+  "mini": "assets/img/stickers/mini/DI-058.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "DI-059",
+  "nombre": "Lilo abrazando a Stitch",
+  "categoria": "Disney",
+  "imagen": "assets/img/stickers/DI-059.webp",
+  "mini": "assets/img/stickers/mini/DI-059.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SE-253",
+  "nombre": "Messi tomando mate",
+  "categoria": "Selección",
+  "imagen": "assets/img/stickers/SE-253.webp",
+  "mini": "assets/img/stickers/mini/SE-253.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-085",
+  "nombre": "Carita feliz clásica",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-085.webp",
+  "mini": "assets/img/stickers/mini/CU-085.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "DI-060",
+  "nombre": "Stitch con helado y lentes",
+  "categoria": "Disney",
+  "imagen": "assets/img/stickers/DI-060.webp",
+  "mini": "assets/img/stickers/mini/DI-060.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SI-047",
+  "nombre": "Lisa abrazando rodillas",
+  "categoria": "Simpsons",
+  "imagen": "assets/img/stickers/SI-047.webp",
+  "mini": "assets/img/stickers/mini/SI-047.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AR-023",
+  "nombre": "Fútbol mate asado",
+  "categoria": "Argentina",
+  "imagen": "assets/img/stickers/AR-023.webp",
+  "mini": "assets/img/stickers/mini/AR-023.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AR-024",
+  "nombre": "Mapa Argentina bandera",
+  "categoria": "Argentina",
+  "imagen": "assets/img/stickers/AR-024.webp",
+  "mini": "assets/img/stickers/mini/AR-024.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AR-025",
+  "nombre": "Islas Malvinas celeste",
+  "categoria": "Argentina",
+  "imagen": "assets/img/stickers/AR-025.webp",
+  "mini": "assets/img/stickers/mini/AR-025.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AR-026",
+  "nombre": "Islas Malvinas bandera",
+  "categoria": "Argentina",
+  "imagen": "assets/img/stickers/AR-026.webp",
+  "mini": "assets/img/stickers/mini/AR-026.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SE-254",
+  "nombre": "Messi 10 de rodillas ilustración",
+  "categoria": "Selección",
+  "imagen": "assets/img/stickers/SE-254.webp",
+  "mini": "assets/img/stickers/mini/SE-254.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "DE-004",
+  "nombre": "NBA",
+  "categoria": "Deportes",
+  "imagen": "assets/img/stickers/DE-004.webp",
+  "mini": "assets/img/stickers/mini/DE-004.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AR-027",
+  "nombre": "Estampilla ¿Dónde está mi amiga?",
+  "categoria": "Argentina",
+  "imagen": "assets/img/stickers/AR-027.webp",
+  "mini": "assets/img/stickers/mini/AR-027.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AR-028",
+  "nombre": "Estampilla Buenos Aires",
+  "categoria": "Argentina",
+  "imagen": "assets/img/stickers/AR-028.webp",
+  "mini": "assets/img/stickers/mini/AR-028.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AR-029",
+  "nombre": "Mapa Argentina sol",
+  "categoria": "Argentina",
+  "imagen": "assets/img/stickers/AR-029.webp",
+  "mini": "assets/img/stickers/mini/AR-029.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-087",
+  "nombre": "Pikachu con gorra",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-087.webp",
+  "mini": "assets/img/stickers/mini/AN-087.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-088",
+  "nombre": "Beerus",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-088.webp",
+  "mini": "assets/img/stickers/mini/AN-088.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-089",
+  "nombre": "Sailor Moon símbolo y personaje",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-089.webp",
+  "mini": "assets/img/stickers/mini/AN-089.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-090",
+  "nombre": "Broche Sailor Moon",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-090.webp",
+  "mini": "assets/img/stickers/mini/AN-090.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-091",
+  "nombre": "Chibiusa",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-091.webp",
+  "mini": "assets/img/stickers/mini/AN-091.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-092",
+  "nombre": "Pikachu con antiparras",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-092.webp",
+  "mini": "assets/img/stickers/mini/AN-092.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-093",
+  "nombre": "Mash comiendo",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-093.webp",
+  "mini": "assets/img/stickers/mini/AN-093.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-094",
+  "nombre": "Calcifer y Whimsicott",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-094.webp",
+  "mini": "assets/img/stickers/mini/AN-094.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-095",
+  "nombre": "Oshawott enamorado",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-095.webp",
+  "mini": "assets/img/stickers/mini/AN-095.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-096",
+  "nombre": "Gata con cartera",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-096.webp",
+  "mini": "assets/img/stickers/mini/AN-096.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-097",
+  "nombre": "Kero",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-097.webp",
+  "mini": "assets/img/stickers/mini/AN-097.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-098",
+  "nombre": "Squirtle con flor",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-098.webp",
+  "mini": "assets/img/stickers/mini/AN-098.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-099",
+  "nombre": "Usagi graciosa",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-099.webp",
+  "mini": "assets/img/stickers/mini/AN-099.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-100",
+  "nombre": "Snorlax",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-100.webp",
+  "mini": "assets/img/stickers/mini/AN-100.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-101",
+  "nombre": "Yato",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-101.webp",
+  "mini": "assets/img/stickers/mini/AN-101.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-102",
+  "nombre": "Logo Fairy Tail",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-102.webp",
+  "mini": "assets/img/stickers/mini/AN-102.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-103",
+  "nombre": "Togepi",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-103.webp",
+  "mini": "assets/img/stickers/mini/AN-103.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-104",
+  "nombre": "Espeon verde",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-104.webp",
+  "mini": "assets/img/stickers/mini/AN-104.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-105",
+  "nombre": "Zorrito kitsune",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-105.webp",
+  "mini": "assets/img/stickers/mini/AN-105.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-106",
+  "nombre": "Buneary",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-106.webp",
+  "mini": "assets/img/stickers/mini/AN-106.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-107",
+  "nombre": "Cherrim",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-107.webp",
+  "mini": "assets/img/stickers/mini/AN-107.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-108",
+  "nombre": "Eevee parado",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-108.webp",
+  "mini": "assets/img/stickers/mini/AN-108.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-109",
+  "nombre": "Ace puño de fuego",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-109.webp",
+  "mini": "assets/img/stickers/mini/AN-109.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-110",
+  "nombre": "Monstruo peludo lila",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-110.webp",
+  "mini": "assets/img/stickers/mini/AN-110.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-111",
+  "nombre": "Totoro celeste",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-111.webp",
+  "mini": "assets/img/stickers/mini/AN-111.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-112",
+  "nombre": "Kuromi llorando",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-112.webp",
+  "mini": "assets/img/stickers/mini/AN-112.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-113",
+  "nombre": "Plusle y Minun",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-113.webp",
+  "mini": "assets/img/stickers/mini/AN-113.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-114",
+  "nombre": "Susuwatari con estrella",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-114.webp",
+  "mini": "assets/img/stickers/mini/AN-114.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-115",
+  "nombre": "Pikachu enojado",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-115.webp",
+  "mini": "assets/img/stickers/mini/AN-115.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-116",
+  "nombre": "Calcifer",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-116.webp",
+  "mini": "assets/img/stickers/mini/AN-116.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-117",
+  "nombre": "Nena saludando",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-117.webp",
+  "mini": "assets/img/stickers/mini/AN-117.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-118",
+  "nombre": "Squirtle con lentes",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-118.webp",
+  "mini": "assets/img/stickers/mini/AN-118.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-119",
+  "nombre": "Umbreon con dona",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-119.webp",
+  "mini": "assets/img/stickers/mini/AN-119.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-120",
+  "nombre": "Pokébola",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-120.webp",
+  "mini": "assets/img/stickers/mini/AN-120.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-121",
+  "nombre": "Luna y Togepi",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-121.webp",
+  "mini": "assets/img/stickers/mini/AN-121.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-122",
+  "nombre": "Piplup sorprendido",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-122.webp",
+  "mini": "assets/img/stickers/mini/AN-122.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-123",
+  "nombre": "Squirtle lengua",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-123.webp",
+  "mini": "assets/img/stickers/mini/AN-123.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-124",
+  "nombre": "Piplup con viento",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-124.webp",
+  "mini": "assets/img/stickers/mini/AN-124.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-125",
+  "nombre": "Marin Kitagawa",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-125.webp",
+  "mini": "assets/img/stickers/mini/AN-125.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-126",
+  "nombre": "Gato negro ojos grandes",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-126.webp",
+  "mini": "assets/img/stickers/mini/AN-126.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-127",
+  "nombre": "Meowth",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-127.webp",
+  "mini": "assets/img/stickers/mini/AN-127.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-128",
+  "nombre": "Gastly",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-128.webp",
+  "mini": "assets/img/stickers/mini/AN-128.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-129",
+  "nombre": "Glaceon",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-129.webp",
+  "mini": "assets/img/stickers/mini/AN-129.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-130",
+  "nombre": "Happy de Fairy Tail",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-130.webp",
+  "mini": "assets/img/stickers/mini/AN-130.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-131",
+  "nombre": "Chi gatita",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-131.webp",
+  "mini": "assets/img/stickers/mini/AN-131.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-132",
+  "nombre": "Togepi y Pikachu",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-132.webp",
+  "mini": "assets/img/stickers/mini/AN-132.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-133",
+  "nombre": "Psyduck",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-133.webp",
+  "mini": "assets/img/stickers/mini/AN-133.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-134",
+  "nombre": "Totoro",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-134.webp",
+  "mini": "assets/img/stickers/mini/AN-134.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-135",
+  "nombre": "Charmander bebé",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-135.webp",
+  "mini": "assets/img/stickers/mini/AN-135.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-136",
+  "nombre": "Gengar",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-136.webp",
+  "mini": "assets/img/stickers/mini/AN-136.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-137",
+  "nombre": "Espurr",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-137.webp",
+  "mini": "assets/img/stickers/mini/AN-137.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-138",
+  "nombre": "Charmander con Pokébola",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-138.webp",
+  "mini": "assets/img/stickers/mini/AN-138.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-139",
+  "nombre": "Pikachu feliz 2",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-139.webp",
+  "mini": "assets/img/stickers/mini/AN-139.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-140",
+  "nombre": "Totoro con paraguas",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-140.webp",
+  "mini": "assets/img/stickers/mini/AN-140.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-141",
+  "nombre": "Chica anime moño rojo",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-141.webp",
+  "mini": "assets/img/stickers/mini/AN-141.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-142",
+  "nombre": "Tohru dragona",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-142.webp",
+  "mini": "assets/img/stickers/mini/AN-142.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-143",
+  "nombre": "Carla de Fairy Tail",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-143.webp",
+  "mini": "assets/img/stickers/mini/AN-143.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-144",
+  "nombre": "Brujita anime",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-144.webp",
+  "mini": "assets/img/stickers/mini/AN-144.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-145",
+  "nombre": "Chica con cámara",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-145.webp",
+  "mini": "assets/img/stickers/mini/AN-145.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-146",
+  "nombre": "Chica diablita",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-146.webp",
+  "mini": "assets/img/stickers/mini/AN-146.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-147",
+  "nombre": "Spinda",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-147.webp",
+  "mini": "assets/img/stickers/mini/AN-147.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-148",
+  "nombre": "Scorbunny",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-148.webp",
+  "mini": "assets/img/stickers/mini/AN-148.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-149",
+  "nombre": "Litwick",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-149.webp",
+  "mini": "assets/img/stickers/mini/AN-149.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-150",
+  "nombre": "Murciélago peludo",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-150.webp",
+  "mini": "assets/img/stickers/mini/AN-150.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-151",
+  "nombre": "Goku niño con esfera",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-151.webp",
+  "mini": "assets/img/stickers/mini/AN-151.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-152",
+  "nombre": "Thundercats clásico",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-152.webp",
+  "mini": "assets/img/stickers/mini/AN-152.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-153",
+  "nombre": "Fennekin",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-153.webp",
+  "mini": "assets/img/stickers/mini/AN-153.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-154",
+  "nombre": "Usagi con consola",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-154.webp",
+  "mini": "assets/img/stickers/mini/AN-154.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-155",
+  "nombre": "Chica anime rosa",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-155.webp",
+  "mini": "assets/img/stickers/mini/AN-155.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-156",
+  "nombre": "Emma saludando",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-156.webp",
+  "mini": "assets/img/stickers/mini/AN-156.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-157",
+  "nombre": "Michiru",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-157.webp",
+  "mini": "assets/img/stickers/mini/AN-157.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-158",
+  "nombre": "Luna y la luna",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-158.webp",
+  "mini": "assets/img/stickers/mini/AN-158.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-159",
+  "nombre": "Usagi llorando",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-159.webp",
+  "mini": "assets/img/stickers/mini/AN-159.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-160",
+  "nombre": "Tohru mucama",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-160.webp",
+  "mini": "assets/img/stickers/mini/AN-160.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-161",
+  "nombre": "Gogeta chibi",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-161.webp",
+  "mini": "assets/img/stickers/mini/AN-161.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-046",
+  "nombre": "Escudo San Lorenzo redondo",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-046.webp",
+  "mini": "assets/img/stickers/mini/FU-046.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-047",
+  "nombre": "San Lorenzo cuervos",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-047.webp",
+  "mini": "assets/img/stickers/mini/FU-047.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-048",
+  "nombre": "Lengua San Lorenzo",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-048.webp",
+  "mini": "assets/img/stickers/mini/FU-048.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-049",
+  "nombre": "Soy cuervo",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-049.webp",
+  "mini": "assets/img/stickers/mini/FU-049.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-050",
+  "nombre": "SL San Lorenzo",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-050.webp",
+  "mini": "assets/img/stickers/mini/FU-050.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-051",
+  "nombre": "Jugador San Lorenzo festejo",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-051.webp",
+  "mini": "assets/img/stickers/mini/FU-051.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-052",
+  "nombre": "San Lorenzo Libertadores",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-052.webp",
+  "mini": "assets/img/stickers/mini/FU-052.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-053",
+  "nombre": "Hinchada San Lorenzo",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-053.webp",
+  "mini": "assets/img/stickers/mini/FU-053.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-054",
+  "nombre": "Estadio San Lorenzo",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-054.webp",
+  "mini": "assets/img/stickers/mini/FU-054.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-055",
+  "nombre": "Escudo San Lorenzo azul",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-055.webp",
+  "mini": "assets/img/stickers/mini/FU-055.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-056",
+  "nombre": "DT San Lorenzo",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-056.webp",
+  "mini": "assets/img/stickers/mini/FU-056.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MA-046",
+  "nombre": "Buenas vibras",
+  "categoria": "Manifestación",
+  "imagen": "assets/img/stickers/MA-046.webp",
+  "mini": "assets/img/stickers/mini/MA-046.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "DE-005",
+  "nombre": "Fórmula 1 Alpine",
+  "categoria": "Deportes",
+  "imagen": "assets/img/stickers/DE-005.webp",
+  "mini": "assets/img/stickers/mini/DE-005.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "ME-148",
+  "nombre": "Por fin soy Wanda",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-148.webp",
+  "mini": "assets/img/stickers/mini/ME-148.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-057",
+  "nombre": "Jugador Racing festejo",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-057.webp",
+  "mini": "assets/img/stickers/mini/FU-057.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-058",
+  "nombre": "Racing Club Avellaneda",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-058.webp",
+  "mini": "assets/img/stickers/mini/FU-058.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-059",
+  "nombre": "Racing El Primer Grande",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-059.webp",
+  "mini": "assets/img/stickers/mini/FU-059.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "DI-061",
+  "nombre": "Lilo y Stitch sentados",
+  "categoria": "Disney",
+  "imagen": "assets/img/stickers/DI-061.webp",
+  "mini": "assets/img/stickers/mini/DI-061.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SE-255",
+  "nombre": "Messi Miami 10",
+  "categoria": "Selección",
+  "imagen": "assets/img/stickers/SE-255.webp",
+  "mini": "assets/img/stickers/mini/SE-255.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-060",
+  "nombre": "Escudo Racing estrellas",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-060.webp",
+  "mini": "assets/img/stickers/mini/FU-060.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-061",
+  "nombre": "Solo entiende quien comparte mi pasión Racing",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-061.webp",
+  "mini": "assets/img/stickers/mini/FU-061.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "DE-006",
+  "nombre": "Leclerc Fórmula 1",
+  "categoria": "Deportes",
+  "imagen": "assets/img/stickers/DE-006.webp",
+  "mini": "assets/img/stickers/mini/DE-006.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "DE-007",
+  "nombre": "Fórmula 1 Ferrari",
+  "categoria": "Deportes",
+  "imagen": "assets/img/stickers/DE-007.webp",
+  "mini": "assets/img/stickers/mini/DE-007.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "DE-008",
+  "nombre": "Piloto Red Bull chibi",
+  "categoria": "Deportes",
+  "imagen": "assets/img/stickers/DE-008.webp",
+  "mini": "assets/img/stickers/mini/DE-008.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-062",
+  "nombre": "Casco Racing",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-062.webp",
+  "mini": "assets/img/stickers/mini/FU-062.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-063",
+  "nombre": "Hinchada Racing",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-063.webp",
+  "mini": "assets/img/stickers/mini/FU-063.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "AN-162",
+  "nombre": "Kuromi",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-162.webp",
+  "mini": "assets/img/stickers/mini/AN-162.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-064",
+  "nombre": "Racing Academia",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-064.webp",
+  "mini": "assets/img/stickers/mini/FU-064.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-065",
+  "nombre": "Estadio Racing Cilindro",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-065.webp",
+  "mini": "assets/img/stickers/mini/FU-065.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-066",
+  "nombre": "Jugador Racing grito",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-066.webp",
+  "mini": "assets/img/stickers/mini/FU-066.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "KP-044",
+  "nombre": "Grupo K-pop chibi",
+  "categoria": "K-pop",
+  "imagen": "assets/img/stickers/KP-044.webp",
+  "mini": "assets/img/stickers/mini/KP-044.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-086",
+  "nombre": "Chicas con hamburguesas",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-086.webp",
+  "mini": "assets/img/stickers/mini/CU-086.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "ME-149",
+  "nombre": "Anda máquina nomás",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-149.webp",
+  "mini": "assets/img/stickers/mini/ME-149.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-067",
+  "nombre": "Escudo Estudiantes CA",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-067.webp",
+  "mini": "assets/img/stickers/mini/FU-067.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-068",
+  "nombre": "Latido Racing",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-068.webp",
+  "mini": "assets/img/stickers/mini/FU-068.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SD-096",
+  "nombre": "Mafalda tomando mate",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-096.webp",
+  "mini": "assets/img/stickers/mini/SD-096.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SD-097",
+  "nombre": "Mafalda con el globo terráqueo",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-097.webp",
+  "mini": "assets/img/stickers/mini/SD-097.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "ME-150",
+  "nombre": "Hola guapa",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-150.webp",
+  "mini": "assets/img/stickers/mini/ME-150.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "KP-045",
+  "nombre": "Grupo K-pop chibi 2",
+  "categoria": "K-pop",
+  "imagen": "assets/img/stickers/KP-045.webp",
+  "mini": "assets/img/stickers/mini/KP-045.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SD-098",
+  "nombre": "Amigas Stranger Things",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-098.webp",
+  "mini": "assets/img/stickers/mini/SD-098.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SD-099",
+  "nombre": "Mafalda leyendo el diario",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-099.webp",
+  "mini": "assets/img/stickers/mini/SD-099.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SD-100",
+  "nombre": "Mafalda",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-100.webp",
+  "mini": "assets/img/stickers/mini/SD-100.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "DE-009",
+  "nombre": "Casco Fórmula 1 argentino",
+  "categoria": "Deportes",
+  "imagen": "assets/img/stickers/DE-009.webp",
+  "mini": "assets/img/stickers/mini/DE-009.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-069",
+  "nombre": "Escudo Vélez",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-069.webp",
+  "mini": "assets/img/stickers/mini/FU-069.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SD-101",
+  "nombre": "Stranger Things",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-101.webp",
+  "mini": "assets/img/stickers/mini/SD-101.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SD-102",
+  "nombre": "Demogorgon Hunter",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-102.webp",
+  "mini": "assets/img/stickers/mini/SD-102.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "DI-062",
+  "nombre": "Stitch con ukelele",
+  "categoria": "Disney",
+  "imagen": "assets/img/stickers/DI-062.webp",
+  "mini": "assets/img/stickers/mini/DI-062.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-087",
+  "nombre": "Gorra trucker",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-087.webp",
+  "mini": "assets/img/stickers/mini/CU-087.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "MA-047",
+  "nombre": "Que tu cuento valga la pena rosa",
+  "categoria": "Manifestación",
+  "imagen": "assets/img/stickers/MA-047.webp",
+  "mini": "assets/img/stickers/mini/MA-047.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SD-103",
+  "nombre": "Eleven flotando",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-103.webp",
+  "mini": "assets/img/stickers/mini/SD-103.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "HP-030",
+  "nombre": "Snitch dorada",
+  "categoria": "Harry Potter",
+  "imagen": "assets/img/stickers/HP-030.webp",
+  "mini": "assets/img/stickers/mini/HP-030.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "FU-070",
+  "nombre": "Escudo CAI brillante",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-070.webp",
+  "mini": "assets/img/stickers/mini/FU-070.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SD-104",
+  "nombre": "Hellfire Club",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-104.webp",
+  "mini": "assets/img/stickers/mini/SD-104.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SD-105",
+  "nombre": "Friends paraguas",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-105.webp",
+  "mini": "assets/img/stickers/mini/SD-105.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SD-106",
+  "nombre": "Stranger Things bicicletas",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-106.webp",
+  "mini": "assets/img/stickers/mini/SD-106.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SD-107",
+  "nombre": "Dustin",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-107.webp",
+  "mini": "assets/img/stickers/mini/SD-107.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SD-108",
+  "nombre": "Steve Harrington",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-108.webp",
+  "mini": "assets/img/stickers/mini/SD-108.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "SD-109",
+  "nombre": "Friends ilustración 2",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-109.webp",
+  "mini": "assets/img/stickers/mini/SD-109.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "BE-015",
+  "nombre": "Lata Coca-Cola rosa",
+  "categoria": "Bebidas",
+  "imagen": "assets/img/stickers/BE-015.webp",
+  "mini": "assets/img/stickers/mini/BE-015.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-088",
+  "nombre": "Perrito salchicha",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-088.webp",
+  "mini": "assets/img/stickers/mini/CU-088.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "ES-009",
+  "nombre": "Planeta lila",
+  "categoria": "Espacio",
+  "imagen": "assets/img/stickers/ES-009.webp",
+  "mini": "assets/img/stickers/mini/ES-009.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-089",
+  "nombre": "Libros galácticos",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-089.webp",
+  "mini": "assets/img/stickers/mini/CU-089.webp",
+  "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "CU-090",
+  "nombre": "Libros con rosas",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-090.webp",
+  "mini": "assets/img/stickers/mini/CU-090.webp",
+  "stock": null,
+  "nuevo": true
  }
 ];
