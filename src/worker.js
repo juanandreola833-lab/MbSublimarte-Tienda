@@ -90,8 +90,10 @@ async function recibirPedido(request, env) {
   try {
     await env.MAIL.send(new EmailMessage(REMITENTE, env.MAIL_TO, raw));
   } catch (e) {
+    console.error("No se pudo enviar el mail del pedido", numero, e && e.message);
     return json({ ok: false, error: "envío: " + (e && e.message) }, 502);
   }
+  console.log("Mail de pedido enviado", numero);
   return json({ ok: true });
 }
 

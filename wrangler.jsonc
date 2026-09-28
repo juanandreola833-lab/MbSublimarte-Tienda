@@ -14,5 +14,9 @@
   },
   "send_email": [
     { "name": "MAIL" }
-  ]
+  ],
+  // No borrar en cada deploy las variables cargadas desde el panel (MAIL_TO).
+  "keep_vars": true,
+  // Logs del Worker visibles en Cloudflare → Observability.
+  "observability": { "enabled": true }
 }
