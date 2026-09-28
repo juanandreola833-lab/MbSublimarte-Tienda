@@ -1,8 +1,7 @@
 // Configuración de Cloudflare para la tienda (Worker + archivos estáticos).
 // - El sitio se sirve tal cual desde esta carpeta (lo que no se publica está en .assetsignore).
 // - Sólo /api/* pasa por src/worker.js (copia de cada pedido por mail).
-// - La casilla de destino NO va acá (el repo es público): se carga como secreto
-//   MAIL_TO en Cloudflare → Settings → Variables and Secrets.
+// - MAIL_TO (casilla que recibe los pedidos) está en "vars" más abajo.
 {
   "name": "mbsublimarte-tienda",
   "main": "src/worker.js",
@@ -15,7 +14,12 @@
   "send_email": [
     { "name": "MAIL" }
   ],
-  // No borrar en cada deploy las variables cargadas desde el panel (MAIL_TO).
+  // Casilla que recibe la copia de cada pedido. Provisorio acá (el repo es
+  // público): más adelante pasarla a un secreto en el panel y sacarla de este archivo.
+  "vars": {
+    "MAIL_TO": "Imaca.btte@gmail.com"
+  },
+  // No borrar en cada deploy las variables cargadas desde el panel.
   "keep_vars": true,
   // Logs del Worker visibles en Cloudflare → Observability.
   "observability": { "enabled": true }

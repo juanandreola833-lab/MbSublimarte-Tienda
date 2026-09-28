@@ -81,8 +81,9 @@ códigos para armar la plancha, desde `pedidos@mbsublimarte.com.ar`.
 Requiere en Cloudflare:
 1. Email Routing activado en `mbsublimarte.com.ar`, con la casilla de destino
    agregada y verificada (Destination addresses).
-2. Secreto `MAIL_TO` en el Worker `mbsublimarte-tienda` (Settings → Variables
-   and Secrets) con esa casilla. No va en el repo porque es público.
+2. `MAIL_TO` con esa casilla: por ahora está en `vars` de `wrangler.jsonc`
+   (provisorio; como el repo es público, conviene pasarlo a un secreto del
+   Worker en Settings → Variables and Secrets y sacarlo del archivo).
 
 Si falta algo de eso, la tienda funciona igual y sólo no llega el mail.
 
