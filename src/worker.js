@@ -9,6 +9,7 @@ import { EmailMessage } from "cloudflare:email";
 
 const REMITENTE = "pedidos@mbsublimarte.com.ar";
 const MAX_ITEMS = 300;
+const VERSION = "2026-09-28c";
 
 export default {
   async fetch(request, env) {
@@ -16,7 +17,19 @@ export default {
     if (url.pathname === "/api/pedido") {
       // GET = chequeo de configuración (no muestra la casilla)
       if (request.method === "GET") {
-        return json({ tienda: "ok", envio_mail: Boolean(env.MAIL), destino_configurado: Boolean(env.MAIL_TO) });
+        // ?prueba=mbtest manda un pedido de prueba y muestra el resultado del envío
+        if (url.searchParams.get("prueba") === "mbtest") {
+          const falso = new Request(request.url, {
+            method: "POST",
+            body: JSON.stringify({
+              numero: "PRUEBA", n: 1, total: 1000, ahorro: 0,
+              datos: { nombre: "Prueba del sistema", entrega: "-", notas: "Mail de prueba: si llegó, el envío de pedidos funciona." },
+              items: [{ id: "TEST-001", q: 1, nombre: "Sticker de prueba" }],
+            }),
+          });
+          return recibirPedido(falso, env);
+        }
+        return json({ tienda: "ok", version: VERSION, envio_mail: Boolean(env.MAIL), destino_configurado: Boolean(env.MAIL_TO) });
       }
       if (request.method !== "POST") return json({ ok: false, error: "método" }, 405);
       return recibirPedido(request, env);
