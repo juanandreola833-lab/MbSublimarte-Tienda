@@ -1,10 +1,18 @@
-// Configuración para publicar la tienda en Cloudflare (Workers con archivos estáticos).
-// El sitio es 100% estático: Cloudflare sirve los archivos de esta carpeta tal cual.
-// Lo que no se publica está listado en .assetsignore.
+// Configuración de Cloudflare para la tienda (Worker + archivos estáticos).
+// - El sitio se sirve tal cual desde esta carpeta (lo que no se publica está en .assetsignore).
+// - Sólo /api/* pasa por src/worker.js (copia de cada pedido por mail).
+// - La casilla de destino NO va acá (el repo es público): se carga como secreto
+//   MAIL_TO en Cloudflare → Settings → Variables and Secrets.
 {
   "name": "mbsublimarte-tienda",
+  "main": "src/worker.js",
   "compatibility_date": "2026-09-01",
   "assets": {
-    "directory": "./"
-  }
+    "directory": "./",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "send_email": [
+    { "name": "MAIL" }
+  ]
 }

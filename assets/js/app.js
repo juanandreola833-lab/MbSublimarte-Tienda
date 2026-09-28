@@ -397,6 +397,7 @@
       datos: datosFormulario(),
       mensaje: mensajePedido(),
     };
+    enviarCopiaPorMail(pedido);
     setTimeout(() => {
       const lista = leer("mb-pedidos", []);
       lista.unshift(pedido);
@@ -413,6 +414,22 @@
       toast("¡Gracias! No te olvides de mandar el comprobante 💜");
     }, 0);
   });
+
+  // Copia del pedido por mail a la tienda (Worker de Cloudflare en /api/pedido).
+  // Si falla (sin conexión, o en el link de respaldo de GitHub) no afecta al cliente.
+  function enviarCopiaPorMail(p) {
+    try {
+      fetch("api/pedido", {
+        method: "POST",
+        keepalive: true,
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          numero: p.numero, n: p.n, total: p.total, ahorro: p.ahorro, datos: p.datos,
+          items: p.items.map(({ id, q, nombre }) => ({ id, q, nombre })),
+        }),
+      }).catch(() => {});
+    } catch (e) {}
+  }
 
   $("#vaciar-carrito").addEventListener("click", () => {
     if (!confirm("¿Vaciar el carrito?")) return;

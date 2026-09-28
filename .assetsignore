@@ -10,3 +10,6 @@ tools/
 originales/
 node_modules/
 __pycache__/
+src/
+.dev.vars
+.wrangler/

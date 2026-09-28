@@ -73,6 +73,19 @@ tienda, y el PNG original pasa a `Archivo/` en el repo de originales
 stickers para corregir nombres, stock y qué se publica; exporta los cambios
 como CSV para pasarlos a `catalogo.csv`.
 
+## Copia de pedidos por mail
+
+Cuando el cliente toca "Enviar pedido por WhatsApp", la página hace un POST a
+`/api/pedido` y el Worker (`src/worker.js`) manda una copia del pedido, con los
+códigos para armar la plancha, desde `pedidos@mbsublimarte.com.ar`.
+Requiere en Cloudflare:
+1. Email Routing activado en `mbsublimarte.com.ar`, con la casilla de destino
+   agregada y verificada (Destination addresses).
+2. Secreto `MAIL_TO` en el Worker `mbsublimarte-tienda` (Settings → Variables
+   and Secrets) con esa casilla. No va en el repo porque es público.
+
+Si falta algo de eso, la tienda funciona igual y sólo no llega el mail.
+
 ## Ver en local
 
 ```
