@@ -14,6 +14,10 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     if (url.pathname === "/api/pedido") {
+      // GET = chequeo de configuración (no muestra la casilla)
+      if (request.method === "GET") {
+        return json({ tienda: "ok", envio_mail: Boolean(env.MAIL), destino_configurado: Boolean(env.MAIL_TO) });
+      }
       if (request.method !== "POST") return json({ ok: false, error: "método" }, 405);
       return recibirPedido(request, env);
     }
