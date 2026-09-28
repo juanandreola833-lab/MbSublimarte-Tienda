@@ -512,7 +512,40 @@
   pintarGrilla();
   refrescar();
 
+  // ---------- avisar cuando hay una versión nueva ----------
+  // Sirve sobre todo para la app instalada, que puede quedar abierta días en el
+  // celu: al volver a abrirla se compara con el servidor y, si cambió el
+  // catálogo o la tienda, aparece un aviso para actualizar (el carrito se conserva).
+  const VIGILADOS = ["data/productos.js", "data/config.js", "assets/js/app.js", "assets/css/styles.css"];
+  let firmaCargada = null;
+  let ultimaRevision = 0;
+
+  async function firmaServidor() {
+    const partes = await Promise.all(VIGILADOS.map((u) =>
+      fetch(u, { method: "HEAD", cache: "no-cache" })
+        .then((r) => (r.ok ? r.headers.get("etag") || r.headers.get("last-modified") || "" : null))
+        .catch(() => null)));
+    return partes.includes(null) ? null : partes.join("|");
+  }
+
+  async function buscarActualizacion() {
+    if (!firmaCargada || document.visibilityState !== "visible") return;
+    if (Date.now() - ultimaRevision < 60 * 1000) return;
+    ultimaRevision = Date.now();
+    if (navigator.serviceWorker) navigator.serviceWorker.getRegistration().then((r) => r && r.update()).catch(() => {});
+    const actual = await firmaServidor();
+    if (actual && actual !== firmaCargada) $("#aviso-version").hidden = false;
+  }
+
+  if (location.protocol.startsWith("http")) {
+    firmaServidor().then((f) => { firmaCargada = f; });
+    document.addEventListener("visibilitychange", buscarActualizacion);
+    window.addEventListener("focus", buscarActualizacion);
+    setInterval(buscarActualizacion, 10 * 60 * 1000);
+  }
+  $("#aviso-version-btn").addEventListener("click", () => location.reload());
+
   if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
-    navigator.serviceWorker.register("sw.js").catch(() => {});
+    navigator.serviceWorker.register("sw.js", { updateViaCache: "none" }).catch(() => {});
   }
 })();

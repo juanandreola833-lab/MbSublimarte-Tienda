@@ -320,3 +320,12 @@ button.icon-btn { border: 0; cursor: pointer; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* Aviso de versión nueva */
+.aviso-version {
+  position: fixed; left: 50%; bottom: max(90px, calc(env(safe-area-inset-bottom) + 80px)); z-index: 55;
+  transform: translateX(-50%); display: flex; align-items: center; gap: 12px;
+  width: max-content; max-width: calc(100% - 32px); padding: 10px 10px 10px 18px; border-radius: 999px;
+  background: var(--blanco); color: var(--ciruela); font-weight: 600; box-shadow: var(--sombra-fuerte);
+}
+.aviso-version button { border: 0; padding: 9px 16px; border-radius: 999px; font-weight: 700; background: var(--ciruela); color: var(--blanco); }
