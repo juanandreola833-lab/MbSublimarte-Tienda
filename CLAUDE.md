@@ -21,8 +21,9 @@ Ver `README.md` para la estructura y el flujo de carga de stickers.
   scripts (`window.PRODUCTOS` / `window.REVISION`) para que funcione también
   con file://.
 - `revision.html` es la planilla de revisión para la dueña (noindex, no
-  enlazada desde la tienda); exporta un CSV de cambios que se aplica a
-  `catalogo.csv`.
+  enlazada desde la tienda); exporta un CSV de cambios que se aplica con
+  `tools/aplicar_cambios.py` (stock 0 = archivar: sale del catálogo y el PNG
+  va a `Archivo/` del repo de originales).
 - Precio único para todos los stickers + combo (config). No hay precio por
   producto.
 - Imágenes publicadas: siempre pasadas por `tools/procesar_imagenes.py`

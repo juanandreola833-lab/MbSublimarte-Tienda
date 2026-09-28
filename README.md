@@ -57,8 +57,17 @@ sueltos con `python tools/dividir_planchas.py ../mbsublimarte-originales`
 `<carpeta>/recortes/<código plancha>-NN.png` y lo agrega al CSV; después hay
 que correr `procesar_imagenes.py`.
 
-Stock en el CSV: número = unidades, `0` = agotado, vacío = a pedido.
+Stock en el CSV: número = unidades, vacío = a pedido (el `0` se archiva al aplicar cambios).
 `publicar` = `si`/`no`. Las planchas y los repetidos arrancan en `no`.
+
+Para aplicar un CSV de cambios exportado desde la planilla:
+```
+python tools/aplicar_cambios.py cambios.csv ../mbsublimarte-originales
+python tools/procesar_imagenes.py ../mbsublimarte-originales
+```
+Stock `0` en la planilla = sacar el sticker: sale de `catalogo.csv` y de la
+tienda, y el PNG original pasa a `Archivo/` en el repo de originales
+(registrado en `Archivo/archivados.csv`, para recuperarlo si vuelve).
 
 `revision.html` (…/MbSublimarte-Tienda/revision.html) muestra todos los
 stickers para corregir nombres, stock y qué se publica; exporta los cambios
