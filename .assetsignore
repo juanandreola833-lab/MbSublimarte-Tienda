@@ -1,0 +1,12 @@
+# Archivos del repo que NO se publican en la web
+.git
+.gitignore
+.nojekyll
+.assetsignore
+wrangler.jsonc
+README.md
+CLAUDE.md
+tools/
+originales/
+node_modules/
+__pycache__/

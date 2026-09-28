@@ -3,7 +3,9 @@
 Sitio estático (HTML/CSS/JS puro, sin build ni framework) con el catálogo de
 stickers DTF UV de MB Sublimarte. Carrito en localStorage, pedido por WhatsApp
 (wa.me con mensaje armado) y pago por transferencia al alias. PWA instalable.
-Se publica con GitHub Pages desde `main` (raíz), así que todas las rutas son
+Se publica en Cloudflare (Workers con archivos estáticos, `wrangler.jsonc` +
+`.assetsignore`) en https://mbsublimarte.com.ar, con deploy automático en cada
+push a `main`. También sigue activo en GitHub Pages. Todas las rutas son
 relativas.
 
 Ver `README.md` para la estructura y el flujo de carga de stickers.

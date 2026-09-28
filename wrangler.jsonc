@@ -1,0 +1,10 @@
+// Configuración para publicar la tienda en Cloudflare (Workers con archivos estáticos).
+// El sitio es 100% estático: Cloudflare sirve los archivos de esta carpeta tal cual.
+// Lo que no se publica está listado en .assetsignore.
+{
+  "name": "mbsublimarte-tienda",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./"
+  }
+}
