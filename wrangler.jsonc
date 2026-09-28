@@ -17,7 +17,7 @@
   // Casilla que recibe la copia de cada pedido. Provisorio acá (el repo es
   // público): más adelante pasarla a un secreto en el panel y sacarla de este archivo.
   "vars": {
-    "MAIL_TO": "Imaca.btte@gmail.com"
+    "MAIL_TO": "imaca.btte@gmail.com"
   },
   // No borrar en cada deploy las variables cargadas desde el panel.
   "keep_vars": true,

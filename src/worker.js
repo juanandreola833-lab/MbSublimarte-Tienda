@@ -9,7 +9,7 @@ import { EmailMessage } from "cloudflare:email";
 
 const REMITENTE = "pedidos@mbsublimarte.com.ar";
 const MAX_ITEMS = 300;
-const VERSION = "2026-09-28c";
+const VERSION = "2026-09-28d";
 
 export default {
   async fetch(request, env) {
@@ -40,6 +40,8 @@ export default {
 
 async function recibirPedido(request, env) {
   if (!env.MAIL || !env.MAIL_TO) return json({ ok: false, error: "mail no configurado" }, 503);
+  // Cloudflare compara la casilla verificada tal cual (en minúsculas)
+  const destino = String(env.MAIL_TO).trim().toLowerCase();
 
   let p;
   try {
@@ -89,7 +91,7 @@ async function recibirPedido(request, env) {
   const asunto = `Pedido ${numero} · ${txt(d.nombre, 40)} · ${unidades} stickers · ${pesos(p.total)}`;
   const raw = [
     `From: MB Sublimarte <${REMITENTE}>`,
-    `To: <${env.MAIL_TO}>`,
+    `To: <${destino}>`,
     `Subject: ${encabezadoUtf8(asunto)}`,
     `Date: ${new Date().toUTCString().replace("GMT", "+0000")}`,
     `Message-ID: <${crypto.randomUUID()}@mbsublimarte.com.ar>`,
@@ -101,7 +103,7 @@ async function recibirPedido(request, env) {
   ].join("\r\n");
 
   try {
-    await env.MAIL.send(new EmailMessage(REMITENTE, env.MAIL_TO, raw));
+    await env.MAIL.send(new EmailMessage(REMITENTE, destino, raw));
   } catch (e) {
     console.error("No se pudo enviar el mail del pedido", numero, e && e.message);
     return json({ ok: false, error: "envío: " + (e && e.message) }, 502);
