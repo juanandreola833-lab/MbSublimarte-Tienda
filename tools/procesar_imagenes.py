@@ -207,7 +207,9 @@ def main():
     agregados = repetidos = 0
     for archivo in sorted(base.rglob("*")):
         rel = archivo.relative_to(base).as_posix()
-        if rel.startswith(".git") or archivo.suffix.lower() not in EXTENSIONES or rel in conocidos:
+        # Archivo/ guarda los stickers sacados de la tienda (stock 0): no se vuelven a sumar
+        if (rel.startswith(".git") or rel.startswith("Archivo/")
+                or archivo.suffix.lower() not in EXTENSIONES or rel in conocidos):
             continue
         h = md5(archivo)
         if h in hashes:

@@ -47,8 +47,13 @@ def main():
         if not f:
             faltan.append(c["id"])
             continue
-        for k in ("nombre", "categoria", "stock", "nuevo"):
+        for k in ("nombre", "categoria"):
+            if c[k].strip():  # un nombre o categoría vacíos no borran el actual
+                f[k] = c[k].strip()
+        for k in ("stock", "nuevo"):
             f[k] = c[k].strip()
+        if c.get("comentario", "").strip().lower() == "repetido":
+            f["stock"] = "0"  # los marcados como repetidos también se sacan
         f["publicar"] = "si" if c["publicar"].strip() == "si" else "no"
         comentario = c.get("comentario", "").strip()
         if comentario and f"comentario: {comentario}" not in f["nota"]:
