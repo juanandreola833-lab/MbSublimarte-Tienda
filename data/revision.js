@@ -10916,11 +10916,11 @@ window.REVISION = [
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-248.webp",
   "mini": "assets/img/stickers/mini/SE-248.webp",
-  "stock": 733,
+  "stock": 7,
   "nuevo": true,
   "tipo": "sticker",
   "publicar": true,
-  "stockTexto": "733",
+  "stockTexto": "7",
   "nota": "recorte de planchas grandes"
  },
  {

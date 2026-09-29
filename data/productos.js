@@ -7131,7 +7131,7 @@ window.PRODUCTOS = [
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-248.webp",
   "mini": "assets/img/stickers/mini/SE-248.webp",
-  "stock": 733,
+  "stock": 7,
   "nuevo": true
  },
  {
