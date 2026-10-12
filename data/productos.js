@@ -174,7 +174,7 @@ window.PRODUCTOS = [
   "categoria": "Anime",
   "imagen": "assets/img/stickers/AN-022.webp",
   "mini": "assets/img/stickers/mini/AN-022.webp",
-  "stock": 1,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -183,7 +183,7 @@ window.PRODUCTOS = [
   "categoria": "Anime",
   "imagen": "assets/img/stickers/AN-023.webp",
   "mini": "assets/img/stickers/mini/AN-023.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -228,7 +228,7 @@ window.PRODUCTOS = [
   "categoria": "Anime",
   "imagen": "assets/img/stickers/AN-031.webp",
   "mini": "assets/img/stickers/mini/AN-031.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -903,7 +903,7 @@ window.PRODUCTOS = [
   "categoria": "Espacio",
   "imagen": "assets/img/stickers/ES-002.webp",
   "mini": "assets/img/stickers/mini/ES-002.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -912,7 +912,7 @@ window.PRODUCTOS = [
   "categoria": "Espacio",
   "imagen": "assets/img/stickers/ES-003.webp",
   "mini": "assets/img/stickers/mini/ES-003.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -921,7 +921,7 @@ window.PRODUCTOS = [
   "categoria": "Espacio",
   "imagen": "assets/img/stickers/ES-004.webp",
   "mini": "assets/img/stickers/mini/ES-004.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -930,7 +930,7 @@ window.PRODUCTOS = [
   "categoria": "Espacio",
   "imagen": "assets/img/stickers/ES-005.webp",
   "mini": "assets/img/stickers/mini/ES-005.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -939,7 +939,7 @@ window.PRODUCTOS = [
   "categoria": "Espacio",
   "imagen": "assets/img/stickers/ES-006.webp",
   "mini": "assets/img/stickers/mini/ES-006.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -948,7 +948,7 @@ window.PRODUCTOS = [
   "categoria": "Espacio",
   "imagen": "assets/img/stickers/ES-007.webp",
   "mini": "assets/img/stickers/mini/ES-007.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -957,7 +957,7 @@ window.PRODUCTOS = [
   "categoria": "Espacio",
   "imagen": "assets/img/stickers/ES-008.webp",
   "mini": "assets/img/stickers/mini/ES-008.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -1119,7 +1119,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-001.webp",
   "mini": "assets/img/stickers/mini/MA-001.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -1128,7 +1128,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-002.webp",
   "mini": "assets/img/stickers/mini/MA-002.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -1137,7 +1137,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-003.webp",
   "mini": "assets/img/stickers/mini/MA-003.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -1146,7 +1146,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-004.webp",
   "mini": "assets/img/stickers/mini/MA-004.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -1569,7 +1569,7 @@ window.PRODUCTOS = [
   "categoria": "Música",
   "imagen": "assets/img/stickers/MU-003.webp",
   "mini": "assets/img/stickers/mini/MU-003.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -1578,7 +1578,7 @@ window.PRODUCTOS = [
   "categoria": "Música",
   "imagen": "assets/img/stickers/MU-004.webp",
   "mini": "assets/img/stickers/mini/MU-004.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -1587,7 +1587,7 @@ window.PRODUCTOS = [
   "categoria": "Música",
   "imagen": "assets/img/stickers/MU-005.webp",
   "mini": "assets/img/stickers/mini/MU-005.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -1614,7 +1614,7 @@ window.PRODUCTOS = [
   "categoria": "Música",
   "imagen": "assets/img/stickers/MU-008.webp",
   "mini": "assets/img/stickers/mini/MU-008.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -2028,7 +2028,7 @@ window.PRODUCTOS = [
   "categoria": "Anime",
   "imagen": "assets/img/stickers/SD-002.webp",
   "mini": "assets/img/stickers/mini/SD-002.webp",
-  "stock": 1,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -2280,7 +2280,7 @@ window.PRODUCTOS = [
   "categoria": "Series y dibujitos",
   "imagen": "assets/img/stickers/SD-034.webp",
   "mini": "assets/img/stickers/mini/SD-034.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -2289,7 +2289,7 @@ window.PRODUCTOS = [
   "categoria": "Series y dibujitos",
   "imagen": "assets/img/stickers/SD-035.webp",
   "mini": "assets/img/stickers/mini/SD-035.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -2298,7 +2298,7 @@ window.PRODUCTOS = [
   "categoria": "Series y dibujitos",
   "imagen": "assets/img/stickers/SD-036.webp",
   "mini": "assets/img/stickers/mini/SD-036.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -2307,7 +2307,7 @@ window.PRODUCTOS = [
   "categoria": "Series y dibujitos",
   "imagen": "assets/img/stickers/SD-037.webp",
   "mini": "assets/img/stickers/mini/SD-037.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -2325,7 +2325,7 @@ window.PRODUCTOS = [
   "categoria": "Simpsons",
   "imagen": "assets/img/stickers/SI-002.webp",
   "mini": "assets/img/stickers/mini/SI-002.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -2334,7 +2334,7 @@ window.PRODUCTOS = [
   "categoria": "Simpsons",
   "imagen": "assets/img/stickers/SI-003.webp",
   "mini": "assets/img/stickers/mini/SI-003.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -2343,7 +2343,7 @@ window.PRODUCTOS = [
   "categoria": "Simpsons",
   "imagen": "assets/img/stickers/SI-004.webp",
   "mini": "assets/img/stickers/mini/SI-004.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3720,7 +3720,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-021.webp",
   "mini": "assets/img/stickers/mini/MA-021.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3729,7 +3729,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-022.webp",
   "mini": "assets/img/stickers/mini/MA-022.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3738,7 +3738,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-023.webp",
   "mini": "assets/img/stickers/mini/MA-023.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3747,7 +3747,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-024.webp",
   "mini": "assets/img/stickers/mini/MA-024.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3756,7 +3756,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-025.webp",
   "mini": "assets/img/stickers/mini/MA-025.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3765,7 +3765,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-026.webp",
   "mini": "assets/img/stickers/mini/MA-026.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3774,7 +3774,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-027.webp",
   "mini": "assets/img/stickers/mini/MA-027.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3783,7 +3783,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-028.webp",
   "mini": "assets/img/stickers/mini/MA-028.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3792,7 +3792,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-029.webp",
   "mini": "assets/img/stickers/mini/MA-029.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3801,7 +3801,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-030.webp",
   "mini": "assets/img/stickers/mini/MA-030.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3810,7 +3810,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-031.webp",
   "mini": "assets/img/stickers/mini/MA-031.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3819,7 +3819,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-032.webp",
   "mini": "assets/img/stickers/mini/MA-032.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3828,7 +3828,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-033.webp",
   "mini": "assets/img/stickers/mini/MA-033.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3837,7 +3837,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-034.webp",
   "mini": "assets/img/stickers/mini/MA-034.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3846,7 +3846,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-035.webp",
   "mini": "assets/img/stickers/mini/MA-035.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3855,7 +3855,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-036.webp",
   "mini": "assets/img/stickers/mini/MA-036.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3864,7 +3864,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-037.webp",
   "mini": "assets/img/stickers/mini/MA-037.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3873,7 +3873,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-038.webp",
   "mini": "assets/img/stickers/mini/MA-038.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3882,7 +3882,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-039.webp",
   "mini": "assets/img/stickers/mini/MA-039.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3891,7 +3891,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-040.webp",
   "mini": "assets/img/stickers/mini/MA-040.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3900,7 +3900,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-041.webp",
   "mini": "assets/img/stickers/mini/MA-041.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3909,7 +3909,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-042.webp",
   "mini": "assets/img/stickers/mini/MA-042.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -3918,7 +3918,7 @@ window.PRODUCTOS = [
   "categoria": "Manifestación",
   "imagen": "assets/img/stickers/MA-043.webp",
   "mini": "assets/img/stickers/mini/MA-043.webp",
-  "stock": null,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -4116,7 +4116,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-062.webp",
   "mini": "assets/img/stickers/mini/ME-062.webp",
-  "stock": 1,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -4125,7 +4125,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-063.webp",
   "mini": "assets/img/stickers/mini/ME-063.webp",
-  "stock": 1,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -4134,7 +4134,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-064.webp",
   "mini": "assets/img/stickers/mini/ME-064.webp",
-  "stock": 1,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -4143,7 +4143,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-065.webp",
   "mini": "assets/img/stickers/mini/ME-065.webp",
-  "stock": 1,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -4152,7 +4152,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-066.webp",
   "mini": "assets/img/stickers/mini/ME-066.webp",
-  "stock": 1,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -4161,7 +4161,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-067.webp",
   "mini": "assets/img/stickers/mini/ME-067.webp",
-  "stock": 1,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -4170,7 +4170,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-068.webp",
   "mini": "assets/img/stickers/mini/ME-068.webp",
-  "stock": 1,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -4179,7 +4179,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-069.webp",
   "mini": "assets/img/stickers/mini/ME-069.webp",
-  "stock": 1,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -4188,7 +4188,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-070.webp",
   "mini": "assets/img/stickers/mini/ME-070.webp",
-  "stock": 1,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -4197,7 +4197,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-071.webp",
   "mini": "assets/img/stickers/mini/ME-071.webp",
-  "stock": 1,
+  "stock": 2,
   "nuevo": false
  },
  {
@@ -8671,6 +8671,582 @@ window.PRODUCTOS = [
   "imagen": "assets/img/stickers/CU-090.webp",
   "mini": "assets/img/stickers/mini/CU-090.webp",
   "stock": null,
+  "nuevo": true
+ },
+ {
+  "id": "KP-046",
+  "nombre": "Logo Stray Kids",
+  "categoria": "K-pop",
+  "imagen": "assets/img/stickers/KP-046.webp",
+  "mini": "assets/img/stickers/mini/KP-046.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "AN-171",
+  "nombre": "Fruta del diablo Mera Mera",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-171.webp",
+  "mini": "assets/img/stickers/mini/AN-171.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "MA-048",
+  "nombre": "No pare de amar",
+  "categoria": "Manifestación",
+  "imagen": "assets/img/stickers/MA-048.webp",
+  "mini": "assets/img/stickers/mini/MA-048.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "CU-091",
+  "nombre": "Margarita blanca",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-091.webp",
+  "mini": "assets/img/stickers/mini/CU-091.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "MU-043",
+  "nombre": "No te va gustar no me analices",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-043.webp",
+  "mini": "assets/img/stickers/mini/MU-043.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "MU-044",
+  "nombre": "Cantando a pesar de las llamas",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-044.webp",
+  "mini": "assets/img/stickers/mini/MU-044.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "FR-001",
+  "nombre": "Frida calavera floral",
+  "categoria": "Frida",
+  "imagen": "assets/img/stickers/FR-001.webp",
+  "mini": "assets/img/stickers/mini/FR-001.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "FR-002",
+  "nombre": "Frida retrato pop",
+  "categoria": "Frida",
+  "imagen": "assets/img/stickers/FR-002.webp",
+  "mini": "assets/img/stickers/mini/FR-002.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "ME-151",
+  "nombre": "¿A dónde está mi amiga? abuela",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-151.webp",
+  "mini": "assets/img/stickers/mini/ME-151.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "MA-049",
+  "nombre": "La vida es ahora",
+  "categoria": "Manifestación",
+  "imagen": "assets/img/stickers/MA-049.webp",
+  "mini": "assets/img/stickers/mini/MA-049.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "FR-003",
+  "nombre": "Frida chibi con flores",
+  "categoria": "Frida",
+  "imagen": "assets/img/stickers/FR-003.webp",
+  "mini": "assets/img/stickers/mini/FR-003.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "MU-045",
+  "nombre": "Corazón hoy no dejes de latir",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-045.webp",
+  "mini": "assets/img/stickers/mini/MU-045.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "FR-004",
+  "nombre": "Frida estampilla",
+  "categoria": "Frida",
+  "imagen": "assets/img/stickers/FR-004.webp",
+  "mini": "assets/img/stickers/mini/FR-004.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "MU-046",
+  "nombre": "Si estoy con vos no necesito nada",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-046.webp",
+  "mini": "assets/img/stickers/mini/MU-046.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "FR-005",
+  "nombre": "Frida blanco y negro con flores",
+  "categoria": "Frida",
+  "imagen": "assets/img/stickers/FR-005.webp",
+  "mini": "assets/img/stickers/mini/FR-005.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "FR-006",
+  "nombre": "Frida mitad calavera",
+  "categoria": "Frida",
+  "imagen": "assets/img/stickers/FR-006.webp",
+  "mini": "assets/img/stickers/mini/FR-006.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "FR-007",
+  "nombre": "Frida con corona de flores",
+  "categoria": "Frida",
+  "imagen": "assets/img/stickers/FR-007.webp",
+  "mini": "assets/img/stickers/mini/FR-007.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "MU-047",
+  "nombre": "Llegás y el día cambia para mí",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-047.webp",
+  "mini": "assets/img/stickers/mini/MU-047.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "FR-008",
+  "nombre": "Frida con rosas rojas",
+  "categoria": "Frida",
+  "imagen": "assets/img/stickers/FR-008.webp",
+  "mini": "assets/img/stickers/mini/FR-008.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "ME-152",
+  "nombre": "Si no te suma que no te consuma",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-152.webp",
+  "mini": "assets/img/stickers/mini/ME-152.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "MU-048",
+  "nombre": "Un alma sola dividida en dos",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-048.webp",
+  "mini": "assets/img/stickers/mini/MU-048.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "AN-163",
+  "nombre": "Chopper",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-163.webp",
+  "mini": "assets/img/stickers/mini/AN-163.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "AN-164",
+  "nombre": "Luffy niño",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-164.webp",
+  "mini": "assets/img/stickers/mini/AN-164.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "FR-009",
+  "nombre": "Frida blanco y negro con flores 2",
+  "categoria": "Frida",
+  "imagen": "assets/img/stickers/FR-009.webp",
+  "mini": "assets/img/stickers/mini/FR-009.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "FR-010",
+  "nombre": "Jirafa con flores",
+  "categoria": "Frida",
+  "imagen": "assets/img/stickers/FR-010.webp",
+  "mini": "assets/img/stickers/mini/FR-010.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "MU-049",
+  "nombre": "Si tengo con quién quedarme a festejar",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-049.webp",
+  "mini": "assets/img/stickers/mini/MU-049.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "AN-165",
+  "nombre": "Luffy sonrisa grande",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-165.webp",
+  "mini": "assets/img/stickers/mini/AN-165.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "AN-166",
+  "nombre": "Zoro con espadas",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-166.webp",
+  "mini": "assets/img/stickers/mini/AN-166.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "FR-011",
+  "nombre": "Frida cuadro colorido",
+  "categoria": "Frida",
+  "imagen": "assets/img/stickers/FR-011.webp",
+  "mini": "assets/img/stickers/mini/FR-011.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "FR-012",
+  "nombre": "Pies para qué los quiero alas",
+  "categoria": "Frida",
+  "imagen": "assets/img/stickers/FR-012.webp",
+  "mini": "assets/img/stickers/mini/FR-012.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "SD-110",
+  "nombre": "Dama verde con tapado",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-110.webp",
+  "mini": "assets/img/stickers/mini/SD-110.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "FR-013",
+  "nombre": "Frida Kahlo nena",
+  "categoria": "Frida",
+  "imagen": "assets/img/stickers/FR-013.webp",
+  "mini": "assets/img/stickers/mini/FR-013.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "FR-014",
+  "nombre": "Frida silueta con flores",
+  "categoria": "Frida",
+  "imagen": "assets/img/stickers/FR-014.webp",
+  "mini": "assets/img/stickers/mini/FR-014.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "AN-167",
+  "nombre": "Luffy chibi",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-167.webp",
+  "mini": "assets/img/stickers/mini/AN-167.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "FR-015",
+  "nombre": "Perrito Frida",
+  "categoria": "Frida",
+  "imagen": "assets/img/stickers/FR-015.webp",
+  "mini": "assets/img/stickers/mini/FR-015.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "CU-092",
+  "nombre": "Gladiolo",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-092.webp",
+  "mini": "assets/img/stickers/mini/CU-092.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "CU-093",
+  "nombre": "Girasol",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-093.webp",
+  "mini": "assets/img/stickers/mini/CU-093.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "FR-016",
+  "nombre": "Pies para qué los quiero letras",
+  "categoria": "Frida",
+  "imagen": "assets/img/stickers/FR-016.webp",
+  "mini": "assets/img/stickers/mini/FR-016.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "KP-047",
+  "nombre": "Celular SKZOO",
+  "categoria": "K-pop",
+  "imagen": "assets/img/stickers/KP-047.webp",
+  "mini": "assets/img/stickers/mini/KP-047.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "AN-168",
+  "nombre": "Bandera Mugiwara",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-168.webp",
+  "mini": "assets/img/stickers/mini/AN-168.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "CU-094",
+  "nombre": "Pensamiento y caléndula",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-094.webp",
+  "mini": "assets/img/stickers/mini/CU-094.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "ME-153",
+  "nombre": "Estoy hecha perxaaa",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-153.webp",
+  "mini": "assets/img/stickers/mini/ME-153.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "KP-048",
+  "nombre": "Stray Kids grupo",
+  "categoria": "K-pop",
+  "imagen": "assets/img/stickers/KP-048.webp",
+  "mini": "assets/img/stickers/mini/KP-048.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "AN-169",
+  "nombre": "Sanji chibi",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-169.webp",
+  "mini": "assets/img/stickers/mini/AN-169.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "KP-049",
+  "nombre": "Curita Stray Kids",
+  "categoria": "K-pop",
+  "imagen": "assets/img/stickers/KP-049.webp",
+  "mini": "assets/img/stickers/mini/KP-049.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "CU-095",
+  "nombre": "Ramita de lavanda",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-095.webp",
+  "mini": "assets/img/stickers/mini/CU-095.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "KP-050",
+  "nombre": "Stray Kids grupo blanco",
+  "categoria": "K-pop",
+  "imagen": "assets/img/stickers/KP-050.webp",
+  "mini": "assets/img/stickers/mini/KP-050.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "CU-096",
+  "nombre": "Amigas siluetas",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-096.webp",
+  "mini": "assets/img/stickers/mini/CU-096.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "AR-030",
+  "nombre": "Criollo de alma, de tierra y de sangre",
+  "categoria": "Argentina",
+  "imagen": "assets/img/stickers/AR-030.webp",
+  "mini": "assets/img/stickers/mini/AR-030.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "MU-050",
+  "nombre": "Podré caerme a pedazos",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-050.webp",
+  "mini": "assets/img/stickers/mini/MU-050.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "MA-050",
+  "nombre": "No tengo fuerzas para rendirme azul",
+  "categoria": "Manifestación",
+  "imagen": "assets/img/stickers/MA-050.webp",
+  "mini": "assets/img/stickers/mini/MA-050.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "CU-097",
+  "nombre": "Magnolia blanca",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-097.webp",
+  "mini": "assets/img/stickers/mini/CU-097.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "ME-154",
+  "nombre": "Parala lokaaaaa",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-154.webp",
+  "mini": "assets/img/stickers/mini/ME-154.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "AN-170",
+  "nombre": "Zoro chibi",
+  "categoria": "Anime",
+  "imagen": "assets/img/stickers/AN-170.webp",
+  "mini": "assets/img/stickers/mini/AN-170.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "MU-051",
+  "nombre": "No te va gustar letras",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-051.webp",
+  "mini": "assets/img/stickers/mini/MU-051.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "MU-052",
+  "nombre": "Me encantaría volver a vivirte",
+  "categoria": "Música",
+  "imagen": "assets/img/stickers/MU-052.webp",
+  "mini": "assets/img/stickers/mini/MU-052.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "CU-098",
+  "nombre": "Flores azul y violeta",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-098.webp",
+  "mini": "assets/img/stickers/mini/CU-098.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "KP-051",
+  "nombre": "SKZOO apilados",
+  "categoria": "K-pop",
+  "imagen": "assets/img/stickers/KP-051.webp",
+  "mini": "assets/img/stickers/mini/KP-051.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "CU-099",
+  "nombre": "Narciso y tulipán",
+  "categoria": "Cute",
+  "imagen": "assets/img/stickers/CU-099.webp",
+  "mini": "assets/img/stickers/mini/CU-099.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "BE-016",
+  "nombre": "Pausa de hidratación",
+  "categoria": "Bebidas",
+  "imagen": "assets/img/stickers/BE-016.webp",
+  "mini": "assets/img/stickers/mini/BE-016.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "KP-052",
+  "nombre": "Stay Club ticket",
+  "categoria": "K-pop",
+  "imagen": "assets/img/stickers/KP-052.webp",
+  "mini": "assets/img/stickers/mini/KP-052.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "ME-155",
+  "nombre": "Haditas hagan algo",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-155.webp",
+  "mini": "assets/img/stickers/mini/ME-155.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "FR-017",
+  "nombre": "Pies para qué los quiero cursiva",
+  "categoria": "Frida",
+  "imagen": "assets/img/stickers/FR-017.webp",
+  "mini": "assets/img/stickers/mini/FR-017.webp",
+  "stock": 2,
+  "nuevo": true
+ },
+ {
+  "id": "KP-053",
+  "nombre": "SKZOO",
+  "categoria": "K-pop",
+  "imagen": "assets/img/stickers/KP-053.webp",
+  "mini": "assets/img/stickers/mini/KP-053.webp",
+  "stock": 2,
   "nuevo": true
  }
 ];

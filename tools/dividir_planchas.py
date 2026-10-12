@@ -90,6 +90,8 @@ def main():
     base = Path(args.originales).resolve()
     csv_path = base / "catalogo.csv"
     filas = list(csv.DictReader(csv_path.open(encoding="utf-8-sig")))
+    reg = base / "Archivo" / "archivados.csv"
+    archivados = [{"id": f["id"], "categoria": ""} for f in csv.DictReader(reg.open(encoding="utf-8-sig"))] if reg.exists() else []
     ya_divididas = {f["nota"].split("recorte de ")[1].split(";")[0].strip()
                     for f in filas if "recorte de " in f["nota"]}
 
@@ -106,7 +108,7 @@ def main():
         for n, m in enumerate(mascaras, 1):
             archivo = destino / f"{plancha['id']}-{n:02d}.png"
             recortar(img, m).save(archivo, optimize=True)
-            filas.append({"id": nuevo_id(plancha["categoria"], filas), "nombre": f"{titulo} {n}",
+            filas.append({"id": nuevo_id(plancha["categoria"], filas + archivados), "nombre": f"{titulo} {n}",
                           "categoria": plancha["categoria"], "tipo": "sticker", "publicar": "si",
                           "stock": "", "nuevo": "", "nota": f"recorte de {plancha['id']}",
                           "archivo": archivo.relative_to(base).as_posix()})

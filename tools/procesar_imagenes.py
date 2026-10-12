@@ -199,6 +199,9 @@ def main():
     base = Path(args.originales).resolve()
     csv_path = base / "catalogo.csv"
     filas = list(csv.DictReader(csv_path.open(encoding="utf-8-sig"))) if csv_path.exists() else []
+    # códigos ya usados por stickers archivados: no se reutilizan
+    reg = base / "Archivo" / "archivados.csv"
+    archivados = [{"id": f["id"], "categoria": ""} for f in csv.DictReader(reg.open(encoding="utf-8-sig"))] if reg.exists() else []
     conocidos = {f["archivo"] for f in filas}
     md5 = lambda ruta: hashlib.md5(ruta.read_bytes()).hexdigest()
     hashes = {md5(base / a) for a in conocidos if (base / a).exists()}
@@ -217,7 +220,7 @@ def main():
             continue
         hashes.add(h)
         cat = categoria_de(rel)
-        filas.append({"id": nuevo_id(cat, filas), "nombre": nombre_de(rel), "categoria": cat,
+        filas.append({"id": nuevo_id(cat, filas + archivados), "nombre": nombre_de(rel), "categoria": cat,
                       "tipo": "sticker", "publicar": "si", "stock": "", "nuevo": "si",
                       "nota": "nuevo: revisar nombre", "archivo": rel})
         agregados += 1
