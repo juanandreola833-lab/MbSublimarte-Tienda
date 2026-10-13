@@ -161,7 +161,7 @@ def nombre_de(ruta):
 def nuevo_id(categoria, filas):
     prefijo = next((f["id"].split("-")[0] for f in filas if f["categoria"] == categoria), None)
     if not prefijo:
-        usados = {f["id"].split("-")[0] for f in filas}
+        usados = {f["id"].split("-")[0] for f in filas} | {"EN"}  # EN = encendedores
         letras = re.sub(r"[^A-Z]", "", categoria.upper()) or "ST"
         prefijo = letras[:2]
         i = 2
@@ -210,8 +210,9 @@ def main():
     agregados = repetidos = 0
     for archivo in sorted(base.rglob("*")):
         rel = archivo.relative_to(base).as_posix()
-        # Archivo/ guarda los stickers sacados de la tienda (stock 0): no se vuelven a sumar
-        if (rel.startswith(".git") or rel.startswith("Archivo/")
+        # Archivo/ guarda los stickers sacados de la tienda (stock 0): no se vuelven a sumar.
+        # Encendedores/ tiene su propio catálogo (tools/procesar_encendedores.py).
+        if (rel.startswith(".git") or rel.startswith("Archivo/") or rel.startswith("Encendedores/")
                 or archivo.suffix.lower() not in EXTENSIONES or rel in conocidos):
             continue
         h = md5(archivo)

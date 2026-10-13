@@ -52,6 +52,12 @@ async function recibirPedido(request, env) {
   const d = p.datos || {};
   const pesos = (n) => "$" + num(n).toLocaleString("es-AR");
   const unidades = items.reduce((a, it) => a + it.q, 0);
+  // Los encendedores tienen código EN-xxx; el resto son stickers.
+  const esEncendedor = (it) => it.id.startsWith("EN-");
+  const stickers = items.filter((it) => !esEncendedor(it));
+  const encendedores = items.filter(esEncendedor);
+  const linea = (it) => `  ${String(it.q).padStart(3)} x  ${it.id}  ${it.nombre}`;
+  const suma = (lista) => lista.reduce((a, it) => a + it.q, 0);
 
   const cuerpo = [
     `Pedido ${numero}`,
@@ -61,9 +67,8 @@ async function recibirPedido(request, env) {
     `Entrega: ${txt(d.entrega, 80)}`,
     ...(txt(d.notas, 500) ? [`Notas: ${txt(d.notas, 500)}`] : []),
     "",
-    `STICKERS (${unidades} unidades)`,
-    ...items.map((it) => `  ${String(it.q).padStart(3)} x  ${it.id}  ${it.nombre}`),
-    "",
+    ...(stickers.length ? [`STICKERS (${suma(stickers)} unidades)`, ...stickers.map(linea), ""] : []),
+    ...(encendedores.length ? [`ENCENDEDORES (${suma(encendedores)} unidades)`, ...encendedores.map(linea), ""] : []),
     `Subtotal: ${pesos(num(p.total) + num(p.ahorro))}`,
     ...(num(p.ahorro) ? [`Descuento combo: -${pesos(p.ahorro)}`] : []),
     `TOTAL: ${pesos(p.total)}`,
@@ -76,7 +81,7 @@ async function recibirPedido(request, env) {
     "y envía el comprobante de transferencia por ese medio.",
   ].join("\r\n");
 
-  const asunto = `Pedido ${numero} · ${txt(d.nombre, 40)} · ${unidades} stickers · ${pesos(p.total)}`;
+  const asunto = `Pedido ${numero} · ${txt(d.nombre, 40)} · ${unidades} ${encendedores.length ? "productos" : "stickers"} · ${pesos(p.total)}`;
   const raw = [
     `From: MB Sublimarte <${REMITENTE}>`,
     `To: <${destino}>`,

@@ -20,6 +20,13 @@ window.CONFIG = {
 
   medida: "Aprox. 5 × 5 cm (proporcional según el diseño)",
 
+  // Encendedores personalizados (pestaña aparte, con su propio combo)
+  encendedores: {
+    precio: 1700,
+    combo: { cantidad: 2, precio: 3000 }, // combo sólo entre encendedores
+    medida: "Encendedor descartable con el diseño impreso alrededor",
+  },
+
   // Opciones de entrega que se muestran al finalizar el pedido
   entregas: ["Retiro (a coordinar)", "Envío (costo a coordinar)"]
 };

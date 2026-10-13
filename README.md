@@ -15,6 +15,7 @@ index.html              tienda: catálogo + carrito + pago
 revision.html           planilla para revisar nombres/stock/publicar (no enlazada)
 data/config.js          WhatsApp, alias, precios, opciones de entrega
 data/productos.js       catálogo publicado (GENERADO, no editar a mano)
+data/encendedores.js    catálogo de encendedores (GENERADO)
 data/revision.js        todos los stickers para revision.html (GENERADO)
 assets/css/styles.css   estilos (paleta lila/pastel)
 assets/js/app.js        lógica del catálogo, carrito y pedido
@@ -24,6 +25,7 @@ assets/icons/           íconos de la app
 manifest.webmanifest    datos para instalar como app
 sw.js                   service worker (carga rápida / sin conexión)
 tools/procesar_imagenes.py  genera imágenes y catálogo desde los originales
+tools/procesar_encendedores.py  lo mismo para los encendedores
 tools/dividir_planchas.py   recorta las planchas en stickers sueltos
 ```
 
@@ -72,6 +74,25 @@ tienda, y el PNG original pasa a `Archivo/` en el repo de originales
 `revision.html` (…/MbSublimarte-Tienda/revision.html) muestra todos los
 stickers para corregir nombres, stock y qué se publica; exporta los cambios
 como CSV para pasarlos a `catalogo.csv`.
+
+## Encendedores
+
+Pestaña aparte en la misma tienda (`#encendedores` abre directo esa pestaña).
+Precio y combo propios en `data/config.js` → `encendedores` (los combos de
+stickers y de encendedores no se mezclan). En la grilla cada diseño se muestra
+puesto sobre un encendedor dibujado en SVG (`mechero()` en `assets/js/app.js`).
+
+En el repo de originales: `Encendedores/<código>.png` (la plantilla plana que
+envuelve el encendedor) y `encendedores.csv` (`id, nombre, categoria,
+publicar, stock, nuevo, archivo`). Las planchas fuente (PDF de CorelDRAW)
+están en `Encendedores/plantillas/`. Códigos `EN-001`, `EN-002`… (nunca se
+reutilizan). Para actualizar:
+
+```
+python tools/procesar_encendedores.py ../mbsublimarte-originales
+```
+
+Genera `assets/img/encendedores/` (con marca de agua) y `data/encendedores.js`.
 
 ## Copia de pedidos por mail
 

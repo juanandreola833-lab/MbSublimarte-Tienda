@@ -7,8 +7,8 @@
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>MB Sublimarte · Stickers</title>
-  <meta name="description" content="Stickers DTF UV de MB Sublimarte. Elegí tus diseños, armá tu pedido y pagá por transferencia.">
+  <title>MB Sublimarte · Stickers y encendedores</title>
+  <meta name="description" content="Stickers DTF UV y encendedores personalizados de MB Sublimarte. Elegí tus diseños, armá tu pedido y pagá por transferencia.">
   <meta name="theme-color" content="#d9c6ef">
   <link rel="canonical" href="https://mbsublimarte.com.ar/">
   <meta property="og:type" content="website">
@@ -41,7 +41,7 @@
       <img src="assets/img/logo-mb.png" alt="" class="brand-logo" width="70" height="80">
       <div>
         <h1 class="brand-name">MB Sublimarte</h1>
-        <p class="brand-sub">stickers DTF UV</p>
+        <p class="brand-sub">stickers y encendedores</p>
       </div>
     </div>
     <nav class="top-links">
@@ -58,12 +58,18 @@
   </header>
 
   <main>
+    <nav class="lineas" role="tablist" aria-label="Productos">
+      <button class="linea" role="tab" data-linea="stickers" aria-selected="true">✨ Stickers</button>
+      <button class="linea" role="tab" data-linea="encendedores" aria-selected="false">🔥 Encendedores</button>
+    </nav>
+
     <section class="hero">
-      <p class="hero-kicker">Elegí tus favoritos</p>
-      <h2 class="hero-title">Stickers con mucho amor</h2>
+      <img class="hero-foto" id="hero-foto" src="assets/img/encendedores/foto-real.webp" alt="Encendedores de MB Sublimarte ya terminados" width="620" height="640" hidden>
+      <p class="hero-kicker" id="hero-kicker">Elegí tus favoritos</p>
+      <h2 class="hero-title" id="hero-title">Stickers con mucho amor</h2>
       <div class="price-pills">
         <span class="pill pill-lila"><b id="precio-unit">$1.000</b> c/u</span>
-        <span class="pill pill-rosa">Combo <b id="precio-combo">3 × $2.500</b></span>
+        <span class="pill pill-rosa" id="pill-combo">Combo <b id="precio-combo">3 × $2.500</b></span>
       </div>
       <p class="hero-note" id="medida"></p>
     </section>
@@ -85,14 +91,14 @@
         </select>
     </div>
 
-    <p class="empty" id="sin-resultados" hidden>No encontramos stickers con esa búsqueda 🥲</p>
+    <p class="empty" id="sin-resultados" hidden>No encontramos nada con esa búsqueda 🥲</p>
     <section class="grid" id="grid" aria-live="polite"></section>
     <button class="btn-mas" id="ver-mas" hidden>Ver más stickers</button>
   </main>
 
   <footer class="foot">
     <p>Hecho con 💜 por <span class="script">MB Sublimarte</span></p>
-    <p class="foot-small">Las imágenes tienen marca de agua. El sticker que recibís no la tiene.</p>
+    <p class="foot-small">Las imágenes tienen marca de agua. Lo que recibís no la tiene.</p>
   </footer>
 
   <!-- Botón flotante del carrito -->
@@ -126,7 +132,7 @@
 
       <!-- Paso 1: carrito -->
       <div class="step" data-step="carrito">
-        <p class="empty" id="carrito-vacio">Todavía no agregaste stickers ✨</p>
+        <p class="empty" id="carrito-vacio">Todavía no agregaste productos ✨</p>
         <ul class="cart-list" id="cart-list"></ul>
         <div class="combo-hint" id="combo-hint"></div>
       </div>
@@ -220,6 +226,7 @@
 
   <script src="data/config.js"></script>
   <script src="data/productos.js"></script>
+  <script src="data/encendedores.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>

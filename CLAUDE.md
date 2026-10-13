@@ -1,4 +1,4 @@
-# MB Sublimarte — tienda de stickers
+# MB Sublimarte — tienda de stickers y encendedores
 
 Sitio estático (HTML/CSS/JS puro, sin build ni framework) con el catálogo de
 stickers DTF UV de MB Sublimarte. Carrito en localStorage, pedido por WhatsApp
@@ -26,6 +26,12 @@ Ver `README.md` para la estructura y el flujo de carga de stickers.
   va a `Archivo/` del repo de originales).
 - Precio único para todos los stickers + combo (config). No hay precio por
   producto.
+- Encendedores: pestaña aparte (`#encendedores`), precio/combo propios en
+  `CONFIG.encendedores` (hoy $1.700 c/u, combo 2 × $3.000; los combos no se
+  mezclan con los de stickers). `data/encendedores.js` lo GENERA
+  `tools/procesar_encendedores.py` desde `encendedores.csv` +
+  `Encendedores/` del repo de originales. Códigos `EN-xxx`.
+  `procesar_imagenes.py` ignora `Encendedores/` y no usa el prefijo EN.
 - Imágenes publicadas: siempre pasadas por `tools/procesar_imagenes.py`
   (WebP 700 px + mini 360 px, marca de agua "@mb.sublimarte"), con el código
   del sticker como nombre de archivo. Nunca subir originales sin marca a este
