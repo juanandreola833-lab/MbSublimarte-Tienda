@@ -4,7 +4,7 @@
 //    con el servidor); la copia guardada sólo se usa si no hay conexión.
 //  - Imágenes: se muestra la copia guardada al instante y en segundo plano se
 //    baja la versión actual, así un cambio de foto aparece en la próxima visita.
-const CACHE = "mb-tienda-v13";
+const CACHE = "mb-tienda-v14";
 const BASE = [
   "./",
   "index.html",
