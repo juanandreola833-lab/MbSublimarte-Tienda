@@ -4116,7 +4116,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-062.webp",
   "mini": "assets/img/stickers/mini/ME-062.webp",
-  "stock": 2,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -4125,7 +4125,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-063.webp",
   "mini": "assets/img/stickers/mini/ME-063.webp",
-  "stock": 2,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -4134,7 +4134,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-064.webp",
   "mini": "assets/img/stickers/mini/ME-064.webp",
-  "stock": 2,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -4143,7 +4143,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-065.webp",
   "mini": "assets/img/stickers/mini/ME-065.webp",
-  "stock": 2,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -4152,7 +4152,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-066.webp",
   "mini": "assets/img/stickers/mini/ME-066.webp",
-  "stock": 2,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -4161,7 +4161,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-067.webp",
   "mini": "assets/img/stickers/mini/ME-067.webp",
-  "stock": 2,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -4170,7 +4170,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-068.webp",
   "mini": "assets/img/stickers/mini/ME-068.webp",
-  "stock": 2,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -4179,7 +4179,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-069.webp",
   "mini": "assets/img/stickers/mini/ME-069.webp",
-  "stock": 2,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -4188,7 +4188,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-070.webp",
   "mini": "assets/img/stickers/mini/ME-070.webp",
-  "stock": 2,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -4197,7 +4197,7 @@ window.PRODUCTOS = [
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-071.webp",
   "mini": "assets/img/stickers/mini/ME-071.webp",
-  "stock": 2,
+  "stock": 1,
   "nuevo": false
  },
  {
@@ -4355,7 +4355,7 @@ window.PRODUCTOS = [
  },
  {
   "id": "ME-112",
-  "nombre": "Meme Barassi",
+  "nombre": "Meme cBarassi",
   "categoria": "Memes",
   "imagen": "assets/img/stickers/ME-112.webp",
   "mini": "assets/img/stickers/mini/ME-112.webp",
@@ -5714,7 +5714,7 @@ window.PRODUCTOS = [
  },
  {
   "id": "AR-015",
-  "nombre": "María Elena Fuseneco",
+  "nombre": "Maria Elena Fuseneco",
   "categoria": "Argentina",
   "imagen": "assets/img/stickers/AR-015.webp",
   "mini": "assets/img/stickers/mini/AR-015.webp",
@@ -7131,7 +7131,7 @@ window.PRODUCTOS = [
   "categoria": "Selección",
   "imagen": "assets/img/stickers/SE-248.webp",
   "mini": "assets/img/stickers/mini/SE-248.webp",
-  "stock": 7,
+  "stock": 733,
   "nuevo": true
  },
  {

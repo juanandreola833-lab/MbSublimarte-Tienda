@@ -8,7 +8,7 @@
 window.ENCENDEDORES = [
  {
   "id": "EN-001",
-  "nombre": "San Lorenzo bandera",
+  "nombre": "San Lorenzo",
   "categoria": "Fútbol",
   "imagen": "assets/img/encendedores/EN-001.webp",
   "mini": "assets/img/encendedores/mini/EN-001.webp",
@@ -17,7 +17,7 @@ window.ENCENDEDORES = [
  },
  {
   "id": "EN-002",
-  "nombre": "San Lorenzo azulgrana",
+  "nombre": "San Lorenzo 2",
   "categoria": "Fútbol",
   "imagen": "assets/img/encendedores/EN-002.webp",
   "mini": "assets/img/encendedores/mini/EN-002.webp",
@@ -106,96 +106,6 @@ window.ENCENDEDORES = [
   "nuevo": false
  },
  {
-  "id": "EN-012",
-  "nombre": "Ansiedad",
-  "categoria": "Intensamente",
-  "imagen": "assets/img/encendedores/EN-012.webp",
-  "mini": "assets/img/encendedores/mini/EN-012.webp",
-  "stock": null,
-  "nuevo": false
- },
- {
-  "id": "EN-013",
-  "nombre": "Tristeza",
-  "categoria": "Intensamente",
-  "imagen": "assets/img/encendedores/EN-013.webp",
-  "mini": "assets/img/encendedores/mini/EN-013.webp",
-  "stock": null,
-  "nuevo": false
- },
- {
-  "id": "EN-014",
-  "nombre": "Envidia",
-  "categoria": "Intensamente",
-  "imagen": "assets/img/encendedores/EN-014.webp",
-  "mini": "assets/img/encendedores/mini/EN-014.webp",
-  "stock": null,
-  "nuevo": false
- },
- {
-  "id": "EN-015",
-  "nombre": "Furia",
-  "categoria": "Intensamente",
-  "imagen": "assets/img/encendedores/EN-015.webp",
-  "mini": "assets/img/encendedores/mini/EN-015.webp",
-  "stock": null,
-  "nuevo": false
- },
- {
-  "id": "EN-016",
-  "nombre": "Temor",
-  "categoria": "Intensamente",
-  "imagen": "assets/img/encendedores/EN-016.webp",
-  "mini": "assets/img/encendedores/mini/EN-016.webp",
-  "stock": null,
-  "nuevo": false
- },
- {
-  "id": "EN-017",
-  "nombre": "Alegría",
-  "categoria": "Intensamente",
-  "imagen": "assets/img/encendedores/EN-017.webp",
-  "mini": "assets/img/encendedores/mini/EN-017.webp",
-  "stock": null,
-  "nuevo": false
- },
- {
-  "id": "EN-018",
-  "nombre": "Bob Esponja",
-  "categoria": "Dibujitos",
-  "imagen": "assets/img/encendedores/EN-018.webp",
-  "mini": "assets/img/encendedores/mini/EN-018.webp",
-  "stock": null,
-  "nuevo": false
- },
- {
-  "id": "EN-019",
-  "nombre": "Patricio carita",
-  "categoria": "Dibujitos",
-  "imagen": "assets/img/encendedores/EN-019.webp",
-  "mini": "assets/img/encendedores/mini/EN-019.webp",
-  "stock": null,
-  "nuevo": false
- },
- {
-  "id": "EN-020",
-  "nombre": "Calamardo",
-  "categoria": "Dibujitos",
-  "imagen": "assets/img/encendedores/EN-020.webp",
-  "mini": "assets/img/encendedores/mini/EN-020.webp",
-  "stock": null,
-  "nuevo": false
- },
- {
-  "id": "EN-021",
-  "nombre": "Medusa",
-  "categoria": "Dibujitos",
-  "imagen": "assets/img/encendedores/EN-021.webp",
-  "mini": "assets/img/encendedores/mini/EN-021.webp",
-  "stock": null,
-  "nuevo": false
- },
- {
   "id": "EN-022",
   "nombre": "Patricio",
   "categoria": "Dibujitos",
@@ -205,29 +115,11 @@ window.ENCENDEDORES = [
   "nuevo": false
  },
  {
-  "id": "EN-023",
-  "nombre": "Bombón",
-  "categoria": "Dibujitos",
-  "imagen": "assets/img/encendedores/EN-023.webp",
-  "mini": "assets/img/encendedores/mini/EN-023.webp",
-  "stock": null,
-  "nuevo": false
- },
- {
   "id": "EN-024",
   "nombre": "Chicas Superpoderosas",
   "categoria": "Dibujitos",
   "imagen": "assets/img/encendedores/EN-024.webp",
   "mini": "assets/img/encendedores/mini/EN-024.webp",
-  "stock": null,
-  "nuevo": false
- },
- {
-  "id": "EN-025",
-  "nombre": "Max Goofy",
-  "categoria": "Dibujitos",
-  "imagen": "assets/img/encendedores/EN-025.webp",
-  "mini": "assets/img/encendedores/mini/EN-025.webp",
   "stock": null,
   "nuevo": false
  },
@@ -255,15 +147,6 @@ window.ENCENDEDORES = [
   "categoria": "Cute",
   "imagen": "assets/img/encendedores/EN-028.webp",
   "mini": "assets/img/encendedores/mini/EN-028.webp",
-  "stock": null,
-  "nuevo": false
- },
- {
-  "id": "EN-029",
-  "nombre": "Call me",
-  "categoria": "Cute",
-  "imagen": "assets/img/encendedores/EN-029.webp",
-  "mini": "assets/img/encendedores/mini/EN-029.webp",
   "stock": null,
   "nuevo": false
  },
@@ -304,29 +187,11 @@ window.ENCENDEDORES = [
   "nuevo": false
  },
  {
-  "id": "EN-034",
-  "nombre": "Nike vintage",
-  "categoria": "Urbano",
-  "imagen": "assets/img/encendedores/EN-034.webp",
-  "mini": "assets/img/encendedores/mini/EN-034.webp",
-  "stock": null,
-  "nuevo": false
- },
- {
   "id": "EN-035",
   "nombre": "Messi besando la Copa",
   "categoria": "Messi",
   "imagen": "assets/img/encendedores/EN-035.webp",
   "mini": "assets/img/encendedores/mini/EN-035.webp",
-  "stock": null,
-  "nuevo": false
- },
- {
-  "id": "EN-036",
-  "nombre": "Messi Sol de Mayo",
-  "categoria": "Messi",
-  "imagen": "assets/img/encendedores/EN-036.webp",
-  "mini": "assets/img/encendedores/mini/EN-036.webp",
   "stock": null,
   "nuevo": false
  },
@@ -395,7 +260,7 @@ window.ENCENDEDORES = [
  },
  {
   "id": "EN-044",
-  "nombre": "Lionel Messi con la Copa",
+  "nombre": "Messi con la Copa",
   "categoria": "Messi",
   "imagen": "assets/img/encendedores/EN-044.webp",
   "mini": "assets/img/encendedores/mini/EN-044.webp",
