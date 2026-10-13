@@ -9,13 +9,19 @@ En el repo de originales:
   - encendedores.csv: una fila por diseño:
         id, nombre, categoria, publicar (si/no),
         stock (vacío = a pedido, 0 = agotado, número = unidades),
-        nuevo (si/vacío), archivo (ruta del PNG original)
+        nuevo (si/vacío), nota, archivo (ruta del PNG original)
 
 Qué hace:
   1. Para cada diseño genera dos WebP con marca de agua "@mb.sublimarte":
        assets/img/encendedores/<id>.webp       (700 px, vista ampliada)
        assets/img/encendedores/mini/<id>.webp  (360 px, grilla)
-  2. Escribe data/encendedores.js (sólo los que tienen publicar = si).
+  2. Escribe data/encendedores.js (sólo los que tienen publicar = si) y
+     data/revision-encendedores.js (todos, para la pestaña Encendedores de
+     revision.html).
+  3. Guarda encendedores.csv normalizado (con todas las columnas).
+
+Los cambios hechos en revision.html se aplican con tools/aplicar_cambios.py,
+igual que los de stickers.
 
 Los códigos son EN-001, EN-002… y nunca se reutilizan.
 
@@ -47,6 +53,15 @@ CABECERA = """\
  */
 window.ENCENDEDORES = """
 
+CABECERA_REVISION = """\
+/*
+ * Todos los encendedores (publicados y ocultos) para revision.html.
+ * Se genera con tools/procesar_encendedores.py. NO editar a mano.
+ */
+window.REVISION_ENCENDEDORES = """
+
+CAMPOS = ["id", "nombre", "categoria", "publicar", "stock", "nuevo", "nota", "archivo"]
+
 
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -55,14 +70,16 @@ def main():
     args = p.parse_args()
 
     base = Path(args.originales).resolve()
-    with open(base / "encendedores.csv", newline="", encoding="utf-8") as fh:
+    with open(base / "encendedores.csv", newline="", encoding="utf-8-sig") as fh:
         filas = list(csv.DictReader(fh))
 
-    SALIDA_MINI.mkdir(parents=True, exist_ok=True)
-    publicados = []
     for f in filas:
-        if f["publicar"].strip().lower() != "si":
-            continue
+        for k in CAMPOS:
+            f[k] = (f.get(k) or "").strip()
+
+    SALIDA_MINI.mkdir(parents=True, exist_ok=True)
+    validas, generadas = [], 0
+    for f in filas:
         origen = base / f["archivo"]
         if not origen.exists():
             print(f"  ! falta {f['archivo']} ({f['id']})")
@@ -70,19 +87,40 @@ def main():
         grande, mini = SALIDA / f"{f['id']}.webp", SALIDA_MINI / f"{f['id']}.webp"
         if args.forzar or not grande.exists() or not mini.exists():
             procesar(origen, [(grande, TAMANO), (mini, TAMANO_MINI)], "@mb.sublimarte")
+            generadas += 1
             print(f"  + {f['id']} {f['nombre']}")
-        publicados.append({
+        validas.append(f)
+
+    # imágenes de encendedores que ya no están en el CSV (archivados)
+    ids = {f["id"] for f in filas}
+    for viejo in list(SALIDA.glob("EN-*.webp")) + list(SALIDA_MINI.glob("EN-*.webp")):
+        if viejo.stem not in ids:
+            viejo.unlink()
+
+    def item(f):
+        return {
             "id": f["id"],
-            "nombre": f["nombre"].strip(),
-            "categoria": f["categoria"].strip(),
+            "nombre": f["nombre"],
+            "categoria": f["categoria"],
             "imagen": f"assets/img/encendedores/{f['id']}.webp",
             "mini": f"assets/img/encendedores/mini/{f['id']}.webp",
             "stock": stock_js(f["stock"]),
-            "nuevo": f["nuevo"].strip().lower() == "si",
-        })
+            "nuevo": f["nuevo"].lower() == "si",
+        }
 
+    publicados = [item(f) for f in validas if f["publicar"].lower() == "si"]
     escribir_js(RAIZ / "data" / "encendedores.js", CABECERA, publicados)
-    print(f"{len(publicados)} encendedores publicados en data/encendedores.js")
+    revision = [dict(item(f), tipo="encendedor", publicar=f["publicar"].lower() == "si",
+                     stockTexto=f["stock"], nota=f["nota"]) for f in validas]
+    escribir_js(RAIZ / "data" / "revision-encendedores.js", CABECERA_REVISION, revision)
+
+    with open(base / "encendedores.csv", "w", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=CAMPOS, extrasaction="ignore")
+        w.writeheader()
+        w.writerows(filas)
+
+    print(f"{len(filas)} encendedores en encendedores.csv, {len(publicados)} publicados, "
+          f"{generadas} imágenes generadas.")
 
 
 if __name__ == "__main__":

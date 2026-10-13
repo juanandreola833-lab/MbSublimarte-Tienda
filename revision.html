@@ -68,16 +68,22 @@
   <main>
     <section class="intro">
       <h2>¡Hola Maca! 💜</h2>
-      Acá están <b id="total"></b> stickers. Los nombres son provisorios. Revisá y corregí lo que quieras:
+      Acá están todos los stickers y encendedores, también los que no se muestran en la tienda. Revisá y corregí lo que quieras:
       <ul>
         <li><b>Nombre</b> y <b>categoría</b>: cambialos si no te gustan.</li>
         <li><b>Stock</b>: un número si tenés unidades, vacío si es <b>a pedido</b>. <b>0 = sacarlo de la tienda</b> (sin rotación o fuera de temporada): se quita del catálogo y queda guardado en el archivo por si vuelve.</li>
         <li><b>Publicar</b>: destildá los que no querés mostrar en la tienda.</li>
         <li>Las <b>planchas</b> y los <b>repetidos</b> arrancan ocultos. Las notas en rosa te avisan por qué.</li>
+        <li>Arriba elegís si ves <b>stickers</b> o <b>encendedores</b>. Los cambios de los dos se descargan juntos en el mismo archivo.</li>
       </ul>
       Los cambios quedan guardados en este celu o esta compu. Cuando termines tocá <b>Descargar cambios</b> o
       <b>Copiar cambios</b> y mandáselos a Juan.
     </section>
+
+    <nav class="lineas" role="tablist" aria-label="Productos">
+      <button class="linea" role="tab" data-linea="stickers" aria-selected="true">✨ Stickers <small id="n-stickers"></small></button>
+      <button class="linea" role="tab" data-linea="encendedores" aria-selected="false">🔥 Encendedores <small id="n-encendedores"></small></button>
+    </nav>
 
     <div class="rev-filtros">
       <input type="search" id="f-buscar" placeholder="Buscar por nombre o código…">
@@ -104,10 +110,18 @@
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script src="data/revision.js"></script>
+  <script src="data/revision-encendedores.js"></script>
   <script>
   (() => {
     "use strict";
-    const ITEMS = window.REVISION || [];
+    // Stickers y encendedores: los códigos no se repiten entre los dos (EN-xxx = encendedor).
+    const TODOS = [
+      ...(window.REVISION || []).map((it) => ({ ...it, linea: "stickers" })),
+      ...(window.REVISION_ENCENDEDORES || []).map((it) => ({ ...it, linea: "encendedores" })),
+    ];
+    const porId = new Map(TODOS.map((it) => [it.id, it]));
+    let linea = location.hash === "#encendedores" ? "encendedores" : "stickers";
+    let ITEMS = [];
     const CLAVE = "mb-revision";
     const FONDOS = ["#ffd6e5", "#cdefe3", "#ffe1c8", "#d6e9ff", "#ece2f8", "#fff3c4"];
     const $ = (s) => document.querySelector(s);
@@ -126,7 +140,7 @@
     const actual = (it) => Object.assign(original(it), cambios[it.id] || {});
 
     // lo que ya se aplicó al catálogo deja de contar como cambio pendiente
-    for (const it of ITEMS) {
+    for (const it of TODOS) {
       const c = cambios[it.id];
       if (!c) continue;
       const o = original(it);
@@ -135,10 +149,21 @@
     }
     try { localStorage.setItem(CLAVE, JSON.stringify(cambios)); } catch (e) {}
 
-    const cats = [...new Set(ITEMS.map((i) => i.categoria))].sort((a, b) => a.localeCompare(b, "es"));
-    $("#f-cat").innerHTML += cats.map((c) => `<option>${esc(c)}</option>`).join("");
-    $("#cats").innerHTML = cats.map((c) => `<option value="${esc(c)}">`).join("");
-    $("#total").textContent = ITEMS.length;
+    for (const l of ["stickers", "encendedores"]) $(`#n-${l}`).textContent = TODOS.filter((it) => it.linea === l).length;
+
+    function elegirLinea(l) {
+      linea = l;
+      ITEMS = TODOS.filter((it) => it.linea === linea);
+      document.querySelectorAll(".linea").forEach((b) => b.setAttribute("aria-selected", b.dataset.linea === linea));
+      const cats = [...new Set(ITEMS.map((i) => i.categoria))].sort((a, b) => a.localeCompare(b, "es"));
+      $("#f-cat").innerHTML = '<option value="">Todas las categorías</option>' + cats.map((c) => `<option>${esc(c)}</option>`).join("");
+      $("#cats").innerHTML = cats.map((c) => `<option value="${esc(c)}">`).join("");
+      $("#f-estado").querySelector('[value="plancha"]').hidden = linea === "encendedores";
+      if (linea === "encendedores" && $("#f-estado").value === "plancha") $("#f-estado").value = "";
+      history.replaceState(null, "", linea === "encendedores" ? "#encendedores" : location.pathname);
+      pintar();
+    }
+    document.querySelectorAll(".linea").forEach((b) => b.addEventListener("click", () => elegirLinea(b.dataset.linea)));
 
     function tarjeta(it) {
       const v = actual(it);
@@ -184,13 +209,13 @@
 
     function contar() {
       const n = Object.keys(cambios).length;
-      $("#cambios").textContent = n ? `${n} sticker${n > 1 ? "s" : ""} modificado${n > 1 ? "s" : ""}` : "Sin cambios";
+      $("#cambios").textContent = n ? `${n} producto${n > 1 ? "s" : ""} modificado${n > 1 ? "s" : ""}` : "Sin cambios";
     }
 
     $("#lista").addEventListener("input", (e) => {
       const card = e.target.closest(".rev");
       if (!card) return;
-      const it = ITEMS.find((i) => i.id === card.dataset.id);
+      const it = porId.get(card.dataset.id);
       const leer = (n) => card.querySelector(`[name=${n}]`);
       const v = {
         nombre: leer("nombre").value.trim(), categoria: leer("categoria").value.trim(),
@@ -213,7 +238,7 @@
     function csv() {
       const col = (x) => `"${String(x).replace(/"/g, '""')}"`;
       const filas = [["id", "nombre", "categoria", "stock", "publicar", "nuevo", "comentario"]];
-      for (const it of ITEMS) {
+      for (const it of TODOS) {
         if (!cambios[it.id]) continue;
         const v = actual(it);
         filas.push([it.id, v.nombre, v.categoria, v.stock, v.publicar ? "si" : "no", v.nuevo ? "si" : "", v.comentario]);
@@ -238,7 +263,7 @@
       setTimeout(() => URL.revokeObjectURL(a.href), 1000);
     });
 
-    pintar();
+    elegirLinea(linea);
   })();
   </script>
 </body>

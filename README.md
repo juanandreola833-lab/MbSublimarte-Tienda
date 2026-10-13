@@ -16,6 +16,7 @@ revision.html           planilla para revisar nombres/stock/publicar (no enlazad
 data/config.js          WhatsApp, alias, precios, opciones de entrega
 data/productos.js       catálogo publicado (GENERADO, no editar a mano)
 data/encendedores.js    catálogo de encendedores (GENERADO)
+data/revision-encendedores.js  todos los encendedores para revision.html (GENERADO)
 data/revision.js        todos los stickers para revision.html (GENERADO)
 assets/css/styles.css   estilos (paleta lila/pastel)
 assets/js/app.js        lógica del catálogo, carrito y pedido
@@ -92,7 +93,11 @@ reutilizan). Para actualizar:
 python tools/procesar_encendedores.py ../mbsublimarte-originales
 ```
 
-Genera `assets/img/encendedores/` (con marca de agua) y `data/encendedores.js`.
+Genera `assets/img/encendedores/` (con marca de agua), `data/encendedores.js`
+(publicados) y `data/revision-encendedores.js` (todos, para la pestaña
+Encendedores de `revision.html`). Los cambios de la planilla se aplican con
+el mismo `tools/aplicar_cambios.py` que los de stickers: los códigos `EN-`
+van a `encendedores.csv` (stock 0 = se archiva en `Archivo/Encendedores/`).
 
 ## Copia de pedidos por mail
 

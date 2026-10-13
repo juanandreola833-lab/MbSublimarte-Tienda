@@ -32,6 +32,10 @@ Ver `README.md` para la estructura y el flujo de carga de stickers.
   `tools/procesar_encendedores.py` desde `encendedores.csv` +
   `Encendedores/` del repo de originales. Códigos `EN-xxx`.
   `procesar_imagenes.py` ignora `Encendedores/` y no usa el prefijo EN.
+  `revision.html` tiene pestañas Stickers / Encendedores (también
+  `data/revision-encendedores.js`, generado) y exporta un solo CSV;
+  `aplicar_cambios.py` manda los `EN-` a `encendedores.csv` (stock 0 archiva
+  igual que los stickers). Después correr el procesador que corresponda.
 - Imágenes publicadas: siempre pasadas por `tools/procesar_imagenes.py`
   (WebP 700 px + mini 360 px, marca de agua "@mb.sublimarte"), con el código
   del sticker como nombre de archivo. Nunca subir originales sin marca a este
@@ -74,7 +78,8 @@ Ver `README.md` para la estructura y el flujo de carga de stickers.
 
 - **Cambios de la planilla** (CSV exportado desde `revision.html`):
   `python tools/aplicar_cambios.py cambios.csv ../mbsublimarte-originales`
-  y después `python tools/procesar_imagenes.py ../mbsublimarte-originales`.
+  y después `python tools/procesar_imagenes.py ../mbsublimarte-originales`
+  (y `procesar_encendedores.py` si hay códigos `EN-`).
   Stock vacío = a pedido, número = unidades, `0` = sacar (se archiva).
   Comentario "repetido" también archiva. Nombre vacío no borra el actual.
 - **Diseños nuevos**: llegan como planchas (PNG o PDF, fondo transparente).
