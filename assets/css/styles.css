@@ -72,8 +72,8 @@ main { max-width: 1100px; margin: 0 auto; padding: 0 16px 120px; }
 
 /* Hero */
 .hero-foto {
-  width: min(240px, 64%); height: auto; margin: 0 auto 16px; border-radius: var(--radio);
-  box-shadow: var(--sombra); transform: rotate(-2deg);
+  width: min(230px, 58%); height: auto; margin: 0 auto 16px; border-radius: var(--radio);
+  box-shadow: var(--sombra);
 }
 .hero { text-align: center; padding: 28px 0 8px; }
 .hero-kicker { margin: 0; font-size: .8rem; letter-spacing: .16em; text-transform: uppercase; color: var(--ciruela-suave); font-weight: 600; }
