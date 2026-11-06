@@ -8,7 +8,9 @@
     encendedores: { singular: "encendedor", plural: "encendedores" },
   };
   const PRODUCTOS = [
-    ...(window.PRODUCTOS || []).map((p) => ({ ...p, linea: "stickers" })),
+    ...(window.PRODUCTOS || [])
+      .filter((p) => !CFG.soloConStock || (typeof p.stock === "number" && p.stock > 0))
+      .map((p) => ({ ...p, linea: "stickers" })),
     ...(window.ENCENDEDORES || []).map((p) => ({ ...p, linea: "encendedores" })),
   ];
   const hayEncendedores = PRODUCTOS.some((p) => p.linea === "encendedores");
@@ -495,6 +497,8 @@
 
   $("#buscar").addEventListener("input", (e) => { busqueda = e.target.value; $("#grid").innerHTML = ""; reiniciarGrilla(); });
   $("#orden").addEventListener("change", (e) => { orden = e.target.value; $("#grid").innerHTML = ""; reiniciarGrilla(); });
+  // con soloConStock los stickers ya vienen filtrados: el interruptor sobra
+  if (CFG.soloConStock) $("#solo-stock").closest("label").hidden = true;
   $("#solo-stock").addEventListener("change", (e) => { soloStock = e.target.checked; $("#grid").innerHTML = ""; reiniciarGrilla(); });
   $("#ver-mas").addEventListener("click", () => { mostrar += POR_PAGINA * 2; pintarGrilla(); });
 

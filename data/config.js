@@ -20,6 +20,10 @@ window.CONFIG = {
 
   medida: "Aprox. 5 × 5 cm (proporcional según el diseño)",
 
+  // true = la tienda sólo muestra los stickers con stock cargado (número > 0);
+  // los "a pedido" (stock vacío) quedan ocultos. Poner false para mostrarlos.
+  soloConStock: true,
+
   // Encendedores personalizados (pestaña aparte, con su propio combo)
   encendedores: {
     precio: 1700,
