@@ -20,10 +20,17 @@ Ver `README.md` para la estructura y el flujo de carga de stickers.
   privado `mbsublimarte-originales` (fuente de verdad del catálogo). Son
   scripts (`window.PRODUCTOS` / `window.REVISION`) para que funcione también
   con file://.
-- `revision.html` es la planilla de revisión para la dueña (noindex, no
-  enlazada desde la tienda); exporta un CSV de cambios que se aplica con
-  `tools/aplicar_cambios.py` (stock 0 = archivar: sale del catálogo y el PNG
-  va a `Archivo/` del repo de originales).
+- `revision.html` es el **panel de administración** (noindex, con
+  contraseña). El **stock se publica solo**: "Guardar stock" hace POST a
+  `/api/stock` y se guarda en Cloudflare KV (binding `STOCK`, un JSON
+  `{id: n|null}`); la tienda lo lee al abrir (`stockEnVivo` en app.js) y manda
+  sobre el stock de `data/productos.js`. Stock 0 = no se muestra; vacío = a
+  pedido. Nombre/categoría/publicar/nuevo siguen yendo por CSV
+  (`tools/aplicar_cambios.py`); ese CSV lleva el stock del catálogo, no el en
+  vivo, para no archivar sin querer.
+- Contraseña del panel: sólo su hash PBKDF2 está en `wrangler.jsonc`
+  (`ADMIN_SAL`/`ADMIN_HASH`). Para cambiarla, generar sal + hash nuevos con
+  `hashlib.pbkdf2_hmac("sha256", clave, sal, 100000)`.
 - Precio único para todos los stickers + combo (config). No hay precio por
   producto.
 - Encendedores: pestaña aparte (`#encendedores`), precio/combo propios en

@@ -1,17 +1,41 @@
-(() => {
+(async () => {
   "use strict";
 
   const CFG = window.CONFIG;
+
+  // Stock en vivo: lo que Maca carga en el panel (revision.html) se guarda en
+  // Cloudflare y manda sobre el stock de data/productos.js. Si no responde a
+  // tiempo (o en el link de respaldo de GitHub), se usa el stock publicado.
+  async function stockEnVivo() {
+    if (!location.protocol.startsWith("http")) return { stock: {}, actualizado: null };
+    const corte = new AbortController();
+    const reloj = setTimeout(() => corte.abort(), 2500);
+    try {
+      const r = await fetch("api/stock", { cache: "no-store", signal: corte.signal });
+      const d = r.ok ? await r.json() : null;
+      return d && d.stock ? d : { stock: {}, actualizado: null };
+    } catch (e) {
+      return { stock: {}, actualizado: null };
+    } finally {
+      clearTimeout(reloj);
+    }
+  }
+  const VIVO = await stockEnVivo();
+  const conStockVivo = (p) => (Object.prototype.hasOwnProperty.call(VIVO.stock, p.id) ? { ...p, stock: VIVO.stock[p.id] } : p);
   const ENC = CFG.encendedores || { precio: 0, medida: "" };
   const LINEAS = {
     stickers: { singular: "sticker", plural: "stickers" },
     encendedores: { singular: "encendedor", plural: "encendedores" },
   };
+  // Stock 0 = no se muestra. Con soloConStock, los stickers "a pedido" tampoco.
   const PRODUCTOS = [
-    ...(window.PRODUCTOS || [])
+    ...(window.PRODUCTOS || []).map(conStockVivo)
+      .filter((p) => p.stock !== 0)
       .filter((p) => !CFG.soloConStock || (typeof p.stock === "number" && p.stock > 0))
       .map((p) => ({ ...p, linea: "stickers" })),
-    ...(window.ENCENDEDORES || []).map((p) => ({ ...p, linea: "encendedores" })),
+    ...(window.ENCENDEDORES || []).map(conStockVivo)
+      .filter((p) => p.stock !== 0)
+      .map((p) => ({ ...p, linea: "encendedores" })),
   ];
   const hayEncendedores = PRODUCTOS.some((p) => p.linea === "encendedores");
   const cuantos = (n, linea) => `${n} ${n === 1 ? LINEAS[linea].singular : LINEAS[linea].plural}`;
@@ -680,6 +704,9 @@
     if (navigator.serviceWorker) navigator.serviceWorker.getRegistration().then((r) => r && r.update()).catch(() => {});
     const actual = await firmaServidor();
     if (actual && actual !== firmaCargada) $("#aviso-version").hidden = false;
+    // también si Maca cambió el stock desde el panel
+    const vivo = await fetch("api/stock", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+    if (vivo && vivo.ok && vivo.actualizado && vivo.actualizado !== VIVO.actualizado) $("#aviso-version").hidden = false;
   }
 
   if (location.protocol.startsWith("http")) {

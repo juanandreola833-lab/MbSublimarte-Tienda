@@ -99,6 +99,14 @@ Encendedores de `revision.html`). Los cambios de la planilla se aplican con
 el mismo `tools/aplicar_cambios.py` que los de stickers: los códigos `EN-`
 van a `encendedores.csv` (stock 0 = se archiva en `Archivo/Encendedores/`).
 
+## Stock en vivo (panel de administración)
+
+`revision.html` pide contraseña y tiene el botón **Guardar stock**: el stock
+cambiado se guarda en Cloudflare KV (`/api/stock`, binding `STOCK`, que
+Cloudflare crea solo en el primer deploy) y la tienda lo toma al abrir, sin
+regenerar archivos. Un código presente en KV manda sobre `data/productos.js`.
+`GET /api/stock` devuelve el JSON completo (sirve de respaldo).
+
 ## Copia de pedidos por mail
 
 Cuando el cliente toca "Enviar pedido por WhatsApp", la página hace un POST a

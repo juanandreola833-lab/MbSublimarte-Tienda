@@ -1,5 +1,6 @@
-// Worker de la tienda: sirve el sitio estático y, en POST /api/pedido,
-// manda por mail una copia de cada pedido (Cloudflare Email Routing).
+// Worker de la tienda: sirve el sitio estático; en POST /api/pedido manda por
+// mail una copia de cada pedido (Cloudflare Email Routing) y en /api/stock
+// guarda y sirve el stock que se carga desde el panel de administración.
 //
 // Configuración necesaria en Cloudflare (ver README):
 //   - Email Routing activado en mbsublimarte.com.ar, con la casilla de destino
@@ -22,9 +23,81 @@ export default {
       if (request.method !== "POST") return json({ ok: false, error: "método" }, 405);
       return recibirPedido(request, env);
     }
+    if (url.pathname === "/api/stock") return stock(request, env);
+    if (url.pathname === "/api/admin/login") return login(request, env);
     return env.ASSETS.fetch(request);
   },
 };
+
+// ---------- stock en vivo (panel de administración) ----------
+// El stock que carga Maca en revision.html se guarda en KV (binding STOCK) como
+// un único JSON { "AN-001": 3, "EN-004": null, ... } y la tienda lo lee al abrir.
+// Un código presente en ese JSON manda sobre el stock de data/productos.js.
+//   GET  /api/stock        → { stock, actualizado }            (público)
+//   POST /api/stock        → { clave, cambios: { id: n|null } } (con contraseña)
+//   POST /api/admin/login  → { clave }                         (valida la contraseña)
+// La contraseña no está en el repo: sólo su hash PBKDF2 (ADMIN_SAL / ADMIN_HASH).
+const CLAVE_KV = "stock";
+const ID_VALIDO = /^[A-Z]{2}-\d{3}$/;
+
+async function leerStock(env) {
+  const guardado = await env.STOCK.get(CLAVE_KV, "json");
+  return guardado && typeof guardado === "object" ? guardado : { stock: {}, actualizado: null };
+}
+
+async function claveCorrecta(clave, env) {
+  if (!env.ADMIN_HASH || !env.ADMIN_SAL || typeof clave !== "string" || !clave || clave.length > 100) return false;
+  const sal = new Uint8Array(env.ADMIN_SAL.match(/../g).map((h) => parseInt(h, 16)));
+  const llave = await crypto.subtle.importKey("raw", new TextEncoder().encode(clave), "PBKDF2", false, ["deriveBits"]);
+  const bits = await crypto.subtle.deriveBits({ name: "PBKDF2", hash: "SHA-256", salt: sal, iterations: 100000 }, llave, 256);
+  const hex = [...new Uint8Array(bits)].map((b) => b.toString(16).padStart(2, "0")).join("");
+  // comparación en tiempo constante
+  let dif = hex.length ^ env.ADMIN_HASH.length;
+  for (let i = 0; i < hex.length; i++) dif |= hex.charCodeAt(i) ^ env.ADMIN_HASH.charCodeAt(i);
+  return dif === 0;
+}
+
+async function leerJson(request) {
+  const texto = await request.text();
+  if (texto.length > 200_000) throw new Error("muy grande");
+  return JSON.parse(texto);
+}
+
+async function login(request, env) {
+  if (request.method !== "POST") return json({ ok: false, error: "método" }, 405);
+  let body;
+  try { body = await leerJson(request); } catch { return json({ ok: false, error: "json" }, 400); }
+  if (!(await claveCorrecta(body.clave, env))) return json({ ok: false, error: "contraseña incorrecta" }, 401);
+  return json({ ok: true });
+}
+
+async function stock(request, env) {
+  if (!env.STOCK) return json({ ok: false, error: "base de stock no configurada" }, 503);
+  if (request.method === "GET") return json({ ok: true, ...(await leerStock(env)) });
+  if (request.method !== "POST") return json({ ok: false, error: "método" }, 405);
+
+  let body;
+  try { body = await leerJson(request); } catch { return json({ ok: false, error: "json" }, 400); }
+  if (!(await claveCorrecta(body.clave, env))) return json({ ok: false, error: "contraseña incorrecta" }, 401);
+
+  const cambios = body.cambios && typeof body.cambios === "object" ? body.cambios : {};
+  const datos = await leerStock(env);
+  let aplicados = 0;
+  for (const [id, valor] of Object.entries(cambios)) {
+    if (!ID_VALIDO.test(id)) continue;
+    if (valor === null) { datos.stock[id] = null; aplicados++; continue; }
+    const n = Number(valor);
+    if (!Number.isInteger(n) || n < 0 || n > 99999) continue;
+    datos.stock[id] = n;
+    aplicados++;
+  }
+  if (aplicados) {
+    datos.actualizado = new Date().toISOString();
+    await env.STOCK.put(CLAVE_KV, JSON.stringify(datos));
+    console.log("Stock actualizado desde el panel:", aplicados, "productos");
+  }
+  return json({ ok: true, aplicados, ...datos });
+}
 
 async function recibirPedido(request, env) {
   if (!env.MAIL || !env.MAIL_TO) return json({ ok: false, error: "mail no configurado" }, 503);
@@ -117,5 +190,8 @@ function encabezadoUtf8(texto) {
 }
 
 function json(obj, status = 200) {
-  return new Response(JSON.stringify(obj), { status, headers: { "content-type": "application/json" } });
+  return new Response(JSON.stringify(obj), {
+    status,
+    headers: { "content-type": "application/json", "cache-control": "no-store" },
+  });
 }

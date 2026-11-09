@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="robots" content="noindex, nofollow">
-  <title>Revisión del catálogo · MB Sublimarte</title>
+  <title>Administración · MB Sublimarte</title>
   <link rel="icon" type="image/png" href="assets/icons/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,6 +51,22 @@
     .barra .info { flex: 1 1 140px; font-weight: 700; font-size: .9rem; }
     .barra button { border: 0; padding: 11px 16px; border-radius: 14px; font-weight: 700; background: var(--lila-claro); }
     .barra button.prim { background: var(--ciruela); color: var(--blanco); }
+    .barra button.guardar { background: #25a35a; color: var(--blanco); }
+    .barra button:disabled { opacity: .45; cursor: not-allowed; }
+    .rev.stock-pend { border-color: #25a35a; }
+    .rev input[name=stock].error { border-color: #e48aa9; }
+    .rev .estado { font-size: .72rem; font-weight: 700; padding: 1px 8px; border-radius: 999px; background: var(--menta); color: #2f6b55; }
+    .rev .estado.no { background: #eee; color: #777; }
+    .login {
+      position: fixed; inset: 0; z-index: 80; display: grid; place-items: center; padding: 16px;
+      background: rgba(248, 243, 253, .96); backdrop-filter: blur(6px);
+    }
+    .login form { width: min(360px, 100%); background: var(--blanco); border-radius: 24px; box-shadow: var(--sombra-fuerte); padding: 22px; display: flex; flex-direction: column; gap: 12px; text-align: center; }
+    .login h2 { margin: 0; font-family: var(--script); font-size: 2.1rem; }
+    .login input[type=password] { font: inherit; font-size: 1rem; padding: 12px 14px; border-radius: 14px; border: 2px solid var(--lila-claro); background: var(--lila-fondo); color: var(--ciruela); text-align: center; letter-spacing: .05em; }
+    .login label { font-size: .85rem; display: flex; gap: 6px; justify-content: center; align-items: center; }
+    .login button { border: 0; padding: 13px; border-radius: 14px; font-weight: 700; font-size: 1rem; background: var(--ciruela); color: var(--blanco); }
+    .login .error { color: #b04a74; font-weight: 600; font-size: .85rem; min-height: 1.2em; margin: 0; }
   </style>
 </head>
 <body>
@@ -60,7 +76,7 @@
       <img src="assets/img/logo-mb.png" alt="" class="brand-logo" width="70" height="80">
       <div>
         <h1 class="brand-name">MB Sublimarte</h1>
-        <p class="brand-sub">revisión del catálogo</p>
+        <p class="brand-sub">administración</p>
       </div>
     </div>
   </header>
@@ -68,16 +84,16 @@
   <main>
     <section class="intro">
       <h2>¡Hola Maca! 💜</h2>
-      Acá están todos los stickers y encendedores, también los que no se muestran en la tienda. Revisá y corregí lo que quieras:
+      Acá están todos los stickers y encendedores, también los que no se muestran en la tienda.
       <ul>
-        <li><b>Nombre</b> y <b>categoría</b>: cambialos si no te gustan.</li>
-        <li><b>Stock</b>: un número si tenés unidades, vacío si es <b>a pedido</b>. <b>0 = sacarlo de la tienda</b> (sin rotación o fuera de temporada): se quita del catálogo y queda guardado en el archivo por si vuelve.</li>
-        <li><b>Publicar</b>: destildá los que no querés mostrar en la tienda.</li>
-        <li>Las <b>planchas</b> y los <b>repetidos</b> arrancan ocultos. Las notas en rosa te avisan por qué.</li>
-        <li>Arriba elegís si ves <b>stickers</b> o <b>encendedores</b>. Los cambios de los dos se descargan juntos en el mismo archivo.</li>
+        <li><b>Stock</b> (se publica solo): un número si tenés unidades, <b>0</b> si no queda (sale de la tienda),
+          vacío si es <b>a pedido</b>. Cambiá los que quieras y tocá <b>Guardar stock</b> abajo:
+          en menos de un minuto se ve en la tienda.</li>
+        <li><b>Nombre, categoría, publicar y nuevo</b>: esos cambios no se publican solos. Tocá
+          <b>Descargar cambios</b> o <b>Copiar cambios</b> y mandáselos a Juan.</li>
+        <li>Un producto <b>no publicado</b> no se ve en la tienda aunque tenga stock.</li>
+        <li>Arriba elegís si ves <b>stickers</b> o <b>encendedores</b>.</li>
       </ul>
-      Los cambios quedan guardados en este celu o esta compu. Cuando termines tocá <b>Descargar cambios</b> o
-      <b>Copiar cambios</b> y mandáselos a Juan.
     </section>
 
     <nav class="lineas" role="tablist" aria-label="Productos">
@@ -94,7 +110,12 @@
         <option value="oculto">Ocultos</option>
         <option value="nota">Con nota</option>
         <option value="plancha">Planchas</option>
-        <option value="cambiado">Modificados por mí</option>
+        <option value="tienda">En la tienda</option>
+        <option value="constock">Con stock</option>
+        <option value="sinstock">Stock 0</option>
+        <option value="pedido">A pedido (sin stock cargado)</option>
+        <option value="stockpend">Stock sin guardar</option>
+        <option value="cambiado">Otros cambios (para Juan)</option>
       </select>
     </div>
     <p class="contador" id="f-contador"></p>
@@ -104,8 +125,20 @@
 
   <div class="barra">
     <span class="info" id="cambios">Sin cambios</span>
+    <button class="guardar" id="btn-guardar" disabled>Guardar stock</button>
     <button id="btn-copiar">Copiar cambios</button>
     <button class="prim" id="btn-descargar">Descargar cambios</button>
+  </div>
+
+  <div class="login" id="login" hidden>
+    <form id="login-form">
+      <h2>Administración</h2>
+      <p>Ingresá la contraseña para cargar el stock.</p>
+      <input type="password" id="login-clave" autocomplete="current-password" placeholder="Contraseña" required>
+      <label><input type="checkbox" id="login-recordar" checked> Recordar en este dispositivo</label>
+      <p class="error" id="login-error"></p>
+      <button type="submit">Entrar</button>
+    </form>
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
@@ -131,10 +164,29 @@
 
     let cambios = {};
     try { cambios = JSON.parse(localStorage.getItem(CLAVE)) || {}; } catch (e) {}
-    const guardar = () => { try { localStorage.setItem(CLAVE, JSON.stringify(cambios)); } catch (e) {} };
+    const guardar = () => {
+      try { localStorage.setItem(CLAVE, JSON.stringify(cambios)); localStorage.setItem(CLAVE_STOCK, JSON.stringify(stockPend)); } catch (e) {}
+    };
+
+    // ---- stock en vivo ----
+    // VIVO: lo guardado en Cloudflare (manda sobre el stock publicado).
+    // stockPend: lo que se cambió acá y todavía no se guardó.
+    const CLAVE_STOCK = "mb-admin-stock";
+    let VIVO = {};
+    let stockPend = {};
+    try { stockPend = JSON.parse(localStorage.getItem(CLAVE_STOCK)) || {}; } catch (e) {}
+    // stock pendiente de la versión anterior de la planilla (iba en "cambios")
+    for (const id in cambios) {
+      if ("stock" in cambios[id]) { stockPend[id] = cambios[id].stock; delete cambios[id].stock; }
+      if (!Object.keys(cambios[id]).length) delete cambios[id];
+    }
+    const stockActual = (it) => (Object.prototype.hasOwnProperty.call(VIVO, it.id)
+      ? (VIVO[it.id] === null ? "" : String(VIVO[it.id])) : (it.stockTexto || ""));
+    const stockVisto = (it) => (Object.prototype.hasOwnProperty.call(stockPend, it.id) ? stockPend[it.id] : stockActual(it));
+    const stockValido = (v) => v === "" || /^\d{1,5}$/.test(v);
 
     const original = (it) => ({
-      nombre: it.nombre, categoria: it.categoria, stock: it.stockTexto || "",
+      nombre: it.nombre, categoria: it.categoria,
       publicar: it.publicar, nuevo: it.nuevo, comentario: "",
     });
     const actual = (it) => Object.assign(original(it), cambios[it.id] || {});
@@ -167,14 +219,17 @@
 
     function tarjeta(it) {
       const v = actual(it);
-      return `<article class="rev ${v.publicar ? "" : "oculto"} ${cambios[it.id] ? "cambiado" : ""}" data-id="${it.id}">
+      const st = stockVisto(it);
+      const enTienda = it.publicar && st !== "0" && (st !== "" || it.linea === "encendedores");
+      return `<article class="rev ${v.publicar ? "" : "oculto"} ${cambios[it.id] ? "cambiado" : ""} ${it.id in stockPend ? "stock-pend" : ""}" data-id="${it.id}">
         <div class="img protect" style="--bg:${fondo(it.id)}"><img src="${esc(it.mini)}" alt="" loading="lazy" draggable="false"></div>
         <div class="campos">
-          <div class="top">${it.id}${it.tipo === "plancha" ? '<span class="chipito">Plancha</span>' : ""}</div>
+          <div class="top">${it.id}${it.tipo === "plancha" ? '<span class="chipito">Plancha</span>' : ""}
+            <span class="estado ${enTienda ? "" : "no"}">${enTienda ? "En la tienda" : "No se muestra"}</span></div>
           <input type="text" name="nombre" value="${esc(v.nombre)}" aria-label="Nombre">
           <input name="categoria" list="cats" value="${esc(v.categoria)}" aria-label="Categoría">
           <div class="fila">
-            <input type="text" name="stock" inputmode="numeric" value="${esc(v.stock)}" placeholder="a pedido" aria-label="Stock">
+            <input type="text" name="stock" inputmode="numeric" value="${esc(st)}" placeholder="a pedido" aria-label="Stock">
             <label class="chk"><input type="checkbox" name="publicar" ${v.publicar ? "checked" : ""}> Publicar</label>
             <label class="chk"><input type="checkbox" name="nuevo" ${v.nuevo ? "checked" : ""}> Nuevo</label>
           </div>
@@ -196,6 +251,12 @@
         if (est === "nota" && !it.nota) return false;
         if (est === "plancha" && it.tipo !== "plancha") return false;
         if (est === "cambiado" && !cambios[it.id]) return false;
+        const st = stockVisto(it);
+        if (est === "tienda" && !(it.publicar && st !== "0" && (st !== "" || it.linea === "encendedores"))) return false;
+        if (est === "constock" && !(st !== "" && st !== "0")) return false;
+        if (est === "sinstock" && st !== "0") return false;
+        if (est === "pedido" && st !== "") return false;
+        if (est === "stockpend" && !(it.id in stockPend)) return false;
         return true;
       });
     }
@@ -209,7 +270,14 @@
 
     function contar() {
       const n = Object.keys(cambios).length;
-      $("#cambios").textContent = n ? `${n} producto${n > 1 ? "s" : ""} modificado${n > 1 ? "s" : ""}` : "Sin cambios";
+      const s = Object.keys(stockPend).length;
+      const partes = [];
+      if (s) partes.push(`${s} stock sin guardar`);
+      if (n) partes.push(`${n} cambio${n > 1 ? "s" : ""} para Juan`);
+      $("#cambios").textContent = partes.length ? partes.join(" · ") : "Sin cambios";
+      const invalidos = Object.values(stockPend).some((v) => !stockValido(v));
+      $("#btn-guardar").disabled = !s || invalidos;
+      $("#btn-guardar").textContent = s ? `Guardar stock (${s})` : "Guardar stock";
     }
 
     $("#lista").addEventListener("input", (e) => {
@@ -217,9 +285,13 @@
       if (!card) return;
       const it = porId.get(card.dataset.id);
       const leer = (n) => card.querySelector(`[name=${n}]`);
+      const st = leer("stock").value.trim();
+      if (st === stockActual(it)) delete stockPend[it.id]; else stockPend[it.id] = st;
+      leer("stock").classList.toggle("error", !stockValido(st));
+      card.classList.toggle("stock-pend", it.id in stockPend);
       const v = {
         nombre: leer("nombre").value.trim(), categoria: leer("categoria").value.trim(),
-        stock: leer("stock").value.trim(), publicar: leer("publicar").checked,
+        publicar: leer("publicar").checked,
         nuevo: leer("nuevo").checked, comentario: leer("comentario").value.trim(),
       };
       const o = original(it);
@@ -237,11 +309,12 @@
 
     function csv() {
       const col = (x) => `"${String(x).replace(/"/g, '""')}"`;
+      // el stock no va: se publica solo desde "Guardar stock"
       const filas = [["id", "nombre", "categoria", "stock", "publicar", "nuevo", "comentario"]];
       for (const it of TODOS) {
         if (!cambios[it.id]) continue;
         const v = actual(it);
-        filas.push([it.id, v.nombre, v.categoria, v.stock, v.publicar ? "si" : "no", v.nuevo ? "si" : "", v.comentario]);
+        filas.push([it.id, v.nombre, v.categoria, it.stockTexto || "", v.publicar ? "si" : "no", v.nuevo ? "si" : "", v.comentario]);
       }
       return filas.map((f) => f.map(col).join(",")).join("\n");
     }
@@ -250,12 +323,12 @@
     const toast = (t) => { const el = $("#toast"); el.textContent = t; el.classList.add("show"); clearTimeout(tt); tt = setTimeout(() => el.classList.remove("show"), 2200); };
 
     $("#btn-copiar").addEventListener("click", async () => {
-      if (!Object.keys(cambios).length) return toast("Todavía no hay cambios");
+      if (!Object.keys(cambios).length) return toast("No hay cambios para Juan (el stock se guarda con Guardar stock)");
       try { await navigator.clipboard.writeText(csv()); toast("Cambios copiados ✓ pegalos en el chat"); }
       catch (e) { toast("No se pudo copiar, usá Descargar"); }
     });
     $("#btn-descargar").addEventListener("click", () => {
-      if (!Object.keys(cambios).length) return toast("Todavía no hay cambios");
+      if (!Object.keys(cambios).length) return toast("No hay cambios para Juan (el stock se guarda con Guardar stock)");
       const a = document.createElement("a");
       a.href = URL.createObjectURL(new Blob(["﻿" + csv()], { type: "text/csv;charset=utf-8" }));
       a.download = `cambios-catalogo-${new Date().toISOString().slice(0, 10)}.csv`;
@@ -263,7 +336,84 @@
       setTimeout(() => URL.revokeObjectURL(a.href), 1000);
     });
 
+    // ---- contraseña y guardado del stock ----
+    const CLAVE_ADMIN = "mb-admin-clave";
+    const leerClave = () => { try { return sessionStorage.getItem(CLAVE_ADMIN) || localStorage.getItem(CLAVE_ADMIN) || ""; } catch (e) { return ""; } };
+    const olvidarClave = () => { try { sessionStorage.removeItem(CLAVE_ADMIN); localStorage.removeItem(CLAVE_ADMIN); } catch (e) {} };
+    let clave = leerClave();
+
+    async function api(ruta, datos) {
+      const r = await fetch(ruta, {
+        method: datos ? "POST" : "GET", cache: "no-store",
+        headers: datos ? { "content-type": "application/json" } : {},
+        body: datos ? JSON.stringify(datos) : undefined,
+      });
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok || !j.ok) { const e = new Error(j.error || `error ${r.status}`); e.status = r.status; throw e; }
+      return j;
+    }
+
+    async function cargarVivo() {
+      try { VIVO = (await api("api/stock")).stock || {}; }
+      catch (e) { toast("No se pudo leer el stock en vivo: se muestra el publicado"); }
+      // lo pendiente que ya coincide con lo guardado deja de estar pendiente
+      for (const id in stockPend) { const it = porId.get(id); if (!it || stockPend[id] === stockActual(it)) delete stockPend[id]; }
+      guardar();
+      pintar();
+    }
+
+    function pedirClave(mensaje = "") {
+      $("#login-error").textContent = mensaje;
+      $("#login").hidden = false;
+      setTimeout(() => $("#login-clave").focus(), 50);
+    }
+
+    $("#login-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const intento = $("#login-clave").value.trim();
+      const btn = e.submitter || $("#login-form button");
+      btn.disabled = true;
+      try {
+        await api("api/admin/login", { clave: intento });
+        clave = intento;
+        try { ($("#login-recordar").checked ? localStorage : sessionStorage).setItem(CLAVE_ADMIN, clave); } catch (er) {}
+        $("#login").hidden = true;
+        $("#login-clave").value = "";
+      } catch (er) {
+        $("#login-error").textContent = er.status === 401 ? "Contraseña incorrecta" : "No se pudo conectar. Probá de nuevo.";
+      } finally {
+        btn.disabled = false;
+      }
+    });
+
+    $("#btn-guardar").addEventListener("click", async () => {
+      const ids = Object.keys(stockPend);
+      if (!ids.length) return;
+      if (!clave) return pedirClave();
+      const enviar = {};
+      for (const id of ids) enviar[id] = stockPend[id] === "" ? null : Number(stockPend[id]);
+      const btn = $("#btn-guardar");
+      btn.disabled = true;
+      btn.textContent = "Guardando…";
+      try {
+        const r = await api("api/stock", { clave, cambios: enviar });
+        VIVO = r.stock || VIVO;
+        for (const id of ids) delete stockPend[id];
+        guardar();
+        pintar();
+        toast(`Guardado ✓ ${ids.length} producto${ids.length > 1 ? "s" : ""}. En menos de un minuto se ve en la tienda.`);
+      } catch (er) {
+        if (er.status === 401) { olvidarClave(); clave = ""; pedirClave("La contraseña cambió o es incorrecta. Ingresala de nuevo."); }
+        else toast("No se pudo guardar. Revisá la conexión y probá de nuevo.");
+        contar();
+      }
+    });
+
     elegirLinea(linea);
+    if (location.protocol.startsWith("http")) {
+      cargarVivo();
+      if (!clave) pedirClave();
+    }
   })();
   </script>
 </body>

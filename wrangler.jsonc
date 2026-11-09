@@ -1,6 +1,6 @@
 // Configuración de Cloudflare para la tienda (Worker + archivos estáticos).
 // - El sitio se sirve tal cual desde esta carpeta (lo que no se publica está en .assetsignore).
-// - Sólo /api/* pasa por src/worker.js (copia de cada pedido por mail).
+// - Sólo /api/* pasa por src/worker.js (copia de cada pedido por mail y stock en vivo).
 // - MAIL_TO (casilla que recibe los pedidos) está en "vars" más abajo.
 {
   "name": "mbsublimarte-tienda",
@@ -11,13 +11,22 @@
     "binding": "ASSETS",
     "run_worker_first": ["/api/*"]
   },
+  // Stock cargado desde el panel (revision.html). Sin "id": Cloudflare crea la
+  // base KV sola en el primer deploy y después la reutiliza.
+  "kv_namespaces": [
+    { "binding": "STOCK" }
+  ],
   "send_email": [
     { "name": "MAIL" }
   ],
   // Casilla que recibe la copia de cada pedido. Provisorio acá (el repo es
   // público): más adelante pasarla a un secreto en el panel y sacarla de este archivo.
   "vars": {
-    "MAIL_TO": "imaca.btte@gmail.com"
+    "MAIL_TO": "imaca.btte@gmail.com",
+    // Contraseña del panel: sólo su hash PBKDF2-SHA256 (100.000 iteraciones).
+    // Para cambiarla, generar sal y hash nuevos (ver README).
+    "ADMIN_SAL": "06f6253fc9f094566b12f58a1dfc53f5",
+    "ADMIN_HASH": "cf61899f333fc957a94a35e59da96f9aad10a0a5180d1a11bc76e3c02505eaef"
   },
   // No borrar en cada deploy las variables cargadas desde el panel.
   "keep_vars": true,
