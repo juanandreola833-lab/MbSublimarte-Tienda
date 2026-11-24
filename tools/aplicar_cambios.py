@@ -8,7 +8,7 @@ Los códigos EN-xxx son encendedores y van a encendedores.csv; el resto son
 stickers y van a catalogo.csv. Para los dos valen las mismas reglas:
   - nombre, categoría, stock, publicar y nuevo se copian a la planilla.
   - Un comentario se agrega a la nota ("comentario: ...").
-  - stock = 0  ->  se ARCHIVA: sale de la planilla (y por lo tanto de la
+  - stock que pasa a 0 (antes no era 0)  ->  se ARCHIVA: sale de la planilla (y por lo tanto de la
     tienda y de revision.html) y su PNG original se mueve a
     Archivo/<carpeta original>/ dentro del repo de originales, junto con una
     fila en Archivo/archivados.csv para poder recuperarlo.
@@ -44,16 +44,22 @@ def aplicar(filas, cambios):
         for k in ("nombre", "categoria"):
             if c[k].strip():  # un nombre o categoría vacíos no borran el actual
                 f[k] = c[k].strip()
+        antes = (f.get("stock") or "").strip()
         for k in ("stock", "nuevo"):
             f[k] = c[k].strip()
+        # Se archiva sólo si el CSV PASA el stock a 0 (o es un repetido). Los que
+        # ya estaban en 0 en el catálogo (p. ej. modelos nuevos que esperan que
+        # se cargue su stock desde el panel) no se tocan.
+        archivar = f["stock"] == "0" and antes != "0"
         if c.get("comentario", "").strip().lower() == "repetido":
             f["stock"] = "0"  # los marcados como repetidos también se sacan
+            archivar = True
         f["publicar"] = "si" if c["publicar"].strip() == "si" else "no"
         comentario = c.get("comentario", "").strip()
         nota = f.get("nota") or ""
         if comentario and f"comentario: {comentario}" not in nota:
             f["nota"] = (nota + "; " if nota else "") + f"comentario: {comentario}"
-        if f["stock"] == "0":
+        if archivar:
             archivados.append(f)
         else:
             actualizados += 1

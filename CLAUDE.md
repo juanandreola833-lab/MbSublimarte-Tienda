@@ -87,16 +87,19 @@ Ver `README.md` para la estructura y el flujo de carga de stickers.
   `python tools/aplicar_cambios.py cambios.csv ../mbsublimarte-originales`
   y después `python tools/procesar_imagenes.py ../mbsublimarte-originales`
   (y `procesar_encendedores.py` si hay códigos `EN-`).
-  Stock vacío = a pedido, número = unidades, `0` = sacar (se archiva).
-  Comentario "repetido" también archiva. Nombre vacío no borra el actual.
+  Stock vacío = a pedido, número = unidades. Pasar el stock a `0` en el CSV
+  archiva (sólo si antes no era 0). Comentario "repetido" también archiva. Nombre vacío no borra el actual.
 - **Diseños nuevos**: llegan como planchas (PNG o PDF, fondo transparente).
   Recortar por transparencia (`tools/dividir_planchas.py` o separación por
   erosión si los bordes se tocan), comparar contra `catalogo.csv` y
   `Archivo/archivados.csv` para no duplicar, nombrar mirando cada sticker,
-  copiar a `Nuevos/` en originales, agregar al CSV y procesar. Un sticker
+  copiar a `Nuevos/` en originales, agregar al CSV y procesar. Los modelos
+  nuevos sin stock conocido entran con stock `0` (ocultos) y Maca les carga
+  el stock desde el panel. Los PDF suelen traer cada sticker como imagen
+  propia (con SMask): extraerlos con pymupdf en vez de recortar. Un sticker
   de ~5 cm con varios dibujos (ej. SKZOO) es un solo producto.
 - Los códigos (AN-001, FR-001…) nunca se reutilizan, aunque el sticker esté
-  archivado. Categorías nuevas toman 2 letras (FR = Frida, HP, VI, MT, DE).
+  archivado. Categorías nuevas toman 2 letras (FR = Frida, HP, VI, MT, DE, MO = Motos y calle).
 - Siempre probar con Playwright (Chromium en /opt/pw-browsers) antes de
   publicar, y commitear en los dos repos.
 
