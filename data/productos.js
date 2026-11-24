@@ -10652,5 +10652,734 @@ window.PRODUCTOS = [
   "mini": "assets/img/stickers/mini/ME-227.webp",
   "stock": 0,
   "nuevo": true
+ },
+ {
+  "id": "ST-001",
+  "nombre": "Baby Yoda con taza",
+  "categoria": "Star Wars",
+  "imagen": "assets/img/stickers/ST-001.webp",
+  "mini": "assets/img/stickers/mini/ST-001.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ST-002",
+  "nombre": "Logo Star Wars dorado",
+  "categoria": "Star Wars",
+  "imagen": "assets/img/stickers/ST-002.webp",
+  "mini": "assets/img/stickers/mini/ST-002.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ST-003",
+  "nombre": "Baby Yoda comiendo",
+  "categoria": "Star Wars",
+  "imagen": "assets/img/stickers/ST-003.webp",
+  "mini": "assets/img/stickers/mini/ST-003.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ST-004",
+  "nombre": "BB-8",
+  "categoria": "Star Wars",
+  "imagen": "assets/img/stickers/ST-004.webp",
+  "mini": "assets/img/stickers/mini/ST-004.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ST-005",
+  "nombre": "Baby Yoda en su cuna",
+  "categoria": "Star Wars",
+  "imagen": "assets/img/stickers/ST-005.webp",
+  "mini": "assets/img/stickers/mini/ST-005.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ST-006",
+  "nombre": "Baby Yoda en caja Adopt me",
+  "categoria": "Star Wars",
+  "imagen": "assets/img/stickers/ST-006.webp",
+  "mini": "assets/img/stickers/mini/ST-006.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ST-007",
+  "nombre": "Maestro Yoda",
+  "categoria": "Star Wars",
+  "imagen": "assets/img/stickers/ST-007.webp",
+  "mini": "assets/img/stickers/mini/ST-007.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ST-008",
+  "nombre": "Chewbacca",
+  "categoria": "Star Wars",
+  "imagen": "assets/img/stickers/ST-008.webp",
+  "mini": "assets/img/stickers/mini/ST-008.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ST-009",
+  "nombre": "Baby Yoda saludando",
+  "categoria": "Star Wars",
+  "imagen": "assets/img/stickers/ST-009.webp",
+  "mini": "assets/img/stickers/mini/ST-009.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ST-010",
+  "nombre": "Casco TIE For the Empire",
+  "categoria": "Star Wars",
+  "imagen": "assets/img/stickers/ST-010.webp",
+  "mini": "assets/img/stickers/mini/ST-010.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ST-011",
+  "nombre": "Baby Yoda tomando sopa",
+  "categoria": "Star Wars",
+  "imagen": "assets/img/stickers/ST-011.webp",
+  "mini": "assets/img/stickers/mini/ST-011.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ME-228",
+  "nombre": "Exceso de cumbia",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-228.webp",
+  "mini": "assets/img/stickers/mini/ME-228.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ME-229",
+  "nombre": "Exceso de cuarteto",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-229.webp",
+  "mini": "assets/img/stickers/mini/ME-229.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ME-230",
+  "nombre": "Exceso de fernet (letras)",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-230.webp",
+  "mini": "assets/img/stickers/mini/ME-230.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ME-231",
+  "nombre": "Exceso de vino",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-231.webp",
+  "mini": "assets/img/stickers/mini/ME-231.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ME-232",
+  "nombre": "Exceso de cerveza",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-232.webp",
+  "mini": "assets/img/stickers/mini/ME-232.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ME-233",
+  "nombre": "Exceso de oooaaa",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-233.webp",
+  "mini": "assets/img/stickers/mini/ME-233.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ME-234",
+  "nombre": "Un montón de ruido",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-234.webp",
+  "mini": "assets/img/stickers/mini/ME-234.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ME-235",
+  "nombre": "Un poco de ruido",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-235.webp",
+  "mini": "assets/img/stickers/mini/ME-235.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ME-236",
+  "nombre": "Acá toma el más cumbiero",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-236.webp",
+  "mini": "assets/img/stickers/mini/ME-236.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ME-237",
+  "nombre": "Hígado salió del grupo",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-237.webp",
+  "mini": "assets/img/stickers/mini/ME-237.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ME-238",
+  "nombre": "Acá toma el más cuartetero",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-238.webp",
+  "mini": "assets/img/stickers/mini/ME-238.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ME-239",
+  "nombre": "Sed de la peligrosa",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-239.webp",
+  "mini": "assets/img/stickers/mini/ME-239.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ME-240",
+  "nombre": "Qué onda la banduri",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-240.webp",
+  "mini": "assets/img/stickers/mini/ME-240.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ME-241",
+  "nombre": "Oooaaa",
+  "categoria": "Memes",
+  "imagen": "assets/img/stickers/ME-241.webp",
+  "mini": "assets/img/stickers/mini/ME-241.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "SD-111",
+  "nombre": "Pato (Gravity Falls) 1",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-111.webp",
+  "mini": "assets/img/stickers/mini/SD-111.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "SD-112",
+  "nombre": "Pato (Gravity Falls) 2",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-112.webp",
+  "mini": "assets/img/stickers/mini/SD-112.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "SD-113",
+  "nombre": "Pato (Gravity Falls) 3",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-113.webp",
+  "mini": "assets/img/stickers/mini/SD-113.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "SD-114",
+  "nombre": "Pato (Gravity Falls) 4",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-114.webp",
+  "mini": "assets/img/stickers/mini/SD-114.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "SD-115",
+  "nombre": "Pato (Gravity Falls) 5",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-115.webp",
+  "mini": "assets/img/stickers/mini/SD-115.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "SD-116",
+  "nombre": "Pato (Gravity Falls) 6",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-116.webp",
+  "mini": "assets/img/stickers/mini/SD-116.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "SD-117",
+  "nombre": "Pato (Gravity Falls) 7",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-117.webp",
+  "mini": "assets/img/stickers/mini/SD-117.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "SD-118",
+  "nombre": "Pato (Gravity Falls) 8",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-118.webp",
+  "mini": "assets/img/stickers/mini/SD-118.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "SD-119",
+  "nombre": "Pato (Gravity Falls) 9",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-119.webp",
+  "mini": "assets/img/stickers/mini/SD-119.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "SD-120",
+  "nombre": "Pato (Gravity Falls) 10",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-120.webp",
+  "mini": "assets/img/stickers/mini/SD-120.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "SD-121",
+  "nombre": "Pato (Gravity Falls) 11",
+  "categoria": "Series y dibujitos",
+  "imagen": "assets/img/stickers/SD-121.webp",
+  "mini": "assets/img/stickers/mini/SD-121.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-134",
+  "nombre": "River: Copa Libertadores",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-134.webp",
+  "mini": "assets/img/stickers/mini/FU-134.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-135",
+  "nombre": "Escudo River trapo",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-135.webp",
+  "mini": "assets/img/stickers/mini/FU-135.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-136",
+  "nombre": "CARP boca",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-136.webp",
+  "mini": "assets/img/stickers/mini/FU-136.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-137",
+  "nombre": "Copa juntos somos más grandes",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-137.webp",
+  "mini": "assets/img/stickers/mini/FU-137.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-138",
+  "nombre": "River: Álvarez 9",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-138.webp",
+  "mini": "assets/img/stickers/mini/FU-138.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-139",
+  "nombre": "El taco no",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-139.webp",
+  "mini": "assets/img/stickers/mini/FU-139.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-140",
+  "nombre": "River: Ortega",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-140.webp",
+  "mini": "assets/img/stickers/mini/FU-140.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-141",
+  "nombre": "River: figurita",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-141.webp",
+  "mini": "assets/img/stickers/mini/FU-141.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-142",
+  "nombre": "Escudo River Plate",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-142.webp",
+  "mini": "assets/img/stickers/mini/FU-142.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-143",
+  "nombre": "Club Atlético River Plate",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-143.webp",
+  "mini": "assets/img/stickers/mini/FU-143.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-144",
+  "nombre": "River: Gallardo y jugadores",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-144.webp",
+  "mini": "assets/img/stickers/mini/FU-144.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-145",
+  "nombre": "Gallardo",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-145.webp",
+  "mini": "assets/img/stickers/mini/FU-145.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-146",
+  "nombre": "Tómala dámela",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-146.webp",
+  "mini": "assets/img/stickers/mini/FU-146.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-147",
+  "nombre": "CARP el más grande",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-147.webp",
+  "mini": "assets/img/stickers/mini/FU-147.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-148",
+  "nombre": "CARP círculo el más grande",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-148.webp",
+  "mini": "assets/img/stickers/mini/FU-148.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-149",
+  "nombre": "Escudo River con copa",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-149.webp",
+  "mini": "assets/img/stickers/mini/FU-149.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-150",
+  "nombre": "09 12 18",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-150.webp",
+  "mini": "assets/img/stickers/mini/FU-150.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-151",
+  "nombre": "Bandera CABJ",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-151.webp",
+  "mini": "assets/img/stickers/mini/FU-151.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-152",
+  "nombre": "Escudo Boca Juniors ovalado",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-152.webp",
+  "mini": "assets/img/stickers/mini/FU-152.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-153",
+  "nombre": "Club Atlético Boca Juniors",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-153.webp",
+  "mini": "assets/img/stickers/mini/FU-153.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-154",
+  "nombre": "Jugador Nº 12",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-154.webp",
+  "mini": "assets/img/stickers/mini/FU-154.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-155",
+  "nombre": "Boca Juniors letras",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-155.webp",
+  "mini": "assets/img/stickers/mini/FU-155.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-156",
+  "nombre": "Camiseta 10 Román",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-156.webp",
+  "mini": "assets/img/stickers/mini/FU-156.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-157",
+  "nombre": "Maradona con la copa",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-157.webp",
+  "mini": "assets/img/stickers/mini/FU-157.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-158",
+  "nombre": "Copa Boca",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-158.webp",
+  "mini": "assets/img/stickers/mini/FU-158.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-159",
+  "nombre": "10 Román",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-159.webp",
+  "mini": "assets/img/stickers/mini/FU-159.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-160",
+  "nombre": "10 Maradona",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-160.webp",
+  "mini": "assets/img/stickers/mini/FU-160.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-161",
+  "nombre": "Boca de mi vida",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-161.webp",
+  "mini": "assets/img/stickers/mini/FU-161.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-162",
+  "nombre": "Maradona en Boca",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-162.webp",
+  "mini": "assets/img/stickers/mini/FU-162.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-163",
+  "nombre": "Maradona joven en Boca",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-163.webp",
+  "mini": "assets/img/stickers/mini/FU-163.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "FU-164",
+  "nombre": "Maradona con gorro",
+  "categoria": "Fútbol",
+  "imagen": "assets/img/stickers/FU-164.webp",
+  "mini": "assets/img/stickers/mini/FU-164.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ST-012",
+  "nombre": "Jar Jar Binks",
+  "categoria": "Star Wars",
+  "imagen": "assets/img/stickers/ST-012.webp",
+  "mini": "assets/img/stickers/mini/ST-012.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ST-013",
+  "nombre": "Grogu",
+  "categoria": "Star Wars",
+  "imagen": "assets/img/stickers/ST-013.webp",
+  "mini": "assets/img/stickers/mini/ST-013.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ST-014",
+  "nombre": "Nene con Grogu y R2-D2",
+  "categoria": "Star Wars",
+  "imagen": "assets/img/stickers/ST-014.webp",
+  "mini": "assets/img/stickers/mini/ST-014.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ST-015",
+  "nombre": "Darth Vader chibi",
+  "categoria": "Star Wars",
+  "imagen": "assets/img/stickers/ST-015.webp",
+  "mini": "assets/img/stickers/mini/ST-015.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ST-016",
+  "nombre": "I love Star Wars",
+  "categoria": "Star Wars",
+  "imagen": "assets/img/stickers/ST-016.webp",
+  "mini": "assets/img/stickers/mini/ST-016.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ST-017",
+  "nombre": "Estrella de la Muerte Star Wars",
+  "categoria": "Star Wars",
+  "imagen": "assets/img/stickers/ST-017.webp",
+  "mini": "assets/img/stickers/mini/ST-017.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ST-018",
+  "nombre": "Darth Vader rosa",
+  "categoria": "Star Wars",
+  "imagen": "assets/img/stickers/ST-018.webp",
+  "mini": "assets/img/stickers/mini/ST-018.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ST-019",
+  "nombre": "Chewbacca roarr",
+  "categoria": "Star Wars",
+  "imagen": "assets/img/stickers/ST-019.webp",
+  "mini": "assets/img/stickers/mini/ST-019.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ST-020",
+  "nombre": "Stormtrooper",
+  "categoria": "Star Wars",
+  "imagen": "assets/img/stickers/ST-020.webp",
+  "mini": "assets/img/stickers/mini/ST-020.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ST-021",
+  "nombre": "Baby Yoda",
+  "categoria": "Star Wars",
+  "imagen": "assets/img/stickers/ST-021.webp",
+  "mini": "assets/img/stickers/mini/ST-021.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "ST-022",
+  "nombre": "Baby Yoda espiando",
+  "categoria": "Star Wars",
+  "imagen": "assets/img/stickers/ST-022.webp",
+  "mini": "assets/img/stickers/mini/ST-022.webp",
+  "stock": 1,
+  "nuevo": true
+ },
+ {
+  "id": "DE-010",
+  "nombre": "Peefeeto caballedo",
+  "categoria": "Deportes",
+  "imagen": "assets/img/stickers/DE-010.webp",
+  "mini": "assets/img/stickers/mini/DE-010.webp",
+  "stock": 3,
+  "nuevo": true
+ },
+ {
+  "id": "DE-011",
+  "nombre": "Disco de pesas y proteína",
+  "categoria": "Deportes",
+  "imagen": "assets/img/stickers/DE-011.webp",
+  "mini": "assets/img/stickers/mini/DE-011.webp",
+  "stock": 3,
+  "nuevo": true
+ },
+ {
+  "id": "DE-012",
+  "nombre": "Huevo levantando pesas",
+  "categoria": "Deportes",
+  "imagen": "assets/img/stickers/DE-012.webp",
+  "mini": "assets/img/stickers/mini/DE-012.webp",
+  "stock": 3,
+  "nuevo": true
  }
 ];
